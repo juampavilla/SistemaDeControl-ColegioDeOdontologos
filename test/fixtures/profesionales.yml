@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  apellido: MyString
+  nombres: MyString
+  fecha_nacimiento: 2017-07-22
+  tipo_doc: MyString
+  nro_doc: 1
+
+two:
+  apellido: MyString
+  nombres: MyString
+  fecha_nacimiento: 2017-07-22
+  tipo_doc: MyString
+  nro_doc: 1

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Apellido:</b>
+  <%= @profesional.apellido %>
+</p>
+
+<p>
+  <b>Nombres:</b>
+  <%= @profesional.nombres %>
+</p>
+
+<p>
+  <b>Fecha nacimiento:</b>
+  <%= @profesional.fecha_nacimiento %>
+</p>
+
+<p>
+  <b>Tipo doc:</b>
+  <%= @profesional.tipo_doc %>
+</p>
+
+<p>
+  <b>Nro doc:</b>
+  <%= @profesional.nro_doc %>
+</p>
+
+
+<%= link_to 'Edit', edit_profesional_path(@profesional) %> |
+<%= link_to 'Back', profesionales_path %>

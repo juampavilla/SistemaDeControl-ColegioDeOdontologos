@@ -1,0 +1,45 @@
+<h1>Listing matriculas</h1>
+
+<table>
+  <tr>
+    <th>Estado</th>
+    <th>Matricula</th>
+    <th>Fecha inscripcion</th>
+    <th>Libro</th>
+    <th>Folio</th>
+    <th>Fecha habilitacion</th>
+    <th>Nota fecha habilitacion</th>
+    <th>Vencimiento</th>
+    <th>Especialidad</th>
+    <th>Fecha vencimiento</th>
+    <th>Profesional</th>
+    <th>Notas</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @matriculas.each do |matricula| %>
+  <tr>
+    <td><%= matricula.estado %></td>
+    <td><%= matricula.matricula %></td>
+    <td><%= matricula.fecha_inscripcion %></td>
+    <td><%= matricula.libro %></td>
+    <td><%= matricula.folio %></td>
+    <td><%= matricula.fecha_habilitacion %></td>
+    <td><%= matricula.nota_fecha_habilitacion %></td>
+    <td><%= matricula.vencimiento %></td>
+    <td><%= matricula.especialidad %></td>
+    <td><%= matricula.fecha_vencimiento %></td>
+    <td><%= matricula.profesional_id %></td>
+    <td><%= matricula.notas %></td>
+    <td><%= link_to 'Show', matricula %></td>
+    <td><%= link_to 'Edit', edit_matricula_path(matricula) %></td>
+    <td><%= link_to 'Destroy', matricula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Matricula', new_matricula_path %>

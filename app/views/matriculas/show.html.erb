@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Estado:</b>
+  <%= @matricula.estado %>
+</p>
+
+<p>
+  <b>Matricula:</b>
+  <%= @matricula.matricula %>
+</p>
+
+<p>
+  <b>Fecha inscripcion:</b>
+  <%= @matricula.fecha_inscripcion %>
+</p>
+
+<p>
+  <b>Libro:</b>
+  <%= @matricula.libro %>
+</p>
+
+<p>
+  <b>Folio:</b>
+  <%= @matricula.folio %>
+</p>
+
+<p>
+  <b>Fecha habilitacion:</b>
+  <%= @matricula.fecha_habilitacion %>
+</p>
+
+<p>
+  <b>Nota fecha habilitacion:</b>
+  <%= @matricula.nota_fecha_habilitacion %>
+</p>
+
+<p>
+  <b>Vencimiento:</b>
+  <%= @matricula.vencimiento %>
+</p>
+
+<p>
+  <b>Especialidad:</b>
+  <%= @matricula.especialidad %>
+</p>
+
+<p>
+  <b>Fecha vencimiento:</b>
+  <%= @matricula.fecha_vencimiento %>
+</p>
+
+<p>
+  <b>Profesional:</b>
+  <%= @matricula.profesional_id %>
+</p>
+
+<p>
+  <b>Notas:</b>
+  <%= @matricula.notas %>
+</p>
+
+
+<%= link_to 'Edit', edit_matricula_path(@matricula) %> |
+<%= link_to 'Back', matriculas_path %>
