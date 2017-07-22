@@ -1,0 +1,35 @@
+<h1>Listing domicilios</h1>
+
+<table>
+  <tr>
+    <th>Cp</th>
+    <th>Localidad</th>
+    <th>Domicilio</th>
+    <th>Telefono</th>
+    <th>Tipo</th>
+    <th>Notas</th>
+    <th>Profesional</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @domicilios.each do |domicilio| %>
+  <tr>
+    <td><%= domicilio.cp %></td>
+    <td><%= domicilio.localidad %></td>
+    <td><%= domicilio.domicilio %></td>
+    <td><%= domicilio.telefono %></td>
+    <td><%= domicilio.tipo %></td>
+    <td><%= domicilio.notas %></td>
+    <td><%= domicilio.profesional_id %></td>
+    <td><%= link_to 'Show', domicilio %></td>
+    <td><%= link_to 'Edit', edit_domicilio_path(domicilio) %></td>
+    <td><%= link_to 'Destroy', domicilio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Domicilio', new_domicilio_path %>

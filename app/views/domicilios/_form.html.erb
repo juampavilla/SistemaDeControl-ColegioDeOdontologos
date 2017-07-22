@@ -1,0 +1,45 @@
+<%= form_for(@domicilio) do |f| %>
+  <% if @domicilio.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@domicilio.errors.count, "error") %> prohibited this domicilio from being saved:</h2>
+
+      <ul>
+      <% @domicilio.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cp %><br />
+    <%= f.text_field :cp %>
+  </div>
+  <div class="field">
+    <%= f.label :localidad %><br />
+    <%= f.text_field :localidad %>
+  </div>
+  <div class="field">
+    <%= f.label :domicilio %><br />
+    <%= f.text_field :domicilio %>
+  </div>
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono %>
+  </div>
+  <div class="field">
+    <%= f.label :tipo %><br />
+    <%= f.text_field :tipo %>
+  </div>
+  <div class="field">
+    <%= f.label :notas %><br />
+    <%= f.text_field :notas %>
+  </div>
+  <div class="field">
+    <%= f.label :profesional_id %><br />
+    <%= f.number_field :profesional_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

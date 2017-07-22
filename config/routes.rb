@@ -1,4 +1,7 @@
 Odontologos::Application.routes.draw do
+  resources :domicilios
+
+
   resources :matriculas
 
 
