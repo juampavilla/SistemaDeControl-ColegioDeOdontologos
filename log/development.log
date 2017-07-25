@@ -1005,3 +1005,16 @@ Served asset /profesionals.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 14:29:55 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (21ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 14:30:02 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 14:30:07 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
