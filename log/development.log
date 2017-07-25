@@ -1018,3 +1018,793 @@ Served asset /rails.png - 304 Not Modified (0ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 14:30:07 -0300
 Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:45:48 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (29ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2017-07-25 19:45:52 -0300
+
+ActionController::RoutingError (No route matches [GET] "/pages"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/juampa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/juampa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/juampa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/pages/home" for 127.0.0.1 at 2017-07-25 19:45:56 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+Compiled pages.css  (14ms)  (pid 19212)
+Compiled application.css  (39ms)  (pid 19212)
+Compiled pages.js  (1236ms)  (pid 19212)
+Compiled application.js  (1243ms)  (pid 19212)
+Completed 200 OK in 1424.0ms (Views: 1423.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 19:45:57 -0300
+Served asset /application.css - 200 OK (24ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /matriculas.css - 200 OK (3ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /profesionals.css - 200 OK (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /pages.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /domicilios.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /domicilios.js - 200 OK (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /pages.js - 200 OK (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /matriculas.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /application.js - 200 OK (12ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 19:45:58 -0300
+Served asset /profesionals.js - 200 OK (1ms)
+
+
+Started GET "/pages/about" for 127.0.0.1 at 2017-07-25 19:46:11 -0300
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7.2ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:11 -0300
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:11 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:11 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:11 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:11 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:11 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/pages/contact" for 127.0.0.1 at 2017-07-25 19:46:18 -0300
+Processing by PagesController#contact as HTML
+  Rendered pages/contact.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7.6ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:18 -0300
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:18 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:18 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:18 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:18 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 19:46:18 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:51:28 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.0ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /domicilios.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 19:51:34 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-07-25 19:52:50 -0300
+
+TypeError (no implicit conversion of String into Hash):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-07-25 19:52:51 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.1ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /domicilios.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /matriculas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 19:52:52 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:52:55 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:52:57 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:52:58 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:52:59 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:52:59 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:53:32 -0300
+
+TypeError (no implicit conversion of String into Hash):
+  config/routes.rb:8:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 19:53:32 -0300
+Served asset /rails.png - 200 OK (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-07-25 19:59:51 -0300
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21.8ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 19:59:51 -0300
+Served asset /domicilios.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /matriculas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /domicilios.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /matriculas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /profesionals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 19:59:52 -0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-07-25 20:00:18 -0300
+
+SyntaxError (/home/juampa/code/SistemaDeControl-ColegioDeOdontologos/config/routes.rb:8: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  match '/', :to 'pages#home'
+                  ^):
+  activesupport (3.2.17) lib/active_support/dependencies.rb:245:in `load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:245:in `block in load'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:236:in `load_dependency'
+  activesupport (3.2.17) lib/active_support/dependencies.rb:245:in `load'
+  railties (3.2.17) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (3.2.17) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (3.2.17) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (3.2.17) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (3.2.17) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (3.2.17) lib/active_support/file_update_checker.rb:78:in `execute'
+  activesupport (3.2.17) lib/active_support/file_update_checker.rb:86:in `execute_if_updated'
+  railties (3.2.17) lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+  railties (3.2.17) lib/rails/application/finisher.rb:68:in `block (2 levels) in <module:Finisher>'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:429:in `_run__995743906216798954__prepare__210524218407180052__callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.17) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.17) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.7) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.7) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.7) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.7) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.7) lib/rack/handler/webrick.rb:59:in `service'
+  /home/juampa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/juampa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/juampa/.rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:00:21 -0300
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:00:23 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:01:01 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:06:57 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:06:59 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:10:05 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (3ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21.5ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /domicilios.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /matriculas.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /profesionals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /domicilios.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /matriculas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /profesionals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 20:10:10 -0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:12:08 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (11.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (107.2ms)[0m  [1mCREATE TABLE "domicilios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cp" varchar(255), "localidad" varchar(255), "domicilio" varchar(255), "telefono" varchar(255), "tipo" varchar(255), "notas" varchar(255), "profesional_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (106.1ms)[0m  CREATE TABLE "matriculas" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "estado" varchar(255), "matricula" varchar(255), "fecha_inscripcion" date, "libro" varchar(255), "folio" integer, "fecha_habilitacion" date, "nota_fecha_habilitacion" varchar(255), "vencimiento" integer, "especialidad" varchar(255), "fecha_vencimiento" date, "profesional_id" integer, "notas" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (73.7ms)[0m  [1mCREATE TABLE "profesionales" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "apellido" varchar(255), "nombres" varchar(255), "fecha_nacimiento" date, "tipo_doc" varchar(255), "nro_doc" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (66.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (83.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (49.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170722195814')[0m
+  [1m[35m (58.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170722131736')
+  [1m[36m (41.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170722153735')[0m
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:15:47 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 304 Not Modified (4ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:15:49 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:15:50 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:15:51 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 21.9ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /profesionals.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /domicilios.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /matriculas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /domicilios.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /matriculas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /profesionals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 20:15:55 -0300
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 20:18:37 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 6.5ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /domicilios.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /matriculas.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:39 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-25 20:18:46 -0300
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22.2ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:46 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:46 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:46 -0300
+Served asset /matriculas.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:46 -0300
+Served asset /domicilios.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:46 -0300
+Served asset /profesionals.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /domicilios.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /matriculas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /profesionals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:47 -0300
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 7.1ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 20:18:48 -0300
+Served asset /application.js - 304 Not Modified (1ms)
