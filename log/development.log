@@ -128,3 +128,880 @@ Connecting to database specified by database.yml
   [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170722131736')
   [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
 Connecting to database specified by database.yml
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-25 12:27:41 -0300
+Connecting to database specified by database.yml
+Served asset /rails.png - 200 OK (30ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-25 12:27:46 -0300
+Processing by DomiciliosController#index as HTML
+Completed 500 Internal Server Error in 16.1ms
+
+ActiveRecord::StatementInvalid (Could not find table 'domicilios'):
+  app/controllers/domicilios_controller.rb:5:in `index'
+
+
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.6ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Processing by MatriculasController#index as HTML
+  [1m[36mMatricula Load (0.8ms)[0m  [1mSELECT "matriculas".* FROM "matriculas" [0m
+  Rendered matriculas/index.html.erb within layouts/application (54.2ms)
+Completed 200 OK in 227.1ms (Views: 211.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /application.css - 200 OK (12ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /domicilios.css - 200 OK (3ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /matriculas.css - 200 OK (7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /scaffolds.css - 200 OK (5ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /profesionals.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /jquery.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /domicilios.js - 200 OK (4ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /matriculas.js - 200 OK (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /profesionals.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 12:27:57 -0300
+Served asset /application.js - 200 OK (8ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-25 12:28:06 -0300
+Processing by MatriculasController#index as HTML
+  [1m[35mMatricula Load (0.6ms)[0m  SELECT "matriculas".* FROM "matriculas" 
+  Rendered matriculas/index.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 55.0ms (Views: 51.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 12:28:06 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 12:28:06 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 12:28:06 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 12:28:06 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 12:28:06 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-25 12:28:12 -0300
+Processing by DomiciliosController#index as HTML
+Completed 500 Internal Server Error in 0.8ms
+
+ActiveRecord::StatementInvalid (Could not find table 'domicilios'):
+  app/controllers/domicilios_controller.rb:5:in `index'
+
+
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateProfesionales (20170722131736)
+Migrating to CreateMatriculas (20170722153735)
+Migrating to CreateDomicilios (20170722195814)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "domicilios" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cp" varchar(255), "localidad" varchar(255), "domicilio" varchar(255), "telefono" varchar(255), "tipo" varchar(255), "notas" varchar(255), "profesional_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20170722195814')[0m
+  [1m[35m (81.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (36.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "ROCA 495"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 1], ["telefono", "02314-15410109"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[36m (75.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "ROCA 495"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 2], ["telefono", "02314-427573"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[35m (62.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "AV. BELGRANO  558"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 3], ["telefono", "02314-15487596"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[36m (113.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "ARENALES 535"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 4], ["telefono", "02314-424104"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[35m (63.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "ALSINA 365"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 5], ["telefono", "02314-427060"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[36m (71.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "PRINGLES 168"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 6], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[35m (96.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "BOER 59 - DOM.PART"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 7], ["telefono", "02314--424545"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[36m (63.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6551"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "SARMIENTO 657"], ["localidad", "PIROVANO"], ["notas", nil], ["profesional_id", 8], ["telefono", "02314-421060"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[35m (88.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00], ["domicilio", "LAS HERAS 287"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 9], ["telefono", "02314-426161"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:50 UTC +00:00]]
+  [1m[36m (72.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "SAN MARTIN 825"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 10], ["telefono", "02314-15551996"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[35m (72.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "SARMIENTO 468"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 11], ["telefono", "02314-426499"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[36m (80.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", nil], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 12], ["telefono", "02314-428888"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[35m (64.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "IGNACIO RIVAS 55"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 13], ["telefono", "02314-427286"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[36m (80.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "SAN MARTIN 441"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 14], ["telefono", "0221-155642149"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[35m (72.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "STO CABRAL 44"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 15], ["telefono", "02314-420565"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[36m (72.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "AV. BELGRANO 167"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 16], ["telefono", "02314- 425604"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[35m (80.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "RIVAS 355"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 17], ["telefono", "02314-428864"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[36m (62.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "BELGRANO 171"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 18], ["telefono", "02314  -  15628370"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[35m (80.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "BELGRANO 171"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 19], ["telefono", "02314  -  15613262"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[36m (48.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "PELLEGRINI 353"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 20], ["telefono", "02314 -15620571"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[35m (80.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "PELLEGRINI 353"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 21], ["telefono", "02314 -15620571"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[36m (47.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "SGTO. CABRAL 44"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 22], ["telefono", "0221 - 155376084"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[35m (65.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00], ["domicilio", "STO CABRAL 44"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 23], ["telefono", "02314-420565 lun,mart,mierc."], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:51 UTC +00:00]]
+  [1m[36m (48.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "AV. BELGRANO 167"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 24], ["telefono", "02314- 425604"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[35m (47.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "ALSINA 365"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 25], ["telefono", "02314-427060"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[36m (69.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "URQUIZA 678"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 26], ["telefono", "02314-426177"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[35m (66.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "AV. BELGRANO 167"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 27], ["telefono", "02314- 425604"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[36m (63.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "PRINGLES 168"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 28], ["telefono", "02314-426499 - 425155"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[35m (90.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6553"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "RIVADAVIA  588"], ["localidad", "URDAMPILLETA"], ["notas", nil], ["profesional_id", 29], ["telefono", "02314-15618674"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[36m (64.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "AV. BELGRANO 452"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 30], ["telefono", "02314-420643"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[35m (71.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "SARMIENTO 468"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 31], ["telefono", "02314-426499"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[36m (80.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "ARENALES 145"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 32], ["telefono", "02314-426499"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[35m (63.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "SGTO. CABRAL 44"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 33], ["telefono", "02314-420565"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[36m (113.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "SAN MARTIN 825"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 34], ["telefono", "0221-154375166"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[35m (64.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "LAVALLE 127"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 35], ["telefono", "02314-424385"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[36m (64.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00], ["domicilio", "LAS HERAS 146"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 36], ["telefono", "02314-428462"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:52 UTC +00:00]]
+  [1m[35m (106.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "ROCA 495"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 37], ["telefono", "02314-15410109"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[36m (70.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "AV. ALSINA 365"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 38], ["telefono", "02314-427060"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[35m (63.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "SALA ODONTOL NIÑOS Muni. (GRAL. PAZ 248)"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 39], ["telefono", "0221-155606461"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[36m (81.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "SGTO. CABRAL 154"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 40], ["telefono", "02314-428247"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[35m (73.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "PRINGLES 168"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 41], ["telefono", "02314-426499"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[36m (65.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "LAVALLE 127"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 42], ["telefono", "02314-424385"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[35m (89.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "AV. LAVALLE 236"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 43], ["telefono", "02314-421782/15628549"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[36m (71.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "BELGRANO 453"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 44], ["telefono", "02314-428075"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[35m (72.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "ALSINA 365"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 45], ["telefono", "02314-427060"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[36m (97.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "SARMIENTO 468"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 46], ["telefono", "02314-426499"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[35m (80.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "LAVALLE 236"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 47], ["telefono", "02314-15614016"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[36m (64.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "RIVAS 25"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 48], ["telefono", "02314-428819"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[35m (63.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6551"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "PALAU 66"], ["localidad", "PIROVANO"], ["notas", nil], ["profesional_id", 49], ["telefono", "02314-(492165 madre)-(492126 Hosp.)"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[36m (72.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00], ["domicilio", "RIVADAVIA 378"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 50], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:53 UTC +00:00]]
+  [1m[35m (81.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "6550"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "HOSPITAL"], ["localidad", "BOLIVAR"], ["notas", nil], ["profesional_id", 51], ["telefono", "02314-491362"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[36m (73.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "SANTA FE 75"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 52], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[35m (65.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "URUGUAY 112"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 53], ["telefono", "02281-15463871"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[36m (89.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "URUGUAY 49"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 54], ["telefono", "02292-451006"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[35m (65.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "URQUIZA 136"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 55], ["telefono", "02292-453184"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[36m (68.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "SANTA FE S/N -Sala de Anuncibai"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 56], ["telefono", "02284-15458178"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[35m (63.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "25 de Mayo 124"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 57], ["telefono", "02292-451299"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[36m (59.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "AV. CONSTITUCION 96"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 58], ["telefono", "02292 - 451984"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[35m (80.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "ALMIRANTE BROWN 108"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 59], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[36m (68.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "9 DE JULIO 73 P.B."], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 60], ["telefono", "02292-451370/73"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[35m (72.3ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "AV. URUGUAY  49"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 61], ["telefono", "02281-15461218"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[36m (89.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "GARIBALDI 416 (TANDIL)"], ["localidad", "TANDIL"], ["notas", nil], ["profesional_id", 62], ["telefono", "02293-436870"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[35m (60.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00], ["domicilio", "SANTA FE Nº 79 - Villa Cacique"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 63], ["telefono", "02292- 498054"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:54 UTC +00:00]]
+  [1m[36m (65.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "LAS HERAS 81"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 64], ["telefono", "02292-452126"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "Av. Libertad 179"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 65], ["telefono", "02292-452299"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[36m (56.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "AV.MITRE 82"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 66], ["telefono", "02292-452892"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[35m (84.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "LIBERTAD 239"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 67], ["telefono", "02292-451196"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[36m (63.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "ALMIRANTE BROWN 108"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 68], ["telefono", "02281- 427160"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[35m (77.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "OTAMENDI 166"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 69], ["telefono", "02292-454968"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[36m (123.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "ZABALZA 228"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 70], ["telefono", "02292-454643"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[35m (61.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "SANTA FE S/N -Sala de Anuncibai"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 71], ["telefono", "02281-15414131"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[36m (72.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "CAYETANO ZIBECHI 31"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 72], ["telefono", "02292-453668"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[35m (80.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "LAVALLE 40"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 73], ["telefono", "02292-451299"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[36m (72.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", "7020"], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "ZIBECHI  84"], ["localidad", "BENITO JUAREZ"], ["notas", nil], ["profesional_id", 74], ["telefono", "02292-451751"], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[35m (63.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "RIVADAVIA 54"], ["localidad", nil], ["notas", nil], ["profesional_id", 2], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[36m (80.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00], ["domicilio", "ROCA 617"], ["localidad", nil], ["notas", nil], ["profesional_id", 3], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:55 UTC +00:00]]
+  [1m[35m (64.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "ARENALES 535"], ["localidad", nil], ["notas", nil], ["profesional_id", 4], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[36m (82.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "RIVADAVIA 268"], ["localidad", nil], ["notas", nil], ["profesional_id", 10], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[35m (73.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "SAN MARTIN 441"], ["localidad", nil], ["notas", nil], ["profesional_id", 14], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[36m (55.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "PRINGLES 109"], ["localidad", nil], ["notas", nil], ["profesional_id", 17], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[35m (55.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "SARMIENTO 468"], ["localidad", nil], ["notas", nil], ["profesional_id", 31], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[36m (64.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "25 DE MAYO 330"], ["localidad", nil], ["notas", nil], ["profesional_id", 33], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[35m (64.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "RIVADAVIA 268"], ["localidad", nil], ["notas", nil], ["profesional_id", 34], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[36m (63.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "GRAL. PAZ 248"], ["localidad", nil], ["notas", nil], ["profesional_id", 39], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[35m (80.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "ALSINA 541"], ["localidad", nil], ["notas", nil], ["profesional_id", 46], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[36m (60.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "FALUCHO 660"], ["localidad", nil], ["notas", nil], ["profesional_id", 47], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[35m (63.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "RAFAEL HERNANDEZ 544"], ["localidad", nil], ["notas", nil], ["profesional_id", 48], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[36m (88.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "URUGUAY 112"], ["localidad", nil], ["notas", nil], ["profesional_id", 53], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[35m (63.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "AV. URQUIZA 64"], ["localidad", nil], ["notas", nil], ["profesional_id", 54], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[36m (80.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00], ["domicilio", "JUAN B. JUSTO 128"], ["localidad", nil], ["notas", nil], ["profesional_id", 55], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:56 UTC +00:00]]
+  [1m[35m (81.4ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "25 de Mayo 124"], ["localidad", nil], ["notas", nil], ["profesional_id", 57], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[36m (73.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "LIBERTAD 196"], ["localidad", nil], ["notas", nil], ["profesional_id", 74], ["telefono", nil], ["tipo", "especial"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[35m (65.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "011-1567374663"], ["localidad", nil], ["notas", nil], ["profesional_id", 1], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[36m (89.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "02314-15573011"], ["localidad", nil], ["notas", nil], ["profesional_id", 2], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[35m (64.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "AV. BELGRANO  558"], ["localidad", nil], ["notas", nil], ["profesional_id", 3], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[36m (90.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "02314-15465588"], ["localidad", nil], ["notas", nil], ["profesional_id", 6], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[35m (55.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "02314-15401938"], ["localidad", nil], ["notas", nil], ["profesional_id", 8], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[36m (72.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "02314-425586"], ["localidad", nil], ["notas", nil], ["profesional_id", 10], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[35m (55.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "02314 - 425155 /// 02314 - 15624093 // DD/JJ C/ GUGLIERI Av. España 744 Tandil"], ["localidad", nil], ["notas", nil], ["profesional_id", 11], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[36m (147.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00], ["domicilio", "No trabaja en bolivar tiene el dom de la mama 02392-15626244"], ["localidad", nil], ["notas", nil], ["profesional_id", 12], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:57 UTC +00:00]]
+  [1m[35m (294.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "IRIGOYEN 583-BOLIVAR  Habilitado15/11/04- Brown 161"], ["localidad", nil], ["notas", nil], ["profesional_id", 15], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[36m (66.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314-15465136"], ["localidad", nil], ["notas", nil], ["profesional_id", 16], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[35m (76.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", " Irigoyen 583  420565 (Urd.) Brown161(420272)Hab12/09/06"], ["localidad", nil], ["notas", nil], ["profesional_id", 23], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[36m (87.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314-15403927"], ["localidad", nil], ["notas", nil], ["profesional_id", 26], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[35m (65.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314-15413279"], ["localidad", nil], ["notas", nil], ["profesional_id", 28], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[36m (73.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "Santos Plaza 265 (Bolívar) Hab. 10/08/2013 V. 2018"], ["localidad", nil], ["notas", nil], ["profesional_id", 29], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314-15447663"], ["localidad", nil], ["notas", nil], ["profesional_id", 30], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[36m (71.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314-15464056"], ["localidad", nil], ["notas", nil], ["profesional_id", 31], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[35m (64.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314-15463252"], ["localidad", nil], ["notas", nil], ["profesional_id", 32], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[36m (119.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "0221-155376084"], ["localidad", nil], ["notas", nil], ["profesional_id", 33], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[35m (83.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314-15502085 - Aizaguer S/N (Pirovano) 16/02/2013 V. 2018"], ["localidad", nil], ["notas", nil], ["profesional_id", 38], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[36m (63.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00], ["domicilio", "02314 - 425155"], ["localidad", nil], ["notas", nil], ["profesional_id", 39], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:58 UTC +00:00]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "02314-15622086"], ["localidad", nil], ["notas", nil], ["profesional_id", 42], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[36m (56.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "OLASCOAGA 345  - HAB. 10/09/11"], ["localidad", nil], ["notas", nil], ["profesional_id", 43], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[35m (72.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "HOSPITAL. AV.CALFULCURA S/N 427015"], ["localidad", nil], ["notas", nil], ["profesional_id", 44], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[36m (64.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "OLASCOAGA 80  02314-15623970"], ["localidad", nil], ["notas", nil], ["profesional_id", 45], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[35m (73.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "0221-156213954"], ["localidad", nil], ["notas", nil], ["profesional_id", 46], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[36m (65.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "02314-428261"], ["localidad", nil], ["notas", nil], ["profesional_id", 47], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[35m (73.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "02314-15610957"], ["localidad", nil], ["notas", nil], ["profesional_id", 48], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[36m (56.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "02281-15417505"], ["localidad", nil], ["notas", nil], ["profesional_id", 54], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[35m (89.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "011-1539300006"], ["localidad", nil], ["notas", nil], ["profesional_id", 55], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[36m (63.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "AVELLANEDA 367 - VELA (TANDIL) 10/09/2011 VENCE 2016"], ["localidad", nil], ["notas", nil], ["profesional_id", 56], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[35m (155.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00], ["domicilio", "02281 - 15544090"], ["localidad", nil], ["notas", nil], ["profesional_id", 58], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:41:59 UTC +00:00]]
+  [1m[36m (247.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "02281-15665457 - (221155079848)"], ["localidad", nil], ["notas", nil], ["profesional_id", 59], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[35m (89.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "sector estadistica 0249-154270031"], ["localidad", nil], ["notas", nil], ["profesional_id", 60], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[36m (64.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "0221-156028376"], ["localidad", nil], ["notas", nil], ["profesional_id", 62], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[35m (81.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "02293-15517865"], ["localidad", nil], ["notas", nil], ["profesional_id", 63], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[36m (73.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "02281 -15586639"], ["localidad", nil], ["notas", nil], ["profesional_id", 67], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[35m (81.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "NECOCHEA Nº 517  dd/jj Carloni  //// SABELLA DIEGO  ///// ESQUENAZI "], ["localidad", nil], ["notas", nil], ["profesional_id", 68], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[36m (89.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "02292-15410339"], ["localidad", nil], ["notas", nil], ["profesional_id", 69], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[35m (72.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "02292-452897"], ["localidad", nil], ["notas", nil], ["profesional_id", 70], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[36m (55.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "02281 - 15657196"], ["localidad", nil], ["notas", nil], ["profesional_id", 74], ["telefono", nil], ["tipo", "profesional"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[35m (55.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "AGRELO 4368 2ºC (CABA) 02314-425155"], ["localidad", nil], ["notas", nil], ["profesional_id", 1], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[36m (71.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "RIVADAVIA 54 - 02314-15573011"], ["localidad", nil], ["notas", nil], ["profesional_id", 2], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[35m (73.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "ARENALES 535 - 02314-424104"], ["localidad", nil], ["notas", nil], ["profesional_id", 4], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[36m (49.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00], ["domicilio", "c/ Locicero"], ["localidad", nil], ["notas", nil], ["profesional_id", 5], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:00 UTC +00:00]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "Roca Nº 273 - 02314-420266"], ["localidad", nil], ["notas", nil], ["profesional_id", 6], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[36m (48.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "BOER 59"], ["localidad", nil], ["notas", nil], ["profesional_id", 7], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[35m (65.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "LAPRIDA 302 02314-426295"], ["localidad", nil], ["notas", nil], ["profesional_id", 8], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[36m (64.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "RIVADAVIA 268"], ["localidad", nil], ["notas", nil], ["profesional_id", 10], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[35m (88.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "ALSINA 541"], ["localidad", nil], ["notas", nil], ["profesional_id", 11], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[36m (47.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "02314-420106 - Corresp a DORREGO 575 (TRENQUE LAUQUEN CP. 6400)"], ["localidad", nil], ["notas", nil], ["profesional_id", 12], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[35m (72.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "IGNACIO RIVAS 55"], ["localidad", nil], ["notas", nil], ["profesional_id", 13], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[36m (64.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "SAN MARTIN 433"], ["localidad", nil], ["notas", nil], ["profesional_id", 14], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[35m (72.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "Irigoyen 766 - 02314-428979"], ["localidad", nil], ["notas", nil], ["profesional_id", 16], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[36m (72.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "PRINGLES 109"], ["localidad", nil], ["notas", nil], ["profesional_id", 17], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[35m (88.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "BELGRANO 230 02314-426995"], ["localidad", nil], ["notas", nil], ["profesional_id", 18], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[36m (88.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "BELGRANO 230 02314-426995"], ["localidad", nil], ["notas", nil], ["profesional_id", 19], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[35m (55.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00], ["domicilio", "Gobernador Irigoyen 654 - Trenque Lauquen (6400) ENVIAR DOCUM."], ["localidad", nil], ["notas", nil], ["profesional_id", 20], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:01 UTC +00:00]]
+  [1m[36m (106.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "Gobernador Irigoyen 654 - Trenque Lauquen (6400) ENVIAR DOCUM."], ["localidad", nil], ["notas", nil], ["profesional_id", 21], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[35m (61.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "RIVADAVIA 351  (427067) 425083 - 02314 // 15610066. (02314-425155 Odontopediatria)"], ["localidad", nil], ["notas", nil], ["profesional_id", 23], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[36m (73.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "SAN MARTIN 630 DTO. 1 (15622721)"], ["localidad", nil], ["notas", nil], ["profesional_id", 24], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[35m (80.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "LAS HERAS 130"], ["localidad", nil], ["notas", nil], ["profesional_id", 25], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[36m (55.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "URQUIZA 678"], ["localidad", nil], ["notas", nil], ["profesional_id", 26], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[35m (88.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "PASO 120 (02314- 421111)"], ["localidad", nil], ["notas", nil], ["profesional_id", 27], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[36m (90.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "SAN MARTIN 853 3º B"], ["localidad", nil], ["notas", nil], ["profesional_id", 28], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[35m (56.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "R. HERNANDEZ 512 ( 02314 - 421121) Bolìvar - 6550 // 02314-15410266"], ["localidad", nil], ["notas", nil], ["profesional_id", 29], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[36m (97.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "PALAVECINO 702 - 0231415447663"], ["localidad", nil], ["notas", nil], ["profesional_id", 30], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[35m (63.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "ALSINA 541 02314-428787"], ["localidad", nil], ["notas", nil], ["profesional_id", 31], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[36m (89.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "ALSINA 541 - 02314-15463252"], ["localidad", nil], ["notas", nil], ["profesional_id", 32], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[35m (63.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "25  DE MAYO 330 - 0221-155376084"], ["localidad", nil], ["notas", nil], ["profesional_id", 33], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[36m (80.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00], ["domicilio", "02314- 427449"], ["localidad", nil], ["notas", nil], ["profesional_id", 36], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:02 UTC +00:00]]
+  [1m[35m (63.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "PASO 334 - 02314-427531 ( Cel. 02314-15410109 )"], ["localidad", nil], ["notas", nil], ["profesional_id", 37], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[36m (90.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "AV. ALSINA 45 - 02314-427800  ALVEAR 47 DPTO. 2 - 011-1559256556"], ["localidad", nil], ["notas", nil], ["profesional_id", 38], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[35m (64.9ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "ROCA 495 (Dr. Peveri)"], ["localidad", nil], ["notas", nil], ["profesional_id", 39], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[36m (65.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "PELLEGRINI 345"], ["localidad", nil], ["notas", nil], ["profesional_id", 41], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[35m (80.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "OLASCOAGA 345 - 02314-421782"], ["localidad", nil], ["notas", nil], ["profesional_id", 43], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[36m (65.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "BELGRANO 453"], ["localidad", nil], ["notas", nil], ["profesional_id", 44], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[35m (82.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "GUEMES 592 02314-426301"], ["localidad", nil], ["notas", nil], ["profesional_id", 45], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[36m (64.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "ALSINA 541 - 02314-428787"], ["localidad", nil], ["notas", nil], ["profesional_id", 46], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[35m (90.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "ARENALES 702"], ["localidad", nil], ["notas", nil], ["profesional_id", 47], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[36m (55.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "RIVAS 25  02314-15610759"], ["localidad", nil], ["notas", nil], ["profesional_id", 48], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[35m (72.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "PALAU Y REPETTO - 6551 (Pirovano)"], ["localidad", nil], ["notas", nil], ["profesional_id", 49], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[36m (47.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "RIVADAVIA 384 URDAMP. - 0299-4401298 Gallarret María Figueroa 2537 Neuquen"], ["localidad", nil], ["notas", nil], ["profesional_id", 50], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[35m (80.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "SAN MARTIN 651 URDAMP- Belgrano 584 Henderson"], ["localidad", nil], ["notas", nil], ["profesional_id", 51], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[36m (72.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00], ["domicilio", "En Tandil con Santuchi"], ["localidad", nil], ["notas", nil], ["profesional_id", 52], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:03 UTC +00:00]]
+  [1m[35m (55.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "URUGUAY 112 -"], ["localidad", nil], ["notas", nil], ["profesional_id", 53], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[36m (64.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "ALVARO BARROS Nº 319 - 02281-15477505"], ["localidad", nil], ["notas", nil], ["profesional_id", 54], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[35m (66.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "JUAN B. JUSTO 128"], ["localidad", nil], ["notas", nil], ["profesional_id", 55], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[36m (56.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "Salta Nº 35 -Villa Cacique - Barker (7005)"], ["localidad", nil], ["notas", nil], ["profesional_id", 56], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[35m (64.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "LAVALLE 40  - 451056"], ["localidad", nil], ["notas", nil], ["profesional_id", 57], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[36m (105.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "9 DE JULIO 297"], ["localidad", nil], ["notas", nil], ["profesional_id", 58], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[35m (65.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "ITUZAINGO Nº 195"], ["localidad", nil], ["notas", nil], ["profesional_id", 59], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[36m (64.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "02292-454061 -( 02281-15650667)"], ["localidad", nil], ["notas", nil], ["profesional_id", 60], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[35m (57.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "MARTIN GUEMES 117 - 02292- 451149"], ["localidad", nil], ["notas", nil], ["profesional_id", 61], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[36m (63.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "2 de Abril Nº 33 - Villa Cacique (CP 7005) 02292-498225"], ["localidad", nil], ["notas", nil], ["profesional_id", 62], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[35m (72.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "SANTA FE 79 - Villa Cacique (CP 7005) 02292-498054"], ["localidad", nil], ["notas", nil], ["profesional_id", 63], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[36m (100.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "LAVALLE Nº 112 (02292-453937)"], ["localidad", nil], ["notas", nil], ["profesional_id", 64], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[35m (68.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "M.ROLDAN 196 1° A "], ["localidad", nil], ["notas", nil], ["profesional_id", 65], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[36m (80.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00], ["domicilio", "MITRE 82"], ["localidad", nil], ["notas", nil], ["profesional_id", 66], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:04 UTC +00:00]]
+  [1m[35m (63.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "25 DE MAYO 246   (02292-451025)"], ["localidad", nil], ["notas", nil], ["profesional_id", 67], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[36m (64.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "GUAMINI  523 ( 0221 - 155079167)"], ["localidad", nil], ["notas", nil], ["profesional_id", 68], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[35m (81.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "AV. BAZAN 3015 "], ["localidad", nil], ["notas", nil], ["profesional_id", 69], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[36m (64.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "Av. Saavedra 583 ( 02292-454643) 02281-15577663"], ["localidad", nil], ["notas", nil], ["profesional_id", 70], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[35m (81.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "Salta Nº 35 -Villa Cacique - Barker (7005)"], ["localidad", nil], ["notas", nil], ["profesional_id", 71], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[36m (74.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "SAN ANTONIO Nº 40  (02292-452336-15584446"], ["localidad", nil], ["notas", nil], ["profesional_id", 72], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[35m (55.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "LAVALLE 40  - 451056 - 02281 -15476854"], ["localidad", nil], ["notas", nil], ["profesional_id", 73], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[36m (64.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "domicilios" ("cp", "created_at", "domicilio", "localidad", "notas", "profesional_id", "telefono", "tipo", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["cp", nil], ["created_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00], ["domicilio", "ADA. LIBERTAD 196 (02292-454253)"], ["localidad", nil], ["notas", nil], ["profesional_id", 74], ["telefono", nil], ["tipo", "real"], ["updated_at", Tue, 25 Jul 2017 15:42:05 UTC +00:00]]
+  [1m[35m (80.7ms)[0m  commit transaction
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-25 12:42:27 -0300
+Connecting to database specified by database.yml
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (0.8ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (115.0ms)
+Completed 200 OK in 173.6ms (Views: 148.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /domicilios.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /matriculas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /domicilios.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /matriculas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /profesionals.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 12:42:28 -0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Processing by MatriculasController#index as HTML
+  [1m[35mMatricula Load (0.5ms)[0m  SELECT "matriculas".* FROM "matriculas" 
+  Rendered matriculas/index.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 70.2ms (Views: 55.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /domicilios.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /matriculas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:21 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/profesionales" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Processing by ProfesionalesController#index as HTML
+  [1m[36mProfesional Load (0.9ms)[0m  [1mSELECT "profesionales".* FROM "profesionales" [0m
+  Rendered profesionales/index.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 86.9ms (Views: 70.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /domicilios.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /matriculas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-25 12:43:30 -0300
+Served asset /application.js - 304 Not Modified (1ms)
