@@ -4318,3 +4318,4469 @@ Served asset /profesionals.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 13:18:12 -0300
 Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-26 13:30:04 -0300
+Processing by MatriculasController#index as HTML
+  [1m[35mMatricula Load (71.1ms)[0m  SELECT "matriculas".* FROM "matriculas" 
+  Rendered matriculas/index.html.erb within layouts/application (64.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 393.2ms (Views: 318.6ms | ActiveRecord: 71.1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:05 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Processing by MatriculasController#index as HTML
+  [1m[36mMatricula Load (1.0ms)[0m  [1mSELECT "matriculas".* FROM "matriculas" [0m
+  Rendered matriculas/index.html.erb within layouts/application (54.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 78.0ms (Views: 72.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:06 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Processing by MatriculasController#index as HTML
+  [1m[35mMatricula Load (1.1ms)[0m  SELECT "matriculas".* FROM "matriculas" 
+  Rendered matriculas/index.html.erb within layouts/application (50.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 72.1ms (Views: 66.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /application.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:08 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (1.7ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (131.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 154.7ms (Views: 146.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 13:30:17 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 58.3ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /matriculas.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-26 14:08:20 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Processing by MatriculasController#index as HTML
+  [1m[35mMatricula Load (0.6ms)[0m  SELECT "matriculas".* FROM "matriculas" 
+  Rendered matriculas/index.html.erb within layouts/application (49.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 69.9ms (Views: 65.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:24 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /domicilios.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:25 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (1.3ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (123.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 149.9ms (Views: 139.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /domicilios.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:09:33 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[35mDomicilio Load (1.3ms)[0m  SELECT "domicilios".* FROM "domicilios" 
+  Rendered domicilios/index.html.erb within layouts/application (116.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 139.9ms (Views: 132.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:00 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:01 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 14:11:03 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (0.9ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (112.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 136.9ms (Views: 127.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /custom.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:04 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[35mDomicilio Load (1.0ms)[0m  SELECT "domicilios".* FROM "domicilios" 
+  Rendered domicilios/index.html.erb within layouts/application (111.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 134.3ms (Views: 127.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /application.css - 304 Not Modified (19ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /domicilios.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /matriculas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:11:14 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (1.1ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (117.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 140.9ms (Views: 134.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:12:40 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 14:13:59 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[35mDomicilio Load (1.0ms)[0m  SELECT "domicilios".* FROM "domicilios" 
+  Rendered domicilios/index.html.erb within layouts/application (109.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 132.1ms (Views: 125.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /matriculas.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /domicilios.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:14:00 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (1.4ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (110.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 134.6ms (Views: 127.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-26 14:15:17 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 13:12:52 -0300
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.9ms)
+Completed 200 OK in 622.8ms (Views: 622.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /application.css - 200 OK (52ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /profesionals.css - 200 OK (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /custom.css - 200 OK (16ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /domicilios.css - 200 OK (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /pages.css - 200 OK (3ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /matriculas.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/affix.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/alert.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/button.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/dropdown.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/tab.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/transition.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/scrollspy.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/tooltip.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap/popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /bootstrap-sprockets.js - 200 OK (16ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /domicilios.js - 200 OK (2ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /matriculas.js - 200 OK (5ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /pages.js - 200 OK (2ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /profesionals.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /application.js - 200 OK (17ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 13:12:53 -0300
+Served asset /rails.png - 200 OK (9ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (46.1ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (122.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 447.2ms (Views: 165.9ms | ActiveRecord: 64.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Served asset /application.css - 304 Not Modified (17ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 13:12:58 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Processing by MatriculasController#index as HTML
+  [1m[35mMatricula Load (12.3ms)[0m  SELECT "matriculas".* FROM "matriculas" 
+  Rendered matriculas/index.html.erb within layouts/application (48.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 121.7ms (Views: 94.2ms | ActiveRecord: 12.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:35 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/profesionales" for 127.0.0.1 at 2017-07-27 13:16:44 -0300
+Processing by ProfesionalesController#index as HTML
+  [1m[36mProfesional Load (0.5ms)[0m  [1mSELECT "profesionales".* FROM "profesionales" [0m
+  Rendered profesionales/index.html.erb within layouts/application (48.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 105.1ms (Views: 95.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:45 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:45 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:45 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:45 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:45 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:45 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:45 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/profesionales/1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Processing by ProfesionalesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfesional Load (0.3ms)[0m  SELECT "profesionales".* FROM "profesionales" WHERE "profesionales"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered profesionales/show.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 23.0ms (Views: 20.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Served asset /custom.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:47 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/matriculas/1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Processing by MatriculasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMatricula Load (0.3ms)[0m  [1mSELECT "matriculas".* FROM "matriculas" WHERE "matriculas"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered matriculas/show.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 31.7ms (Views: 29.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 13:16:55 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 13:16:56 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 15:39:54 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 376.8ms (Views: 376.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 15:39:54 -0300
+Served asset /custom.css - 304 Not Modified (28ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /matriculas.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 15:39:55 -0300
+Served asset /rails.png - 304 Not Modified (10ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 15:58:03 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 33.4ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 15:58:04 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23.0ms (Views: 22.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /application.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /custom.css - 304 Not Modified (16ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /scaffolds.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 15:58:31 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 15:59:57 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 82.4ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /scaffolds.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 15:59:58 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 21.7ms (Views: 21.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /custom.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:00:19 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:00:35 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 17.0ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:35 -0300
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:35 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /matriculas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:00:36 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 30.1ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /application.css - 304 Not Modified (22ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:05:25 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 19.0ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /custom.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:05:28 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 16.9ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /custom.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /matriculas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /profesionals.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:33 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:05:34 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18.1ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /scaffolds.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:05:39 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:10:29 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Compiled custom.css  (3326ms)  (pid 4223)
+Compiled application.css  (3ms)  (pid 4223)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3481.0ms (Views: 3480.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /application.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /custom.css - 200 OK (15ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /domicilios.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /domicilios.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:10:33 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 14.1ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /custom.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:10:37 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:12:13 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+Compiled custom.css  (3296ms)  (pid 4223)
+Compiled application.css  (3ms)  (pid 4223)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3359.0ms (Views: 3358.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /application.css - 304 Not Modified (54ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /domicilios.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /custom.css - 200 OK (16ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:12:17 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:13:24 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 53.3ms
+
+ActionView::Template::Error (Invalid CSS after "}*/": expected "{", was ""
+  (in /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/stylesheets/custom.scss)):
+    3: <head>
+    4:   <title>Sistema de control- Colegio Odontologos|<%= @title %></title>
+    5:   <%= csrf_meta_tags %>
+    6:   <%= stylesheet_link_tag    'application', media: 'all',
+    7:   'data-turbolinks-track': 'reload' %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   <%= render 'layouts/shim' %>
+  app/assets/stylesheets/custom.scss:100
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1196319244670479434_69998784174280'
+
+
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.1ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:13:37 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Compiled custom.css  (3313ms)  (pid 4223)
+Compiled application.css  (3ms)  (pid 4223)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3384.9ms (Views: 3384.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /application.css - 304 Not Modified (41ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /custom.css - 200 OK (16ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:13:41 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:14:25 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Compiled application.css  (3ms)  (pid 4223)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 52.6ms (Views: 52.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /application.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:14:26 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 16:14:59 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Compiled custom.css  (3413ms)  (pid 4223)
+Compiled application.css  (4ms)  (pid 4223)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3465.6ms (Views: 3465.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /application.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /matriculas.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /custom.css - 200 OK (45ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /domicilios.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 16:15:02 -0300
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/matriculas/1" for 127.0.0.1 at 2017-07-27 16:15:21 -0300
+Processing by MatriculasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMatricula Load (231.1ms)[0m  SELECT "matriculas".* FROM "matriculas" WHERE "matriculas"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered matriculas/show.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 258.0ms (Views: 25.9ms | ActiveRecord: 231.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /application.css - 304 Not Modified (12ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:22 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/matriculas/" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Processing by MatriculasController#index as HTML
+  [1m[36mMatricula Load (27.2ms)[0m  [1mSELECT "matriculas".* FROM "matriculas" [0m
+  Rendered matriculas/index.html.erb within layouts/application (44.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 88.0ms (Views: 58.2ms | ActiveRecord: 27.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /domicilios.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:25 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-27 16:15:36 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[35mDomicilio Load (1.3ms)[0m  SELECT "domicilios".* FROM "domicilios" 
+  Rendered domicilios/index.html.erb within layouts/application (137.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 160.7ms (Views: 152.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /custom.css - 304 Not Modified (11ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 16:15:37 -0300
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 17:29:03 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (110.7ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (41.0ms)
+  Rendered layouts/_footer.html.erb (15.7ms)
+Completed 200 OK in 3478.0ms (Views: 3458.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:09 -0300
+Served asset /jquery.js - 304 Not Modified (218ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:11 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (48ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:11 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (35ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 17:29:11 -0300
+Served asset /application.css - 304 Not Modified (444ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:13 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (75ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 17:29:13 -0300
+Served asset /custom.css - 304 Not Modified (244ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 17:29:14 -0300
+Served asset /domicilios.css - 304 Not Modified (110ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 17:29:14 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 17:29:14 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 17:29:14 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:14 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (53ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:14 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:14 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (64ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (61ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /domicilios.js - 304 Not Modified (65ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /matriculas.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /pages.js - 304 Not Modified (26ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /profesionals.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:15 -0300
+Served asset /application.js - 304 Not Modified (95ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:16 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:16 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:16 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:16 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 17:29:16 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 17:29:16 -0300
+Served asset /rails.png - 304 Not Modified (15ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-27 17:31:20 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (21.4ms)
+Compiled custom.css  (8463ms)  (pid 4223)
+Compiled application.css  (3ms)  (pid 4223)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 9087.3ms (Views: 9087.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-27 17:31:29 -0300
+Served asset /application.css - 304 Not Modified (98ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-27 17:31:29 -0300
+Served asset /pages.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /domicilios.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /custom.css - 200 OK (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/alert.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/tab.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/tooltip.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/popover.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap/modal.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /bootstrap-sprockets.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /domicilios.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /matriculas.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /profesionals.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
+Served asset /rails.png - 304 Not Modified (0ms)

@@ -1,6 +1,6 @@
 <h1>Listing domicilios</h1>
-
-<table>
+<div class="container">
+<table class="table table-condensed">
   <tr>
     <th>Cp</th>
     <th>Localidad</th>
@@ -9,9 +9,9 @@
     <th>Tipo</th>
     <th>Notas</th>
     <th>Profesional</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>acción1</th>
+    <th>acción2</th>
+    <th>acción3</th>
   </tr>
 
 <% @domicilios.each do |domicilio| %>
@@ -29,7 +29,7 @@
   </tr>
 <% end %>
 </table>
-
+</div>
 <br />
 
 <%= link_to 'New Domicilio', new_domicilio_path %>

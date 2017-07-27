@@ -3,7 +3,6 @@
 
 /* mixins, variables, etc. */
 
-/*$gray-medium-light: #eaeaea;*/
 $gray-medium-light: #eaeaea;
 
 /* universal */
@@ -82,7 +81,7 @@ footer {
   a {
     color: $gray;
     &:hover {
-      color: white;
+      color: $gray-darker;
     }
   }
   small {
