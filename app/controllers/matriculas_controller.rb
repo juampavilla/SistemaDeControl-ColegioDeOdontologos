@@ -40,7 +40,7 @@ class MatriculasController < ApplicationController
   # POST /matriculas
   # POST /matriculas.json
   def create
-    @matricula = Matricula.new(params[:matricula])
+    @matricula = Matricula.new(matricula_params)
 
     respond_to do |format|
       if @matricula.save
@@ -59,7 +59,7 @@ class MatriculasController < ApplicationController
     @matricula = Matricula.find(params[:id])
 
     respond_to do |format|
-      if @matricula.update_attributes(params[:matricula])
+      if @matricula.update_attributes(matricula_params)
         format.html { redirect_to @matricula, notice: 'Matricula was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,10 @@ class MatriculasController < ApplicationController
       format.html { redirect_to matriculas_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def matricula_params
+    params.require(:matricula).permit(:especialidad, :estado, :fecha_habilitacion, :fecha_inscripcion, :fecha_vencimiento, :folio, :libro, :matricula, :nota_fecha_habilitacion, :notas, :profesional_id, :vencimiento)
   end
 end
