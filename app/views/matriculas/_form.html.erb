@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :fecha_inscripcion %><br />
-    <%= f.date_select :fecha_inscripcion %>
+    <%= f.date_select :fecha_inscripcion, include_blank: true, start_year:1950, end_year: 2020 %>
   </div>
   <div class="field">
     <%= f.label :libro %><br />
@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :fecha_habilitacion %><br />
-    <%= f.date_select :fecha_habilitacion %>
+    <%= f.date_select :fecha_habilitacion, include_blank: true, start_year:1950, end_year: 2020 %>
   </div>
   <div class="field">
     <%= f.label :nota_fecha_habilitacion %><br />
@@ -49,7 +49,7 @@
   </div>
   <div class="field">
     <%= f.label :fecha_vencimiento %><br />
-    <%= f.date_select :fecha_vencimiento %>
+    <%= f.date_select :fecha_vencimiento, include_blank: true, start_year:1950, end_year: 2020 %>
   </div>
   <div class="field">
     <%= f.label :profesional_id %><br />

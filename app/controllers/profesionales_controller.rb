@@ -40,7 +40,7 @@ class ProfesionalesController < ApplicationController
   # POST /profesionales
   # POST /profesionales.json
   def create
-    @profesional = Profesional.new(params[:profesional])
+    @profesional = Profesional.new(profesional_params)
 
     respond_to do |format|
       if @profesional.save
@@ -59,7 +59,7 @@ class ProfesionalesController < ApplicationController
     @profesional = Profesional.find(params[:id])
 
     respond_to do |format|
-      if @profesional.update_attributes(params[:profesional])
+      if @profesional.update_attributes(profesional_params)
         format.html { redirect_to @profesional, notice: 'Profesional was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,11 @@ class ProfesionalesController < ApplicationController
       format.html { redirect_to profesionales_url }
       format.json { head :no_content }
     end
+  end
+
+
+  private
+  def profesional_params
+    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento)
   end
 end
