@@ -8784,3 +8784,364 @@ Served asset /application.js - 304 Not Modified (2ms)
 
 Started GET "/assets/rails.png" for 127.0.0.1 at 2017-07-27 17:31:30 -0300
 Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-30 14:26:23 -0300
+Connecting to database specified by database.yml
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (3.9ms)
+Compiled custom.css  (3500ms)  (pid 7023)
+Compiled domicilios.css  (2ms)  (pid 7023)
+Compiled matriculas.css  (2ms)  (pid 7023)
+Compiled pages.css  (1ms)  (pid 7023)
+Compiled profesionals.css  (1ms)  (pid 7023)
+Compiled application.css  (3546ms)  (pid 7023)
+Compiled jquery.js  (5ms)  (pid 7023)
+Compiled jquery_ujs.js  (0ms)  (pid 7023)
+Compiled bootstrap/affix.js  (0ms)  (pid 7023)
+Compiled bootstrap/alert.js  (0ms)  (pid 7023)
+Compiled bootstrap/button.js  (0ms)  (pid 7023)
+Compiled bootstrap/carousel.js  (0ms)  (pid 7023)
+Compiled bootstrap/collapse.js  (0ms)  (pid 7023)
+Compiled bootstrap/dropdown.js  (0ms)  (pid 7023)
+Compiled bootstrap/tab.js  (0ms)  (pid 7023)
+Compiled bootstrap/transition.js  (0ms)  (pid 7023)
+Compiled bootstrap/scrollspy.js  (0ms)  (pid 7023)
+Compiled bootstrap/modal.js  (0ms)  (pid 7023)
+Compiled bootstrap/tooltip.js  (0ms)  (pid 7023)
+Compiled bootstrap/popover.js  (0ms)  (pid 7023)
+Compiled bootstrap-sprockets.js  (77ms)  (pid 7023)
+Compiled domicilios.js  (1741ms)  (pid 7023)
+Compiled matriculas.js  (205ms)  (pid 7023)
+Compiled pages.js  (203ms)  (pid 7023)
+Compiled profesionals.js  (206ms)  (pid 7023)
+Compiled application.js  (2549ms)  (pid 7023)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 6205.6ms (Views: 6205.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /custom.css - 200 OK (39ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /application.css - 200 OK (36ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /matriculas.css - 200 OK (2ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /pages.css - 200 OK (2ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /domicilios.css - 200 OK (2ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /profesionals.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/affix.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/button.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/dropdown.js - 200 OK (6ms)
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/tab.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/transition.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/modal.js - 200 OK (4ms)
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/tooltip.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap/popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /bootstrap-sprockets.js - 200 OK (25ms)
+
+
+Started GET "/assets/domicilios.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /domicilios.js - 200 OK (1ms)
+
+
+Started GET "/assets/matriculas.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /matriculas.js - 200 OK (3ms)
+
+
+Started GET "/assets/pages.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /pages.js - 200 OK (2ms)
+
+
+Started GET "/assets/profesionals.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /profesionals.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /application.js - 200 OK (25ms)
+
+
+Started GET "/assets/isologo.png" for 127.0.0.1 at 2017-07-30 14:26:30 -0300
+Served asset /isologo.png - 200 OK (12ms)
+
+
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-30 14:26:38 -0300
+Processing by DomiciliosController#index as HTML
+  [1m[36mDomicilio Load (21.1ms)[0m  [1mSELECT "domicilios".* FROM "domicilios" [0m
+  Rendered domicilios/index.html.erb within layouts/application (149.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 432.2ms (Views: 161.5ms | ActiveRecord: 72.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:38 -0300
+Served asset /application.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:38 -0300
+Served asset /custom.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/domicilios.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:38 -0300
+Served asset /domicilios.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pages.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:38 -0300
+Served asset /pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/matriculas.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:38 -0300
+Served asset /matriculas.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/profesionals.css?body=1" for 127.0.0.1 at 2017-07-30 14:26:38 -0300
+Served asset /profesionals.css - 304 Not Modified (0ms)
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from env_config at /home/juampa/.rvm/gems/ruby-2.3.0/gems/railties-5.1.0/lib/rails/application.rb:247)
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-30 14:29:02 -0300
+Processing by DomiciliosController#index as HTML
+  Rendering domicilios/index.html.erb within layouts/application
+  [1m[36mDomicilio Load (1.8ms)[0m  [1m[34mSELECT "domicilios".* FROM "domicilios"[0m
+  Rendered domicilios/index.html.erb within layouts/application (107.5ms)
+Completed 500 Internal Server Error in 626ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: bootstrap-sprockets.
+Load paths:
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/images
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/stylesheets
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/stylesheets
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.0/lib/assets/compiled
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.0/lib/assets/compiled):
+    3: <head>
+    4:   <title>Sistema de control- Colegio Odontologos|<%= @title %></title>
+    5:   <%= csrf_meta_tags %>
+    6:   <%= stylesheet_link_tag    'application', media: 'all',
+    7:   'data-turbolinks-track': 'reload' %>
+    8:   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   <%= render 'layouts/shim' %>
+  
+app/assets/stylesheets/custom.scss:1
+app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___1580213170201229768_19535380'
+Started GET "/" for 127.0.0.1 at 2017-07-30 14:29:08 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (59.0ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/images
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/stylesheets
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/stylesheets
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.0/lib/assets/compiled
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.0/lib/assets/compiled):
+     9:   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    10: </div>
+    11: 
+    12: <%= link_to image_tag("isologo.png", alt: "logo"),
+    13: 'http://www.copba8.com.ar/' %>
+  
+app/assets/javascripts/application.js:15
+app/views/pages/home.html.erb:12:in `_app_views_pages_home_html_erb__144847051364645183_70321923072960'
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from env_config at /home/juampa/.rvm/gems/ruby-2.3.0/gems/railties-5.1.0/lib/rails/application.rb:247)
+Started GET "/" for 127.0.0.1 at 2017-07-30 14:30:08 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (164.1ms)
+Completed 500 Internal Server Error in 293ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/images
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/stylesheets
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/stylesheets
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.0/lib/assets/compiled
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.0/lib/assets/compiled):
+     9:   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    10: </div>
+    11: 
+    12: <%= link_to image_tag("isologo.png", alt: "logo"),
+    13: 'http://www.copba8.com.ar/' %>
+  
+app/assets/javascripts/application.js:15
+app/views/pages/home.html.erb:12:in `_app_views_pages_home_html_erb__1217566457677477420_69887273726680'
+Started GET "/" for 127.0.0.1 at 2017-07-30 14:30:10 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 14ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'bootstrap-sprockets' with type 'application/javascript'
+Checked in these paths: 
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/images
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/app/assets/stylesheets
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/javascripts
+  /home/juampa/code/SistemaDeControl-ColegioDeOdontologos/vendor/assets/stylesheets
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actioncable-5.1.0/lib/assets/compiled
+  /home/juampa/.rvm/gems/ruby-2.3.0/gems/actionview-5.1.0/lib/assets/compiled):
+     9:   <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+    10: </div>
+    11: 
+    12: <%= link_to image_tag("isologo.png", alt: "logo"),
+    13: 'http://www.copba8.com.ar/' %>
+  
+app/assets/javascripts/application.js:15
+app/views/pages/home.html.erb:12:in `_app_views_pages_home_html_erb__1217566457677477420_69887295216620'
+DEPRECATION WARNING: You didn't set `secret_key_base`. Read the upgrade documentation to learn more about this new config option. (called from env_config at /home/juampa/.rvm/gems/ruby-2.3.0/gems/railties-5.1.0/lib/rails/application.rb:247)
+Started GET "/" for 127.0.0.1 at 2017-07-30 14:33:24 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5769.5ms)
+  Rendered layouts/_shim.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_header.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 6012ms (Views: 5869.7ms)
+
+
+Started GET "/assets/application.self-27f004bb902952dbbaad25f0f28c312f29ffee315c94fa51dea6b5ec6dc993e6.css?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/custom.self-3df3b7af74a937c2c0d9e7e333ccc197fcc8906e6dbe29d836fd3adadfb1d01b.css?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/domicilios.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/matriculas.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/profesionals.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/domicilios.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/matriculas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/profesionals.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/application.self-29c15a76104243fc4fab0b953f6571b7056bbebdb2b4019eaab82bf4f241caae.js?body=1" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/assets/isologo-e78539919960bc81090137e21c0813e90d29eec816d2aedfb6819caaf2ab2d8d.png" for 127.0.0.1 at 2017-07-30 14:33:30 -0300
+Started GET "/domicilios" for 127.0.0.1 at 2017-07-30 14:33:35 -0300
+Processing by DomiciliosController#index as HTML
+  Rendering domicilios/index.html.erb within layouts/application
+  [1m[36mDomicilio Load (2.6ms)[0m  [1m[34mSELECT "domicilios".* FROM "domicilios"[0m
+  Rendered domicilios/index.html.erb within layouts/application (89.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_header.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.3ms) [cache miss]
+Completed 200 OK in 191ms (Views: 142.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/matriculas" for 127.0.0.1 at 2017-07-30 14:33:41 -0300
+Processing by MatriculasController#index as HTML
+  Rendering matriculas/index.html.erb within layouts/application
+  [1m[36mMatricula Load (37.6ms)[0m  [1m[34mSELECT "matriculas".* FROM "matriculas"[0m
+  Rendered matriculas/index.html.erb within layouts/application (82.0ms)
+  Rendered layouts/_shim.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_header.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 161ms (Views: 104.1ms | ActiveRecord: 38.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-30 14:34:03 -0300
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.4ms) [cache miss]
+  Rendered layouts/_header.html.erb (0.5ms) [cache miss]
+  Rendered layouts/_footer.html.erb (0.4ms) [cache miss]
+Completed 200 OK in 60ms (Views: 58.5ms | ActiveRecord: 0.0ms)
+
+

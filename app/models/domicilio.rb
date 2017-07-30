@@ -1,4 +1,3 @@
-class Domicilio < ActiveRecord::Base
-  attr_accessible :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo
+class Domicilio < ApplicationRecord
   belongs_to :profesional
 end

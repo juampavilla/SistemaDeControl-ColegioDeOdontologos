@@ -40,7 +40,7 @@ class DomiciliosController < ApplicationController
   # POST /domicilios
   # POST /domicilios.json
   def create
-    @domicilio = Domicilio.new(params[:domicilio])
+    @domicilio = Domicilio.new(domicilio_params)
 
     respond_to do |format|
       if @domicilio.save
@@ -59,7 +59,7 @@ class DomiciliosController < ApplicationController
     @domicilio = Domicilio.find(params[:id])
 
     respond_to do |format|
-      if @domicilio.update_attributes(params[:domicilio])
+      if @domicilio.update_attributes(domicilio_params)
         format.html { redirect_to @domicilio, notice: 'Domicilio was successfully updated.' }
         format.json { head :no_content }
       else
@@ -79,5 +79,10 @@ class DomiciliosController < ApplicationController
       format.html { redirect_to domicilios_url }
       format.json { head :no_content }
     end
+  end
+
+  private
+  def domicilio_params
+    params.require(:domicilio).permit(:cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo)
   end
 end
