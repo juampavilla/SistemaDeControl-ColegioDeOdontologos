@@ -1,4 +1,13 @@
 Odontologos::Application.routes.draw do
+  get "/home", to: "pages#home"
+
+  get "pages/contact"
+
+  get "pages/about"
+
+  root :to => "pages#home"
+
+
   resources :domicilios
 
 
@@ -6,6 +15,8 @@ Odontologos::Application.routes.draw do
 
 
   resources :profesionales
+
+
 
 
   # The priority is based upon order of creation:
