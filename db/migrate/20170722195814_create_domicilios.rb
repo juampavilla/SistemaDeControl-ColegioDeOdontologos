@@ -1,4 +1,4 @@
-class CreateDomicilios < ActiveRecord::Migration
+class CreateDomicilios < ActiveRecord::Migration[5.0]
   def change
     create_table :domicilios do |t|
       t.string :cp

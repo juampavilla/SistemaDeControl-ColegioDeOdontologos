@@ -1,4 +1,4 @@
-class CreateProfesionales < ActiveRecord::Migration
+class CreateProfesionales < ActiveRecord::Migration[5.0]
   def change
     create_table :profesionales do |t|
       t.string :apellido
