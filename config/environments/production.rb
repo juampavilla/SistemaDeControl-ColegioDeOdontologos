@@ -62,4 +62,6 @@ Odontologos::Application.configure do
   config.active_support.deprecation = :notify
 
   config.eager_load = true
+
+  config.assets.js_compressor = :uglifier
 end
