@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+<% @domicilios.each do |domicilio| %>
+  <p>
+    <b>Cp:</b>
+    <%= domicilio.cp %>
+  </p>
+
+  <p>
+    <b>Localidad:</b>
+    <%= domicilio.localidad %>
+  </p>
+
+  <p>
+    <b>Domicilio:</b>
+    <%= domicilio.domicilio %>
+  </p>
+
+  <p>
+    <b>Telefono:</b>
+    <%= domicilio.telefono %>
+  </p>
+
+  <p>
+    <b>Tipo:</b>
+    <%= domicilio.tipo %>
+  </p>
+
+  <p>
+    <b>Notas:</b>
+    <%= domicilio.notas %>
+  </p>
+
+  <p>
+    <b>Profesional:</b>
+    <%= domicilio.profesional_id %>
+  </p>
+  <%= link_to 'Modificar', edit_domicilio_path(domicilio) %> |
+<% end %>
+
+<%= link_to 'Volver', profesionales_path %>

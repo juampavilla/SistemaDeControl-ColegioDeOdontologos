@@ -2,26 +2,36 @@
 
 <table class="table table-condensed">
   <tr>
-    <th>Apellido</th>
-    <th>Nombres</th>
-    <th>Fecha nacimiento</th>
-    <th>Tipo doc</th>
-    <th>Nro doc</th>
-    <th>Mostar</th>
-    <th>Editar</th>
-    <th>Eliminar</th>
+    <th>Apellido y Nombres</th>
+    <th>Localidad</th>
+    <th>Documento</th>
+    <th>Matrícula</th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 
 <% @profesionales.each do |profesional| %>
   <tr>
-    <td><%= profesional.apellido %></td>
-    <td><%= profesional.nombres %></td>
-    <td><%= profesional.fecha_nacimiento %></td>
-    <td><%= profesional.tipo_doc %></td>
-    <td><%= profesional.nro_doc %></td>
-    <td><%= link_to 'Show', profesional %></td>
-    <td><%= link_to 'Edit', edit_profesional_path(profesional) %></td>
-    <td><%= link_to 'Destroy', profesional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
+    <td><%= link_to "#{profesional.domicilio.first.localidad}", profesional_show_domicilios_path(profesional) %>
+    <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
+    <td><%= link_to "#{profesional.matricula.matricula}", matricula_path(profesional.matricula) %>
+    <td>
+      <%= link_to profesional_path(profesional) do %>
+        <%= fa_icon "search" %>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to edit_profesional_path(profesional) do %>
+        <%= fa_icon "pencil" %>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to profesional_path(profesional), method: :delete, data: { confirm: 'Estás seguro?' } do %>
+        <%= fa_icon "trash-o" %>
+      <% end %>
+    </td>
   </tr>
 <% end %>
 </table>

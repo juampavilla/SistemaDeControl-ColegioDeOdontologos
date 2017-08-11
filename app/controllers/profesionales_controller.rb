@@ -21,6 +21,17 @@ class ProfesionalesController < ApplicationController
     end
   end
 
+  # GET /profesionales/1/domicilios
+  # GET /profesionales/1/domicilios.json
+  def show_domicilios
+    @domicilios = Profesional.find(params[:profesional_id]).domicilio
+
+    respond_to do |format|
+      format.html # show_domicilios.html.erb
+      format.json { render json: @domicilios }
+    end
+  end
+
   # GET /profesionales/new
   # GET /profesionales/new.json
   def new
