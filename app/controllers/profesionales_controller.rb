@@ -2,7 +2,7 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales
   # GET /profesionales.json
   def index
-    @profesionales = Profesional.all
+    @profesionales = Profesional.all.order :id
 
     respond_to do |format|
       format.html # index.html.erb

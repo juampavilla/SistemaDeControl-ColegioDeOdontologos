@@ -1,4 +1,4 @@
-<h1>Listing matriculas</h1>
+<h1>Listado matriculas</h1>
 
 <table class="table table-condensed">
   <tr>
@@ -33,13 +33,13 @@
     <td><%= matricula.fecha_vencimiento %></td>
     <td><%= matricula.profesional_id %></td>
     <td><%= matricula.notas %></td>
-    <td><%= link_to 'Show', matricula %></td>
-    <td><%= link_to 'Edit', edit_matricula_path(matricula) %></td>
-    <td><%= link_to 'Destroy', matricula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', matricula %></td>
+    <td><%= link_to 'Modificar', edit_matricula_path(matricula) %></td>
+    <td><%= link_to 'Eliminar', matricula, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Matricula', new_matricula_path %>
+<%= link_to 'Agregar Matricula', new_matricula_path %>

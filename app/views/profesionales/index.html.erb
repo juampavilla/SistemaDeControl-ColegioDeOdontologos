@@ -1,4 +1,4 @@
-<h1>Listing profesionales</h1>
+<h1>Listado profesionales</h1>
 
 <table class="table table-condensed">
   <tr>
@@ -28,7 +28,7 @@
       <% end %>
     </td>
     <td>
-      <%= link_to profesional_path(profesional), method: :delete, data: { confirm: 'Estás seguro?' } do %>
+      <%= link_to profesional_path(profesional), method: :delete, data: { confirm: 'Está seguro?' } do %>
         <%= fa_icon "trash-o" %>
       <% end %>
     </td>
@@ -38,4 +38,4 @@
 
 <br />
 
-<%= link_to 'New Profesional', new_profesional_path %>
+<%= link_to 'Agregar Profesional', new_profesional_path %>

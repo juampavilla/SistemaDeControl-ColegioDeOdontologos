@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170722195814) do
+ActiveRecord::Schema.define(version: 20170812012146) do
 
   create_table "domicilios", force: :cascade do |t|
     t.string "cp"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20170722195814) do
     t.string "domicilio"
     t.string "telefono"
     t.string "tipo"
-    t.string "notas"
+    t.text "notas"
     t.integer "profesional_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(version: 20170722195814) do
     t.string "especialidad"
     t.date "fecha_vencimiento"
     t.integer "profesional_id"
-    t.string "notas"
+    t.text "notas"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

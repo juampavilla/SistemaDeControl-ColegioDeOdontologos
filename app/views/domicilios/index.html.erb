@@ -1,4 +1,4 @@
-<h1>Listing domicilios</h1>
+<h1>Listado domicilios</h1>
 <div class="container">
 <table class="table table-condensed">
   <tr>
@@ -23,13 +23,13 @@
     <td><%= domicilio.tipo %></td>
     <td><%= domicilio.notas %></td>
     <td><%= domicilio.profesional_id %></td>
-    <td><%= link_to 'Show', domicilio %></td>
-    <td><%= link_to 'Edit', edit_domicilio_path(domicilio) %></td>
-    <td><%= link_to 'Destroy', domicilio, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', domicilio %></td>
+    <td><%= link_to 'Modificar', edit_domicilio_path(domicilio) %></td>
+    <td><%= link_to 'Eliminar', domicilio, method: :delete, data: { confirm: 'Está seguro?' } %></td>
   </tr>
 <% end %>
 </table>
 </div>
 <br />
 
-<%= link_to 'New Domicilio', new_domicilio_path %>
+<%= link_to 'Agregar Domicilio', new_domicilio_path %>

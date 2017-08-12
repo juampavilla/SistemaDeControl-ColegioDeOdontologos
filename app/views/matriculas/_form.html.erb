@@ -52,14 +52,10 @@
     <%= f.date_select :fecha_vencimiento, include_blank: true, start_year:1950, end_year: 2020 %>
   </div>
   <div class="field">
-    <%= f.label :profesional_id %><br />
-    <%= f.number_field :profesional_id %>
-  </div>
-  <div class="field">
     <%= f.label :notas %><br />
-    <%= f.text_field :notas %>
+    <%= f.text_area :notas %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Guardar" %>
   </div>
 <% end %>
