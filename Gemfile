@@ -19,3 +19,5 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'byebug'
 end
+
+ruby "2.4.1"
