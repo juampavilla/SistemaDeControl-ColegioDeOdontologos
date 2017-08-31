@@ -7,12 +7,11 @@ Odontologos::Application.routes.draw do
 
   root :to => "pages#home"
 
+  get "search/index", to: "search#index"
 
   resources :domicilios
 
-
   resources :matriculas
-
 
   resources :profesionales do
     get 'show_domicilios'
