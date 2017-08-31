@@ -1,7 +1,7 @@
-<%= render 'buscador' %>
+<%= render 'profesionales/buscador' %>
 
-<h1>Listado profesionales</h1>
-
+<h1>Resultados de la búsqueda</h1>
+<%= "buscando #{params[:termino_buscado]}..." %>
 <table class="table table-condensed">
   <tr>
     <th>Apellido y Nombres</th>
@@ -13,7 +13,7 @@
     <th></th>
   </tr>
 
-<% @profesionales.each do |profesional| %>
+<% @result.each do |profesional| %>
   <tr>
     <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
     <td><%= link_to "#{profesional.domicilio.first.localidad}", profesional_show_domicilios_path(profesional) %>
@@ -37,7 +37,3 @@
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'Agregar Profesional', new_profesional_path %>
