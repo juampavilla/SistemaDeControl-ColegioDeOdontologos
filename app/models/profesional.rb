@@ -8,7 +8,7 @@ class Profesional < ApplicationRecord
       attributes.each do |att|
         results = results.empty? ? (Profesional.joins(:matricula).joins(:domicilio).where("#{att} LIKE ?", "%#{termino_buscado}%")) : results + Profesional.joins(:matricula).joins(:domicilio).where("#{att} LIKE ?", "%#{termino_buscado}%")
       end
-      results
+      results.uniq
     else
       all
     end
