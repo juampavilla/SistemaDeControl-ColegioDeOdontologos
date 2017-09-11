@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get  '/about',   to: 'pages#about'
   get  '/contact', to: 'pages#contact'
   get  '/signup',  to: 'users#new'
+  get  '/users/new'
   get  'search/index', to: 'search#index'
 
   resources :domicilios
