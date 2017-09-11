@@ -20,4 +20,6 @@ Rails.application.routes.draw do
     get 'show_domicilios'
   end
 
+  resources :users
+
 end
