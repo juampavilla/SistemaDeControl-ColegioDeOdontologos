@@ -31,6 +31,86 @@
     <%= f.label :nro_doc %><br />
     <%= f.number_field :nro_doc %>
   </div>
+  <hr></hr>
+  <h2>Matricula Registrada</h2>
+  <%= f.fields_for :matricula do |ff| %>
+    <div class="field">
+      <%= ff.label :estado %><br />
+      <%= ff.text_field :estado %>
+    </div>
+    <div class="field">
+      <%= ff.label :matricula %><br />
+      <%= ff.text_field :matricula %>
+    </div>
+    <div class="field">
+      <%= ff.label :fecha_inscripcion %><br />
+      <%= ff.date_select :fecha_inscripcion, include_blank: true, start_year:1950, end_year: 2020 %>
+    </div>
+    <div class="field">
+      <%= ff.label :libro %><br />
+      <%= ff.text_field :libro %>
+    </div>
+    <div class="field">
+      <%= ff.label :folio %><br />
+      <%= ff.number_field :folio %>
+    </div>
+    <div class="field">
+      <%= ff.label :fecha_habilitacion %><br />
+      <%= ff.date_select :fecha_habilitacion, include_blank: true, start_year:1950, end_year: 2020 %>
+    </div>
+    <div class="field">
+      <%= ff.label :nota_fecha_habilitacion %><br />
+      <%= ff.text_field :nota_fecha_habilitacion %>
+    </div>
+    <div class="field">
+      <%= ff.label :vencimiento %><br />
+      <%= ff.number_field :vencimiento %>
+    </div>
+    <div class="field">
+      <%= ff.label :especialidad %><br />
+      <%= ff.text_field :especialidad %>
+    </div>
+    <div class="field">
+      <%= ff.label :fecha_vencimiento %><br />
+      <%= ff.date_select :fecha_vencimiento, include_blank: true, start_year:1950, end_year: 2020 %>
+    </div>
+    <div class="field">
+      <%= ff.label :notas %><br />
+      <%= ff.text_area :notas %>
+    </div>
+  <% end %>
+  <hr></hr>
+  <h2>Domicilios Registrados</h2>
+  <%= f.fields_for :domicilio do |ff| %>
+    <div>
+      <div class="field">
+        <%= ff.label :cp %><br />
+        <%= ff.text_field :cp %>
+      </div>
+      <div class="field">
+        <%= ff.label :localidad %><br />
+        <%= ff.text_field :localidad %>
+      </div>
+      <div class="field">
+        <%= ff.label :domicilio %><br />
+        <%= ff.text_field :domicilio %>
+      </div>
+      <div class="field">
+        <%= ff.label :telefono %><br />
+        <%= ff.text_field :telefono %>
+      </div>
+      <div class="field">
+        <%= ff.label :tipo %><br />
+        <%= ff.text_field :tipo %>
+      </div>
+      <div class="field">
+        <%= ff.label :notas %><br />
+        <%= ff.text_area :notas %>
+      </div>
+    </div>
+    <hr></hr>
+  <% end %>
+
   <div class="actions">
     <%= f.submit "Guardar" %>
   </div>

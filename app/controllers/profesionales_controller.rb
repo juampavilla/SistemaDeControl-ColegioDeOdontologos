@@ -95,6 +95,12 @@ class ProfesionalesController < ApplicationController
 
   private
   def profesional_params
-    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento)
+    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilio_attributes: domicilio_params)
+  end
+  def matricula_params
+    [:id, :especialidad, :estado, :fecha_habilitacion, :fecha_inscripcion, :fecha_vencimiento, :folio, :libro, :matricula, :nota_fecha_habilitacion, :notas, :profesional_id, :vencimiento]
+  end
+  def domicilio_params
+    [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
   end
 end
