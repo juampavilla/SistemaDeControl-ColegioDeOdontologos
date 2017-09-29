@@ -12,7 +12,8 @@ class UsersController < ApplicationController
     if @user.save
       log_in @user
       flash[:success] = "¡Bienvenido a SACO!"
-      redirect_to @user
+      #redirect_to @user
+      redirect_to profesionales_path
     else
       render 'new'
     end
