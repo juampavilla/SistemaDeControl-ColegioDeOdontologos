@@ -24,7 +24,7 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales/1/domicilios
   # GET /profesionales/1/domicilios.json
   def show_domicilios
-    @domicilios = Profesional.find(params[:profesional_id]).domicilio
+    @domicilios = Profesional.find(params[:profesional_id]).domicilios
 
     respond_to do |format|
       format.html # show_domicilios.html.erb
@@ -36,7 +36,8 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales/new.json
   def new
     @profesional = Profesional.new
-
+    @profesional.matricula = Matricula.new(profesional: @profesional)
+    @profesional.domicilios << Domicilio.new(profesional: @profesional)
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @profesional }
@@ -95,12 +96,12 @@ class ProfesionalesController < ApplicationController
 
   private
   def profesional_params
-    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilio_attributes: domicilio_params)
+    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params)
   end
   def matricula_params
     [:id, :especialidad, :estado, :fecha_habilitacion, :fecha_inscripcion, :fecha_vencimiento, :folio, :libro, :matricula, :nota_fecha_habilitacion, :notas, :profesional_id, :vencimiento]
   end
-  def domicilio_params
+  def domicilios_params
     [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
   end
 end

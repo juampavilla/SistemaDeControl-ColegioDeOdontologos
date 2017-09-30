@@ -1,13 +1,32 @@
 <%= form_tag(search_index_path, method: :get) do %>
-  <%= text_field_tag :termino_buscado, params[:termino_buscado] %>
-  <%= submit_tag 'Buscar', name: nil  %>
-  <label class="checkbox">
-    <%= check_box_tag 'nombre' %>Apellido y nombre
-  </label>
-  <label class="checkbox">
-    <%= check_box_tag 'documento' %>Documento
-  </label>
-  <label class="checkbox">
-    <%= check_box_tag 'matricula' %>Matrícula
-  </label>
+  <div class="container-fluid search-box">
+    <div class="row">
+      <div class="form-group">
+        <div class="col-sm-10">
+          <%= text_field_tag :termino_buscado, params[:termino_buscado], class: "form-control" %>
+        </div>
+        <div class="col-sm-2">
+          <%= submit_tag 'Buscar', class: "btn btn-default", name: nil  %>
+        </div>
+      </div>
+    </div>
+    <div class="row pl20">
+      <div class="col-sm-2">
+        <label class="checkbox">
+          <%= check_box_tag 'nombre' %>Apellido y nombre
+        </label>
+      </div>
+      <div class="col-sm-2">
+        <label class="checkbox">
+          <%= check_box_tag 'documento' %>Documento
+        </label>
+      </div>
+      <div class="col-sm-2">
+        <label class="checkbox">
+          <%= check_box_tag 'matricula' %>Matrícula
+        </label>
+      </div>
+    </div>
+  </div>
+
 <% end %>
