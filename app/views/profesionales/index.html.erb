@@ -16,7 +16,7 @@
 <% @profesionales.each do |profesional| %>
   <tr>
     <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
-    <td><%= link_to "#{profesional.domicilio.first.localidad}", profesional_show_domicilios_path(profesional) %>
+    <td><%= link_to "#{profesional.domicilios.first.localidad}", profesional_show_domicilios_path(profesional) %>
     <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
     <td><%= link_to "#{profesional.matricula.matricula}", matricula_path(profesional.matricula) %>
     <td>
