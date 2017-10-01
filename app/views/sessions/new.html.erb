@@ -8,13 +8,18 @@
     <%= f.label :email %>
     <%= f.email_field :email, class: 'form-control' %>
 
-    <%= f.label :password %>
+    <%= f.label :contraseña %>
     <%= f.password_field :password, class: 'form-control' %>
+
+    <%= f.label :remember_me, class: "checkbox inline" do %>
+        <%= f.check_box :remember_me %>
+        <span>Recordarme en esta computadora</span>
+      <% end %>
 
     <%= f.submit "Iniciar sesión", class: "btn btn-primary" %>
     <% end %>
 
-    <p>New user?
-      <%= link_to "Registrarse!", signup_path %></p>
+    <p>Eres nuevo?
+      <%= link_to "Registrarte!", signup_path %></p>
   </div>
 </div>
