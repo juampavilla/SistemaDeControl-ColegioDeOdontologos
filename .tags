@@ -1,0 +1,116 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActionDispatch	test/test_helper.rb	/^class ActionDispatch::IntegrationTest$/;"	c
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddIndexToUsersEmail	db/migrate/20170911012834_add_index_to_users_email.rb	/^class AddIndexToUsersEmail < ActiveRecord::Migration[5.1]$/;"	c
+AddPasswordDigestToUsers	db/migrate/20170911020536_add_password_digest_to_users.rb	/^class AddPasswordDigestToUsers < ActiveRecord::Migration[5.1]$/;"	c
+AddRememberDigestToUsers	db/migrate/20170930231235_add_remember_digest_to_users.rb	/^class AddRememberDigestToUsers < ActiveRecord::Migration[5.1]$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Odontologos
+ApplicationCable	app/channels/application_cable/channel.rb	/^module ApplicationCable$/;"	m
+ApplicationCable	app/channels/application_cable/connection.rb	/^module ApplicationCable$/;"	m
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+ApplicationJob	app/jobs/application_job.rb	/^class ApplicationJob < ActiveJob::Base$/;"	c
+ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < ActionMailer::Base$/;"	c
+ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
+ApplicationSystemTestCase	test/application_system_test_case.rb	/^class ApplicationSystemTestCase < ActionDispatch::SystemTestCase$/;"	c
+ChangeNotasFieldToText	db/migrate/20170812012146_change_notas_field_to_text.rb	/^class ChangeNotasFieldToText < ActiveRecord::Migration[5.1]$/;"	c
+Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable
+Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable
+CreateDomicilios	db/migrate/20170722195814_create_domicilios.rb	/^class CreateDomicilios < ActiveRecord::Migration[5.0]$/;"	c
+CreateMatriculas	db/migrate/20170722153735_create_matriculas.rb	/^class CreateMatriculas < ActiveRecord::Migration[5.0]$/;"	c
+CreateProfesionales	db/migrate/20170722131736_create_profesionales.rb	/^class CreateProfesionales < ActiveRecord::Migration[5.0]$/;"	c
+CreateUsers	db/migrate/20170911005119_create_users.rb	/^class CreateUsers < ActiveRecord::Migration[5.1]$/;"	c
+Domicilio	app/models/domicilio.rb	/^class Domicilio < ApplicationRecord$/;"	c
+DomiciliosController	app/controllers/domicilios_controller.rb	/^class DomiciliosController < ApplicationController$/;"	c
+Matricula	app/models/matricula.rb	/^class Matricula < ApplicationRecord$/;"	c
+MatriculasController	app/controllers/matriculas_controller.rb	/^class MatriculasController < ApplicationController$/;"	c
+Odontologos	config/application.rb	/^module Odontologos$/;"	m
+PagesController	app/controllers/pages_controller.rb	/^class PagesController < ApplicationController$/;"	c
+Profesional	app/models/profesional.rb	/^class Profesional < ApplicationRecord$/;"	c
+ProfesionalesController	app/controllers/profesionales_controller.rb	/^class ProfesionalesController < ApplicationController$/;"	c
+SearchController	app/controllers/search_controller.rb	/^class SearchController < ApplicationController$/;"	c
+SessionsController	app/controllers/sessions_controller.rb	/^class SessionsController < ApplicationController$/;"	c
+SessionsControllerTest	test/controllers/sessions_controller_test.rb	/^class SessionsControllerTest < ActionDispatch::IntegrationTest$/;"	c
+SessionsHelper	app/helpers/sessions_helper.rb	/^module SessionsHelper$/;"	m
+User	app/models/user.rb	/^class User < ApplicationRecord$/;"	c
+UserTest	test/models/user_test.rb	/^class UserTest < ActiveSupport::TestCase$/;"	c
+UsersController	app/controllers/users_controller.rb	/^class UsersController < ApplicationController$/;"	c
+UsersControllerTest	test/controllers/users_controller_test.rb	/^class UsersControllerTest < ActionDispatch::IntegrationTest$/;"	c
+UsersHelper	app/helpers/users_helper.rb	/^module UsersHelper$/;"	m
+UsersLoginTest	test/integration/users_login_test.rb	/^class UsersLoginTest < ActionDispatch::IntegrationTest$/;"	c
+UsersSignupTest	test/integration/users_signup_test.rb	/^class UsersSignupTest < ActionDispatch::IntegrationTest$/;"	c
+about	app/controllers/pages_controller.rb	/^  def about$/;"	f	class:PagesController
+attributes	app/controllers/search_controller.rb	/^  def attributes$/;"	f	class:SearchController
+authenticated?	app/models/user.rb	/^  def authenticated?(remember_token)$/;"	f	class:User
+change	db/migrate/20170722131736_create_profesionales.rb	/^  def change$/;"	f	class:CreateProfesionales
+change	db/migrate/20170722153735_create_matriculas.rb	/^  def change$/;"	f	class:CreateMatriculas
+change	db/migrate/20170722195814_create_domicilios.rb	/^  def change$/;"	f	class:CreateDomicilios
+change	db/migrate/20170812012146_change_notas_field_to_text.rb	/^  def change$/;"	f	class:ChangeNotasFieldToText
+change	db/migrate/20170911005119_create_users.rb	/^  def change$/;"	f	class:CreateUsers
+change	db/migrate/20170911012834_add_index_to_users_email.rb	/^  def change$/;"	f	class:AddIndexToUsersEmail
+change	db/migrate/20170911020536_add_password_digest_to_users.rb	/^  def change$/;"	f	class:AddPasswordDigestToUsers
+change	db/migrate/20170930231235_add_remember_digest_to_users.rb	/^  def change$/;"	f	class:AddRememberDigestToUsers
+contact	app/controllers/pages_controller.rb	/^  def contact$/;"	f	class:PagesController
+create	app/controllers/domicilios_controller.rb	/^  def create$/;"	f	class:DomiciliosController
+create	app/controllers/matriculas_controller.rb	/^  def create$/;"	f	class:MatriculasController
+create	app/controllers/profesionales_controller.rb	/^  def create$/;"	f	class:ProfesionalesController
+create	app/controllers/sessions_controller.rb	/^  def create$/;"	f	class:SessionsController
+create	app/controllers/users_controller.rb	/^ def create$/;"	f	class:UsersController
+current_user	app/helpers/sessions_helper.rb	/^  def current_user$/;"	f	class:SessionsHelper
+dependencies	package.json	/^  "dependencies": {}$/;"	f
+destroy	app/controllers/domicilios_controller.rb	/^  def destroy$/;"	f	class:DomiciliosController
+destroy	app/controllers/matriculas_controller.rb	/^  def destroy$/;"	f	class:MatriculasController
+destroy	app/controllers/profesionales_controller.rb	/^  def destroy$/;"	f	class:ProfesionalesController
+destroy	app/controllers/sessions_controller.rb	/^  def destroy;$/;"	f	class:SessionsController
+digest	app/models/user.rb	/^  def User.digest(string)$/;"	F	class:User
+domicilio_params	app/controllers/domicilios_controller.rb	/^  def domicilio_params$/;"	f	class:DomiciliosController
+domicilios_params	app/controllers/profesionales_controller.rb	/^  def domicilios_params$/;"	f	class:ProfesionalesController
+edit	app/controllers/domicilios_controller.rb	/^  def edit$/;"	f	class:DomiciliosController
+edit	app/controllers/matriculas_controller.rb	/^  def edit$/;"	f	class:MatriculasController
+edit	app/controllers/profesionales_controller.rb	/^  def edit$/;"	f	class:ProfesionalesController
+forget	app/helpers/sessions_helper.rb	/^  def forget(user)$/;"	f	class:SessionsHelper
+forget	app/models/user.rb	/^  def forget$/;"	f	class:User
+home	app/controllers/pages_controller.rb	/^  def home$/;"	f	class:PagesController
+index	app/controllers/domicilios_controller.rb	/^  def index$/;"	f	class:DomiciliosController
+index	app/controllers/matriculas_controller.rb	/^  def index$/;"	f	class:MatriculasController
+index	app/controllers/profesionales_controller.rb	/^  def index$/;"	f	class:ProfesionalesController
+index	app/controllers/search_controller.rb	/^  def index$/;"	f	class:SearchController
+is_logged_in?	test/test_helper.rb	/^  def is_logged_in?$/;"	f	class:ActiveSupport
+log_in	app/helpers/sessions_helper.rb	/^  def log_in(user)$/;"	f	class:SessionsHelper
+log_in_as	test/test_helper.rb	/^  def log_in_as(user, password: 'password', remember_me: '1')$/;"	f	class:ActionDispatch
+log_in_as	test/test_helper.rb	/^ def log_in_as(user)$/;"	f	class:ActiveSupport
+log_out	app/helpers/sessions_helper.rb	/^  def log_out$/;"	f	class:SessionsHelper
+logged_in?	app/helpers/sessions_helper.rb	/^  def logged_in?$/;"	f	class:SessionsHelper
+matricula_params	app/controllers/matriculas_controller.rb	/^  def matricula_params$/;"	f	class:MatriculasController
+matricula_params	app/controllers/profesionales_controller.rb	/^  def matricula_params$/;"	f	class:ProfesionalesController
+name	package.json	/^  "name": "odontologos",$/;"	f
+new	app/controllers/domicilios_controller.rb	/^  def new$/;"	f	class:DomiciliosController
+new	app/controllers/matriculas_controller.rb	/^  def new$/;"	f	class:MatriculasController
+new	app/controllers/profesionales_controller.rb	/^  def new$/;"	f	class:ProfesionalesController
+new	app/controllers/sessions_controller.rb	/^  def new$/;"	f	class:SessionsController
+new	app/controllers/users_controller.rb	/^  def new$/;"	f	class:UsersController
+new_token	app/models/user.rb	/^  def User.new_token$/;"	F	class:User
+private	package.json	/^  "private": true,$/;"	f
+profesional_params	app/controllers/profesionales_controller.rb	/^  def profesional_params$/;"	f	class:ProfesionalesController
+remember	app/helpers/sessions_helper.rb	/^  def remember(user)$/;"	f	class:SessionsHelper
+remember	app/models/user.rb	/^  def remember$/;"	f	class:User
+search	app/models/profesional.rb	/^  def self.search(termino_buscado, attributes)$/;"	F	class:Profesional
+search_params	app/controllers/search_controller.rb	/^  def search_params$/;"	f	class:SearchController
+setup	test/integration/users_login_test.rb	/^  def setup$/;"	f	class:UsersLoginTest
+setup	test/models/user_test.rb	/^   def setup$/;"	f	class:UserTest
+show	app/controllers/domicilios_controller.rb	/^  def show$/;"	f	class:DomiciliosController
+show	app/controllers/matriculas_controller.rb	/^  def show$/;"	f	class:MatriculasController
+show	app/controllers/profesionales_controller.rb	/^  def show$/;"	f	class:ProfesionalesController
+show	app/controllers/users_controller.rb	/^  def show$/;"	f	class:UsersController
+show_domicilios	app/controllers/profesionales_controller.rb	/^  def show_domicilios$/;"	f	class:ProfesionalesController
+system!	bin/setup	/^def system!(*args)$/;"	f
+system!	bin/update	/^def system!(*args)$/;"	f
+update	app/controllers/domicilios_controller.rb	/^  def update$/;"	f	class:DomiciliosController
+update	app/controllers/matriculas_controller.rb	/^  def update$/;"	f	class:MatriculasController
+update	app/controllers/profesionales_controller.rb	/^  def update$/;"	f	class:ProfesionalesController
+user_params	app/controllers/users_controller.rb	/^    def user_params$/;"	f	class:UsersController
