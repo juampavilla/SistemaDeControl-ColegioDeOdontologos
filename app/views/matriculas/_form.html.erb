@@ -1,7 +1,7 @@
 <%= form_for(@matricula) do |f| %>
   <% if @matricula.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@matricula.errors.count, "error") %> prohibited this matricula from being saved:</h2>
+      <h2><%= pluralize(@matricula.errors.count, "error") %> no permite que la matrícula sea guardada:</h2>
 
       <ul>
       <% @matricula.errors.full_messages.each do |msg| %>
