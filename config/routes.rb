@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get  '/contact', to: 'pages#contact'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
+  get  '/settings',  to: 'users#edit'
+  post '/settings',  to: 'users#update'
+
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
