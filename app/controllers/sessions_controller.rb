@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       redirect_to profesionales_path
     else
       # Create an error message.
-      flash.now[:danger] = 'Invalid email/password combination' # Not quite right!
+      flash.now[:danger] = 'Combinación de email/password inválida'
       render 'new'
     end
   end

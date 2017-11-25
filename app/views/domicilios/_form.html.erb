@@ -1,7 +1,7 @@
 <%= form_for(@domicilio) do |f| %>
   <% if @domicilio.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@domicilio.errors.count, "error") %> prohibited this domicilio from being saved:</h2>
+      <h2><%= pluralize(@domicilio.errors.count, "error") %> no permite que el domicilio sea guardado:</h2>
 
       <ul>
       <% @domicilio.errors.full_messages.each do |msg| %>
