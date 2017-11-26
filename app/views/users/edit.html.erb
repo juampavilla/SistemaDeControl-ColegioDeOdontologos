@@ -1,7 +1,7 @@
-<% provide(:title, 'Edit user') %>
+<% provide(:title, "Edit user") %>
 <% provide(:button_text, 'Guardar cambios') %>
-<% provide(:path, edit_path)%>
-<h1>Actualiza tus datos</h1>
+<% provide(:action, user_path(@user)) %>
+<h1>Actualiza tu perfil</h1>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= render 'form' %>
