@@ -13,7 +13,7 @@ class UsersEditTest < ActionDispatch::IntegrationTest
                                               password_confirmation: 'bar' } }
 
     assert_template 'users/edit'
-    #assert_select 'div[name=]',count
+    assert_select 'div.alert' ,'El formulario contiene 3 errores.'
     #assert_not flash.empty?
 
   end
