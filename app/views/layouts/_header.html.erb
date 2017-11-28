@@ -7,6 +7,7 @@
         <li><%= link_to "Contacto", '#' %></li>
         <li><%= link_to "Quiénes somos?", '#' %></li>
         <% if logged_in? %>
+        <li><%= link_to "Usuarios", users_path %></li>
         <li><%= link_to "Profesionales", profesionales_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
