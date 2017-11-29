@@ -11,19 +11,22 @@
       </div>
     </div>
     <div class="row pl20">
+      <h3>Elija por cuáles campos desea buscar:</h3>
+    </div>
+    <div class="row pl20">
       <div class="col-sm-2">
         <label class="checkbox">
-          <%= check_box_tag 'nombre' %>Apellido y nombre
+          Apellido y nombre: <%= check_box_tag 'nombre' %>
         </label>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-2 col-sm-offset-1">
         <label class="checkbox">
-          <%= check_box_tag 'documento' %>Documento
+          Documento: <%= check_box_tag 'documento' %>
         </label>
       </div>
-      <div class="col-sm-2">
+      <div class="col-sm-2 col-sm-offset-1">
         <label class="checkbox">
-          <%= check_box_tag 'matricula' %>Matrícula
+          Matrícula: <%= check_box_tag 'matricula' %>
         </label>
       </div>
     </div>

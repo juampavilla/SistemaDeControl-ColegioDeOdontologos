@@ -40,4 +40,6 @@
 
 <br />
 
+<%= link_to 'Exportar Todo a Excel', search_index_path(params.permit!.merge(:format => "csv")) %>
+<br />
 <%= link_to 'Agregar Profesional', new_profesional_path %>

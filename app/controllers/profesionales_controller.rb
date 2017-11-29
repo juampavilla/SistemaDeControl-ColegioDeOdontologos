@@ -7,6 +7,7 @@ class ProfesionalesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @profesionales }
+      format.csv { send_data @profesionales.to_csv }
     end
   end
 
@@ -93,14 +94,16 @@ class ProfesionalesController < ApplicationController
     end
   end
 
-
   private
+
   def profesional_params
     params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params)
   end
+
   def matricula_params
     [:id, :especialidad, :estado, :fecha_habilitacion, :fecha_inscripcion, :fecha_vencimiento, :folio, :libro, :matricula, :nota_fecha_habilitacion, :notas, :profesional_id, :vencimiento]
   end
+
   def domicilios_params
     [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
   end
