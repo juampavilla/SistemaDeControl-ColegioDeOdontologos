@@ -31,6 +31,11 @@ gem 'bcrypt',         '3.1.11'
 gem 'jquery-rails'
 # traducciones
 gem 'rails-i18n'
+# usuarios simulacion
+gem 'faker',          '1.7.3'
+# paginacion
+gem 'will_paginate',           '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

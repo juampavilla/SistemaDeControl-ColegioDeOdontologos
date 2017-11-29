@@ -9,3 +9,21 @@
 michael:
   email: michael@example.com
   password_digest: <%= User.digest('password') %>
+
+archer:
+  email: duchess@example.gov
+  password_digest: <%= User.digest('password') %>
+
+lana:
+  email: hands@example.gov
+  password_digest: <%= User.digest('password') %>
+
+malory:
+  email: boss@example.gov
+  password_digest: <%= User.digest('password') %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<% end %>

@@ -8,7 +8,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     post users_path, params: { user: { email: "user@invalid",
                                        password:              "foo",
                                        password_confirmation: "bar" } }
-   end
+  end
    assert_template 'users/new'
    assert_select 'div#error_explanation'
    assert_select 'div.field_with_errors'
@@ -24,7 +24,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                       password_confirmation: "password" } }
    end
    follow_redirect!
-   assert_template 'profesionales/index'
+   assert_template 'users/show'
    assert_not flash.empty?
    assert is_logged_in?
  end
