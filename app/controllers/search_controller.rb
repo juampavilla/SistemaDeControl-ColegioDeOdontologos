@@ -1,6 +1,10 @@
 class SearchController < ApplicationController
   def index
     @result = Profesional.search(search_params[:termino_buscado], attributes)
+    respond_to do |format|
+      format.html
+      format.csv { send_data Profesional.to_csv(@result), filename: "exportado_#{I18n.l(Time.now, format: :short).tr(" ","_")}.csv" }
+    end
   end
 
   private
@@ -15,6 +19,6 @@ class SearchController < ApplicationController
   end
 
   def search_params
-    params.permit(:termino_buscado, :nombre, :documento, :matricula)
+    params.permit(:termino_buscado, :nombre, :documento, :matricula, :format)
   end
 end

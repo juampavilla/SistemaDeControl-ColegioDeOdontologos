@@ -7,4 +7,17 @@ div.container-fluid.search-box {
   .row.pl20 {
     padding-left: 20px;
   }
+  input[type="checkbox"] {
+    margin-left: 0;
+  }
+  div.col-sm-2.col-sm-offset-1 {
+    border-left: 1px solid #333;
+  }
+  label.checkbox {
+    margin: 10px;
+  }
+  h3 {
+    margin: 0;
+    padding-bottom: 10px;
+  }
 }
