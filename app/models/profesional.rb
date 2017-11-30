@@ -3,6 +3,7 @@ class Profesional < ApplicationRecord
 
   has_one :matricula
   has_many :domicilios
+  has_one :user
 
   accepts_nested_attributes_for :domicilios
   accepts_nested_attributes_for :matricula

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171129010008) do
+ActiveRecord::Schema.define(version: 20171130231023) do
 
   create_table "domicilios", force: :cascade do |t|
     t.string "cp"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20171129010008) do
     t.integer "nro_doc"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -58,6 +59,7 @@ ActiveRecord::Schema.define(version: 20171129010008) do
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin", default: false
+    t.integer "profesional_id"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
