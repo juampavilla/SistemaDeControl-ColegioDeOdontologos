@@ -2,6 +2,7 @@ require 'test_helper'
 
 class UsersIndexTest < ActionDispatch::IntegrationTest
   def setup
+    #michael es admin, sino no puede ver usuarios
     @user = users(:michael)
   end
 

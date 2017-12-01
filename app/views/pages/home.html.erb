@@ -6,8 +6,11 @@
     Bienvenidos al sistema administrativo del colegio de odontologos de la provincia de Buenos Aires
 
   </h2>
-
-  <%= link_to "Iniciar Sesión", login_path, class: "btn btn-lg btn-primary" %>
+  <% if logged_in? %>
+    <%= link_to "Perfil profesional", current_user, class: "btn btn-lg btn-primary" %>
+  <% else %>
+    <%= link_to "Iniciar Sesión", login_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
 </div>
 
 <%= link_to image_tag("isologo.png", alt: "logo"),

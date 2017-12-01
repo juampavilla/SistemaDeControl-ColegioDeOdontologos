@@ -8,6 +8,7 @@
 
 michael:
   email: michael@example.com
+  admin: true
   password_digest: <%= User.digest('password') %>
 
 archer:

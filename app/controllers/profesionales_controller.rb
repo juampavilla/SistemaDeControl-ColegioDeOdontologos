@@ -1,6 +1,8 @@
 class ProfesionalesController < ApplicationController
-  # GET /profesionales
-  # GET /profesionales.json
+  before_action :logged_in_user, only: [:index, :edit, :update]
+  before_action :correct_user,   only: [:edit, :update]
+  before_action :admin_user,     only: :index
+
   def index
     @profesionales = Profesional.all.order :id
 
@@ -107,4 +109,25 @@ class ProfesionalesController < ApplicationController
   def domicilios_params
     [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
   end
+
+  # Confirms a logged-in user.
+  def logged_in_user
+    unless logged_in?
+      store_location
+      flash[:danger] = 'Es necesario loguearse.'
+      redirect_to login_url
+    end
+  end
+
+  # Confirms the correct user.
+   def correct_user
+     @user = User.find(params[:id])
+     redirect_to(root_url) unless current_user?(@user)
+   end
+
+
+    # Confirms an admin user.
+    def admin_user
+      redirect_to(root_url) unless current_user.admin?
+    end
 end
