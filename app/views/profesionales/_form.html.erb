@@ -10,6 +10,13 @@
         <%= f.label :nombres %><br />
         <%= f.text_field :nombres %>
       </div>
+      <%= f.text_field :fecha_nacimiento,
+          data: { provide: "datepicker",
+              'date-format': 'yyyy/mm/dd',
+              'date-autoclose': 'true',
+              'date-today-btn': 'linked',
+              'date-today-highlight': 'true'} %>
+
       <div class="field">
         <%= f.label :fecha_nacimiento %><br />
         <%= f.date_select :fecha_nacimiento, include_blank: true, start_year:1900, end_year: 2000 %>
