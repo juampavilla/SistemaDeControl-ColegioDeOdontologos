@@ -12,7 +12,8 @@ class Profesional < ApplicationRecord
     if termino_buscado && attributes
       results = []
       attributes.each do |att|
-        results = results.empty? ? (Profesional.joins(:matricula).joins(:domicilios).where("#{att} LIKE ?", "%#{termino_buscado}%")) : results + Profesional.joins(:matricula).joins(:domicilios).where("#{att} LIKE ?", "%#{termino_buscado}%")
+        att = 'nro_doc::text' if (att == 'nro_doc')
+        results = results.empty? ? (Profesional.joins(:matricula).joins(:domicilios).where("#{att} ILIKE ?", "%#{termino_buscado}%")) : results + Profesional.joins(:matricula).joins(:domicilios).where("#{att} LIKE ?", "%#{termino_buscado}%")
       end
       results.uniq
     else

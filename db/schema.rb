@@ -12,7 +12,10 @@
 
 ActiveRecord::Schema.define(version: 20171130231023) do
 
-  create_table "domicilios", force: :cascade do |t|
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "domicilios", id: :serial, force: :cascade do |t|
     t.string "cp"
     t.string "localidad"
     t.string "domicilio"
@@ -24,7 +27,7 @@ ActiveRecord::Schema.define(version: 20171130231023) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "matriculas", force: :cascade do |t|
+  create_table "matriculas", id: :serial, force: :cascade do |t|
     t.string "estado"
     t.string "matricula"
     t.date "fecha_inscripcion"
@@ -41,7 +44,7 @@ ActiveRecord::Schema.define(version: 20171130231023) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "profesionales", force: :cascade do |t|
+  create_table "profesionales", id: :serial, force: :cascade do |t|
     t.string "apellido"
     t.string "nombres"
     t.date "fecha_nacimiento"
