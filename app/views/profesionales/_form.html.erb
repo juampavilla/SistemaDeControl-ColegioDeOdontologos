@@ -10,17 +10,13 @@
         <%= f.label :nombres %><br />
         <%= f.text_field :nombres %>
       </div>
-      <%= f.text_field :fecha_nacimiento,
-          data: { provide: "datepicker",
-              'date-format': 'yyyy/mm/dd',
-              'date-autoclose': 'true',
-              'date-today-btn': 'linked',
-              'date-today-highlight': 'true'} %>
 
       <div class="field">
         <%= f.label :fecha_nacimiento %><br />
-        <%= f.date_select :fecha_nacimiento, include_blank: true, start_year:1900, end_year: 2000 %>
+        <%= datepicker_field(f, :fecha_nacimiento) %>
       </div>
+
+
       <div class="field">
         <%= f.label :tipo_doc %><br />
         <%= f.text_field :tipo_doc %>
@@ -45,8 +41,9 @@
         </div>
         <div class="field">
           <%= ff.label :fecha_inscripcion %><br />
-          <%= ff.date_select :fecha_inscripcion, include_blank: true, start_year:1950, end_year: 2020 %>
+          <%= datepicker_field(ff, :fecha_inscripcion) %>
         </div>
+
         <div class="field">
           <%= ff.label :libro %><br />
           <%= ff.text_field :libro %>
@@ -57,8 +54,9 @@
         </div>
         <div class="field">
           <%= ff.label :fecha_habilitacion %><br />
-          <%= ff.date_select :fecha_habilitacion, include_blank: true, start_year:1950, end_year: 2020 %>
+          <%= datepicker_field(ff, :fecha_habilitacion) %>
         </div>
+
         <div class="field">
           <%= ff.label :nota_fecha_habilitacion %><br />
           <%= ff.text_field :nota_fecha_habilitacion %>
@@ -73,7 +71,7 @@
         </div>
         <div class="field">
           <%= ff.label :fecha_vencimiento %><br />
-          <%= ff.date_select :fecha_vencimiento, include_blank: true, start_year:1950, end_year: 2020 %>
+          <%= datepicker_field(ff, :fecha_vencimiento) %>
         </div>
         <div class="field">
           <%= ff.label :notas %><br />
