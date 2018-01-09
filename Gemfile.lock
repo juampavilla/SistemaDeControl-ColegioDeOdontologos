@@ -47,6 +47,8 @@ GEM
     awesome_print (1.8.0)
     bcrypt (3.1.11)
     bindex (0.5.0)
+    bootstrap-datepicker-rails (1.7.1.1)
+      railties (>= 3.0)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -238,6 +240,7 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bcrypt (= 3.1.11)
+  bootstrap-datepicker-rails
   bootstrap-sass
   bootstrap-will_paginate (= 1.0.0)
   byebug
