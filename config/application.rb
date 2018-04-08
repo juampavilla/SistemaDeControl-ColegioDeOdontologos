@@ -16,6 +16,6 @@ module Odontologos
     # -- all .rb files in that directory are automatically loaded.
     config.i18n.available_locales = [:es, :en]
     config.i18n.enforce_available_locales = true
-    config.i18n.default_locale = :'es'
+    config.i18n.default_locale = :es
   end
 end
