@@ -5,7 +5,7 @@ es-AR:
         record_invalid: "La validación falló: %{errors}"
         restrict_dependent_destroy:
           has_one: No se puede eliminar el registro porque existe un %{record} dependiente
-          has_many: No se puede eliminar el registro porque existen %{record} dependientes      
+          has_many: No se puede eliminar el registro porque existen %{record} dependientes
   date:
     abbr_day_names:
     - dom
@@ -16,7 +16,6 @@ es-AR:
     - vie
     - sáb
     abbr_month_names:
-    -
     - ene
     - feb
     - mar

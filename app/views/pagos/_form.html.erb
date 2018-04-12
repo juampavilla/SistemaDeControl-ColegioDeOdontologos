@@ -1,0 +1,30 @@
+<%= form_for [@pago.profesional, @pago] do |f| %>
+
+  <% if pago.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pago.errors.count, "error") %> prohibited this pago from being saved:</h2>
+      <ul>
+      <% pago.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.label :monto_abonado %>
+
+  <%= f.number_field :monto_abonado, in: 1.0..20.00, step: 0.5, class: 'form-control' %>
+
+  <%= f.label :fecha_pago %>
+  <%= f.date_field :fecha_pago, class: 'form-control', value: Time.now.strftime('%d-%m-%Y') %>
+
+  <%= f.label :nro_recibo %>
+  <%= f.text_field :nro_recibo, class: 'form-control' %>
+
+  <%= f.label :profesional_id %>
+  <%= f.text_field :profesional_id, class: 'form-control', readonly: true %>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

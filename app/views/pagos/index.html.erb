@@ -1,0 +1,40 @@
+<h3>Pagos Realizados</h3>
+<h4><%= @profesional.apellido %>&ensp;<%= @profesional.nombres %></h4>
+<table class='table table-condensed'>
+
+  <tr>
+    <th>Nro recibo</th>
+    <th>Fecha</th>
+    <th>Monto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+  <% @pagos.each do |pago| %>
+  <tr>
+    <td><%= pago.nro_recibo %></td>
+    <td><%= pago.fecha_pago %></td>
+    <td><%= pago.monto_abonado %></td>
+    <td><%= link_to profesional_pago_path(pago.profesional, pago) do %>
+      <%= fa_icon "search" %>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to edit_profesional_pago_path(pago.profesional, pago) do%>
+      <%= fa_icon "pencil" %></td>
+      <% end %>
+    </td>
+    <td>
+      <%= link_to profesional_pago_path(pago.profesional, pago), method: :delete, data: { confirm: '¿Está seguro?' } do %>
+      <%= fa_icon "trash-o" %></td>
+      <% end %>
+    </td>
+  </tr>
+  <% end %>
+</tbody>
+
+</table>
+<br>
+
+<%= link_to 'Nuevo Pago', new_profesional_pago_path(@profesional) %>
