@@ -20,7 +20,7 @@
       <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
       <td><%= link_to "#{profesional.matricula.matricula}", matricula_path(profesional.matricula) %>
         <td>
-          <%= link_to new_profesional_pago_path(profesional) do %>
+          <%= link_to profesional_pagos_path(profesional) do %>
           <%= fa_icon "usd" %>
           <% end %>
         </td>

@@ -1,9 +1,19 @@
-<p id="notice"><%= notice %></p>
+<p>
+  <strong></strong>
+</p>
+<p>
+  <strong>Apellido:</strong>
+    <%= @profesional.apellido%></h2>
+</p>
+<p>
+  <strong>Monto:</strong>
+  <%= @pago.monto_abonado %>
+</p>
 
-<h2><%= @pago.monto_abonado %></h2>
 <h2><%= @pago.fecha_pago %></h2>
 <h2><%= @profesional.apellido%></h2>
 <h2><%= @pago.nro_recibo %></h2>
 
-<%= link_to 'Edit', edit_pago_path(@pago) %> |
-<%= link_to 'Back', pagos_path %>
+<%= link_to 'Edit', edit_profesional_pago_path(@pago.profesional, @pago) %>
+|
+<%= link_to 'Back', profesional_pagos_path(@pago.profesional) %>

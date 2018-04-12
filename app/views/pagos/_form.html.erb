@@ -1,4 +1,5 @@
-<%= form_with(model: @pago, url: [@profesional, @pago], local: true) do |f| %>
+<%= form_for [@pago.profesional, @pago] do |f| %>
+
   <% if pago.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(pago.errors.count, "error") %> prohibited this pago from being saved:</h2>

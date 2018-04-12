@@ -29,6 +29,6 @@ Rails.application.routes.draw do
     resources :pagos
   end
   resources :users
-  resources :pagos
+#  resources :pagos
 
 end

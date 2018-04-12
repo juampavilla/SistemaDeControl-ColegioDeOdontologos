@@ -4,8 +4,9 @@ class PagosController < ApplicationController
   # GET /pagos
   # GET /pagos.json
   def index
-    @pagos = Pago.all
-    #  @pagos = Pago.all(:conditions => { :profesional_id => :profesional_id })
+    @pagos = Pago.where profesional: params[:profesional_id]
+    @profesional = Profesional.find params[:profesional_id]
+
   end
 
   # GET /pagos/1
@@ -13,13 +14,14 @@ class PagosController < ApplicationController
   def show
     @pago = Pago.find params[:id]
 
-    @profesional = Profesional.find @pago.profesional_id 
+    @profesional = Profesional.find @pago.profesional_id
   end
 
   # GET /pagos/new
   def new
-    @profesional = Profesional.find pago_params[:profesional_id]
-    @pago = Pago.new(pago_params)
+    
+    @profesional = Profesional.find params[:profesional_id]
+    @pago = Pago.new(profesional_id: @profesional.id)
   end
 
   # GET /pagos/1/edit
@@ -28,12 +30,13 @@ class PagosController < ApplicationController
   # POST /pagos
   # POST /pagos.json
   def create
+
     @pago = Pago.new(pago_params)
 
     respond_to do |format|
       if @pago.save
         #  redirect_to @pago
-        format.html { redirect_to @pago, notice: 'Pago was successfully created.' }
+        format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully created.' }
         format.json { render :show, status: :created, location: @pago }
       else
         format.html { render :new }
@@ -47,7 +50,7 @@ class PagosController < ApplicationController
   def update
     respond_to do |format|
       if @pago.update(pago_params)
-        format.html { redirect_to @pago, notice: 'Pago was successfully updated.' }
+        format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully updated.' }
         format.json { render :show, status: :ok, location: @pago }
       else
         format.html { render :edit }
@@ -61,7 +64,7 @@ class PagosController < ApplicationController
   def destroy
     @pago.destroy
     respond_to do |format|
-      format.html { redirect_to pagos_url, notice: 'Pago was successfully destroyed.' }
+      format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
@@ -75,7 +78,7 @@ class PagosController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def pago_params
-    params.permit(:monto_abonado,
+    params.require(:pago).permit(:monto_abonado,
                   :fecha_pago,
                   :nro_recibo,
                   :profesional_id)
