@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profesional: one
+  monto_abonado: 
+  fecha_pago: 2018-03-18
+  nro_recibo: 1
+
+two:
+  profesional: two
+  monto_abonado: 
+  fecha_pago: 2018-03-18
+  nro_recibo: 1

@@ -109,6 +109,8 @@ class ProfesionalesController < ApplicationController
     [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
   end
 
+  
+
   # Confirms a logged-in user.
   def logged_in_user
     unless logged_in?
@@ -118,7 +120,7 @@ class ProfesionalesController < ApplicationController
     end
   end
 
-  
+
     # Confirms an admin user.
     def admin_user
       redirect_to(root_url) unless current_user.admin?

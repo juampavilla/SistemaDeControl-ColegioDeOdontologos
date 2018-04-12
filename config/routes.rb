@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pago/new'
+
   get 'sessions/new'
 
   root :to => "pages#home"
@@ -18,11 +20,15 @@ Rails.application.routes.draw do
 
   get  'search/index', to: 'search#index'
 
+
+
   resources :domicilios
   resources :matriculas
   resources :profesionales do
     get 'show_domicilios'
+    resources :pagos
   end
   resources :users
+  resources :pagos
 
 end

@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @pago.monto_abonado %></h2>
+<h2><%= @pago.fecha_pago %></h2>
+<h2><%= @profesional.apellido%></h2>
+<h2><%= @pago.nro_recibo %></h2>
+
+<%= link_to 'Edit', edit_pago_path(@pago) %> |
+<%= link_to 'Back', pagos_path %>
