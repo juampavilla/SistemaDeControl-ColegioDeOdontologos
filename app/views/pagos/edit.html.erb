@@ -1,6 +1,7 @@
-<h1>Editing Pago</h1>
+<% provide(:title, 'Editando pago') %>
+  <% provide(:button_text, 'Actualizar pago') %>
+    <!-- <div class='profesional-header'> <p class='bg-info text-white'><%= @profesional.apellido.downcase %>&ensp;<%= @profesional.nombres.downcase %></p> </div> </br> <h1>Editando Pago</h1> -->
 
-<%= render 'form', pago: @pago %>
+    <%= render 'form', pago: @pago %>
 
-<%= link_to 'Edit', edit_profesional_pago_path(@pago.profesional, @pago) %>
-<%= link_to 'Back', profesional_pagos_path(@pago.profesional) %>
+    <%= link_to 'Atras', profesional_pagos_path(@pago.profesional) %>

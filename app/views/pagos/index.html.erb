@@ -1,11 +1,15 @@
-<h3>Pagos Realizados</h3>
-<h4><%= @profesional.apellido %>&ensp;<%= @profesional.nombres %></h4>
+<div class='profesional-header'>
+  <p class='bg-info text-white'><%= @profesional.apellido.downcase %>&ensp;<%= @profesional.nombres.downcase %></p>
+</div>
+</br>
+<h3>Pagos realizados</h3>
 <table class='table table-condensed'>
 
   <tr>
     <th>Nro recibo</th>
-    <th>Fecha</th>
     <th>Monto</th>
+    <th>Fecha</th>
+
     <th></th>
     <th></th>
     <th></th>
@@ -14,8 +18,8 @@
   <% @pagos.each do |pago| %>
   <tr>
     <td><%= pago.nro_recibo %></td>
-    <td><%= pago.fecha_pago %></td>
     <td><%= pago.monto_abonado %></td>
+    <td><%= pago.fecha_pago %></td>
     <td><%= link_to profesional_pago_path(pago.profesional, pago) do %>
       <%= fa_icon "search" %>
       <% end %>
@@ -26,7 +30,7 @@
       <% end %>
     </td>
     <td>
-      <%= link_to profesional_pago_path(pago.profesional, pago), method: :delete, data: { confirm: '¿Está seguro?' } do %>
+      <%= link_to profesional_pago_path(pago.profesional, pago), method: :delete, data: { confirm: "¿Está seguro que desea eliminar el pago: #{pago.nro_recibo}?"} do %>
       <%= fa_icon "trash-o" %></td>
       <% end %>
     </td>
@@ -37,4 +41,4 @@
 </table>
 <br>
 
-<%= link_to 'Nuevo Pago', new_profesional_pago_path(@profesional) %>
+<%= link_to 'Nuevo Pago', new_profesional_pago_path(@profesional), class:'btn btn-primary' %>

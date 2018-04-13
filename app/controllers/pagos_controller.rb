@@ -6,7 +6,6 @@ class PagosController < ApplicationController
   def index
     @pagos = Pago.where profesional: params[:profesional_id]
     @profesional = Profesional.find params[:profesional_id]
-
   end
 
   # GET /pagos/1
@@ -19,26 +18,28 @@ class PagosController < ApplicationController
 
   # GET /pagos/new
   def new
-    
     @profesional = Profesional.find params[:profesional_id]
     @pago = Pago.new(profesional_id: @profesional.id)
   end
 
   # GET /pagos/1/edit
-  def edit; end
+  def edit
+    @profesional = Profesional.find params[:profesional_id]
+  end
 
   # POST /pagos
   # POST /pagos.json
   def create
-
     @pago = Pago.new(pago_params)
 
     respond_to do |format|
       if @pago.save
-        #  redirect_to @pago
+        flash[:success] = 'Pago creado exitosamente'
         format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully created.' }
         format.json { render :show, status: :created, location: @pago }
       else
+        flash[:danger] = 'No se pudo crear el Pago'
+        @profesional = Profesional.find @pago.profesional_id
         format.html { render :new }
         format.json { render json: @pago.errors, status: :unprocessable_entity }
       end
@@ -48,25 +49,26 @@ class PagosController < ApplicationController
   # PATCH/PUT /pagos/1
   # PATCH/PUT /pagos/1.json
   def update
-    respond_to do |format|
-      if @pago.update(pago_params)
-        format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully updated.' }
-        format.json { render :show, status: :ok, location: @pago }
-      else
-        format.html { render :edit }
-        format.json { render json: @pago.errors, status: :unprocessable_entity }
-      end
+    profesional_id = @pago.profesional;
+    if @pago.update(pago_params)
+      flash[:success] = 'El pago se actualizó exitosamente'
+      redirect_to profesional_pagos_url(profesional_id)
+    else
+      flash[:danger] = 'No se pudo actualizar el Pago'
+      @profesional = Profesional.find @pago.profesional_id
+      render 'edit'
     end
   end
 
   # DELETE /pagos/1
   # DELETE /pagos/1.json
   def destroy
-    @pago.destroy
-    respond_to do |format|
-      format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully destroyed.' }
-      format.json { head :no_content }
+    if @pago.destroy
+      flash[:success] = 'El pago fue eliminado exitosamente'
+    else
+      flash[:danger] = 'No se pudo eliminar el Pago'
     end
+    redirect_to profesional_pagos_url(@pago.profesional)
   end
 
   private
@@ -79,8 +81,9 @@ class PagosController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def pago_params
     params.require(:pago).permit(:monto_abonado,
-                  :fecha_pago,
-                  :nro_recibo,
-                  :profesional_id)
+                                 :fecha_pago,
+                                 :nro_recibo,
+                                 :profesional_id,
+                                 :notas)
   end
 end

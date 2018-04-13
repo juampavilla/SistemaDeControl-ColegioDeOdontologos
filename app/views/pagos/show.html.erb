@@ -1,19 +1,44 @@
-<p>
-  <strong></strong>
-</p>
-<p>
-  <strong>Apellido:</strong>
-    <%= @profesional.apellido%></h2>
-</p>
-<p>
-  <strong>Monto:</strong>
-  <%= @pago.monto_abonado %>
-</p>
+<%= provide title: 'Examinar pago' %>
+<div class='profesional-header'>
+  <p class='bg-info text-white'><%= @profesional.apellido.downcase %>&ensp;<%= @profesional.nombres.downcase %></p>
+</div>
+<h1>Examinar pago</h1>
+<!-- <ul class="pagos"> <% @pago.attributes.each{|key, value| %> <li> <%= "#{key} : #{value}" %> </li> <% } %> </ul> -->
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <p>
+      <strong>Rro recibo:</strong>
+      <%= @pago.nro_recibo %>
+    </p>
+    <p>
+      <strong>Fecha pago:</strong>
+      <%= @pago.fecha_pago %>
+    </p>
 
-<h2><%= @pago.fecha_pago %></h2>
-<h2><%= @profesional.apellido%></h2>
-<h2><%= @pago.nro_recibo %></h2>
+    <p>
+      <strong>Monto abonado:</strong>
+      <%= @pago.monto_abonado %>
+    </p>
 
-<%= link_to 'Edit', edit_profesional_pago_path(@pago.profesional, @pago) %>
+    <p>
+      <strong>Notas:</strong>
+      <%= @pago.notas %>
+    </p>
+
+  </br>
+</div>
+</div>
+<div class='panel panel-info'>
+  <p>
+    <strong>Generado:</strong>
+    <i><%= @pago.created_at %></i>
+  </p>
+  <p>
+    <strong>Modificado:</strong>
+    <i><%= @pago.updated_at %></i>
+  </p>
+</div>
+
+<%= link_to 'Editar', edit_profesional_pago_path(@pago.profesional, @pago) %>
 |
-<%= link_to 'Back', profesional_pagos_path(@pago.profesional) %>
+<%= link_to 'Volver', profesional_pagos_path(@pago.profesional) %>

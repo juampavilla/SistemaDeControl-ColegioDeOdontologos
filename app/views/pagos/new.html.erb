@@ -1,7 +1,7 @@
-<h1>New Pago</h1>
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <%= render 'form', pago: @pago %>
-    </div>
-</div>
-<%= link_to 'Back', profesional_pagos_path %>
+<% provide(:title, 'Nuevo pago') %>
+<% provide(:button_text, 'Crear pago') %>
+<!-- <div class='profesional-header'> <p class='bg-info text-white'><%= @profesional.apellido.downcase %>&ensp;<%= @profesional.nombres.downcase %></p> </div> <h1>Nuevo Pago</h1> -->
+
+<%= render 'form', pago: @pago %>
+
+<%= link_to 'Volver', profesional_pagos_path %>
