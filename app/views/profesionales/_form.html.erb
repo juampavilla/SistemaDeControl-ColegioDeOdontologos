@@ -20,7 +20,7 @@
     </div>
     <div class="field">
       <%= f.label :nro_doc %><br/>
-      <%= f.number_field :nro_doc %>
+      <%= f.number_field :nro_doc, class:'form-control' %>
     </div>
     <hr>
   </div>
@@ -29,47 +29,47 @@
     <%= f.fields_for :matricula do |ff| %>
     <div class="field">
       <%= ff.label :estado %><br/>
-      <%= ff.text_field :estado %>
+      <%= ff.text_field :estado, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :matricula %><br/>
-      <%= ff.text_field :matricula %>
+      <%= ff.text_field :matricula, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :fecha_inscripcion %><br/>
-      <%= ff.date_field :fecha_inscripcion %>
+      <%= ff.date_field :fecha_inscripcion, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :libro %><br/>
-      <%= ff.text_field :libro %>
+      <%= ff.text_field :libro, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :folio %><br/>
-      <%= ff.number_field :folio %>
+      <%= ff.number_field :folio, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :fecha_habilitacion %><br/>
-      <%= ff.date_field :fecha_habilitacion %>
+      <%= ff.date_field :fecha_habilitacion, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :nota_fecha_habilitacion %><br/>
-      <%= ff.text_field :nota_fecha_habilitacion %>
+      <%= ff.text_field :nota_fecha_habilitacion, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :vencimiento %><br/>
-      <%= ff.number_field :vencimiento %>
+      <%= ff.number_field :vencimiento, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :especialidad %><br/>
-      <%= ff.text_field :especialidad %>
+      <%= ff.text_field :especialidad, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :fecha_vencimiento %><br/>
-      <%= ff.date_field :fecha_vencimiento %>
+      <%= ff.date_field :fecha_vencimiento, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :notas %><br/>
-      <%= ff.text_area :notas %>
+      <%= ff.text_area :notas, class:'form-control' %>
     </div>
     <hr>
   <% end %>
@@ -79,27 +79,27 @@
   <%= f.fields_for :domicilios do |ff| %>
   <div class="field">
     <%= ff.label :cp %><br/>
-    <%= ff.text_field :cp %>
+    <%= ff.text_field :cp, class:'form-control' %>
   </div>
   <div class="field">
     <%= ff.label :localidad %><br/>
-    <%= ff.text_field :localidad %>
+    <%= ff.text_field :localidad, class:'form-control' %>
   </div>
   <div class="field">
     <%= ff.label :domicilio %><br/>
-    <%= ff.text_field :domicilio %>
+    <%= ff.text_field :domicilio, class:'form-control' %>
   </div>
   <div class="field">
     <%= ff.label :telefono %><br/>
-    <%= ff.text_field :telefono %>
+    <%= ff.text_field :telefono, class:'form-control' %>
   </div>
   <div class="field">
     <%= ff.label :tipo %><br/>
-    <%= ff.text_field :tipo %>
+    <%= ff.text_field :tipo, class:'form-control' %>
   </div>
   <div class="field">
     <%= ff.label :notas %><br/>
-    <%= ff.text_area :notas %>
+    <%= ff.text_area :notas, class:'form-control' %>
   </div>
   <hr>
 <% end %>

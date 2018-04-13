@@ -1,12 +1,21 @@
-<%= form_for [@pago.profesional, @pago] do |f| %>
+<div class='profesional-header'>
+  <p class='bg-info text-white'><%= @profesional.apellido.downcase %>&ensp;<%= @profesional.nombres.downcase %></p>
+</div>
+</br>
+<h1><%= yield(:title) %></h1>
+
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+  <%= form_for [@pago.profesional, @pago] do |f| %>
 
   <% if pago.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(pago.errors.count, "error") %> prohibited this pago from being saved:</h2>
+      <h2><%= pluralize(pago.errors.count, "error") %>
+        prohibited this pago from being saved:</h2>
       <ul>
-      <% pago.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
+        <% pago.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
       </ul>
     </div>
   <% end %>
@@ -17,13 +26,15 @@
   <%= f.text_field :nro_recibo, class: 'form-control' %>
 
   <%= f.label :monto_abonado %>
-
   <%= f.number_field :monto_abonado, class: 'form-control' %>
 
   <%= f.label :fecha_pago %>
   <%= f.date_field :fecha_pago, value: Date.today.strftime("%Y-%m-%d"), class: 'form-control'%>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.label :notas %>
+  <%= f.text_area :notas, class: 'form-control' %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
+</div>
+</div>

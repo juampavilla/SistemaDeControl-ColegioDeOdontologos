@@ -23,7 +23,9 @@ class PagosController < ApplicationController
   end
 
   # GET /pagos/1/edit
-  def edit; end
+  def edit
+    @profesional = Profesional.find params[:profesional_id]
+  end
 
   # POST /pagos
   # POST /pagos.json
@@ -32,10 +34,12 @@ class PagosController < ApplicationController
 
     respond_to do |format|
       if @pago.save
-        #  redirect_to @pago
+        flash[:success] = 'Pago creado exitosamente'
         format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully created.' }
         format.json { render :show, status: :created, location: @pago }
       else
+        flash[:danger] = 'No se pudo crear el Pago'
+        @profesional = Profesional.find @pago.profesional_id
         format.html { render :new }
         format.json { render json: @pago.errors, status: :unprocessable_entity }
       end
@@ -45,14 +49,14 @@ class PagosController < ApplicationController
   # PATCH/PUT /pagos/1
   # PATCH/PUT /pagos/1.json
   def update
-    respond_to do |format|
-      if @pago.update(pago_params)
-        format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully updated.' }
-        format.json { render :show, status: :ok, location: @pago }
-      else
-        format.html { render :edit }
-        format.json { render json: @pago.errors, status: :unprocessable_entity }
-      end
+    profesional_id = @pago.profesional;
+    if @pago.update(pago_params)
+      flash[:success] = 'El pago se actualizó exitosamente'
+      redirect_to profesional_pagos_url(profesional_id)
+    else
+      flash[:danger] = 'No se pudo actualizar el Pago'
+      @profesional = Profesional.find @pago.profesional_id
+      render 'edit'
     end
   end
 
@@ -60,11 +64,11 @@ class PagosController < ApplicationController
   # DELETE /pagos/1.json
   def destroy
     if @pago.destroy
-      flash[:success] = '¡El pago fue eliminado exitosamente!'
-      redirect_to profesional_pagos_url(@pago.profesional)
+      flash[:success] = 'El pago fue eliminado exitosamente'
     else
-      flash[:danger] = '¡No se pudo eliminar el Pago!'
+      flash[:danger] = 'No se pudo eliminar el Pago'
     end
+    redirect_to profesional_pagos_url(@pago.profesional)
   end
 
   private
@@ -79,6 +83,7 @@ class PagosController < ApplicationController
     params.require(:pago).permit(:monto_abonado,
                                  :fecha_pago,
                                  :nro_recibo,
-                                 :profesional_id)
+                                 :profesional_id,
+                                 :notas)
   end
 end

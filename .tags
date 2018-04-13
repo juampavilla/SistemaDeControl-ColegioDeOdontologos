@@ -23,6 +23,7 @@ ApplicationMailer	app/mailers/application_mailer.rb	/^class ApplicationMailer < 
 ApplicationRecord	app/models/application_record.rb	/^class ApplicationRecord < ActiveRecord::Base$/;"	c
 ApplicationSystemTestCase	test/application_system_test_case.rb	/^class ApplicationSystemTestCase < ActionDispatch::SystemTestCase$/;"	c
 ChangeNotasFieldToText	db/migrate/20170812012146_change_notas_field_to_text.rb	/^class ChangeNotasFieldToText < ActiveRecord::Migration[5.1]$/;"	c
+ChangeNroReciboToBeStringInPagos	db/migrate/20180413222813_change_nro_recibo_to_be_string_in_pagos.rb	/^class ChangeNroReciboToBeStringInPagos < ActiveRecord::Migration[5.1]$/;"	c
 Channel	app/channels/application_cable/channel.rb	/^  class Channel < ActionCable::Channel::Base$/;"	c	class:ApplicationCable
 Connection	app/channels/application_cable/connection.rb	/^  class Connection < ActionCable::Connection::Base$/;"	c	class:ApplicationCable
 CreateDomicilios	db/migrate/20170722195814_create_domicilios.rb	/^class CreateDomicilios < ActiveRecord::Migration[5.0]$/;"	c
@@ -96,9 +97,10 @@ destroy	app/controllers/sessions_controller.rb	/^  def destroy;$/;"	f	class:Sess
 digest	app/models/user.rb	/^  def User.digest(string)$/;"	F	class:User
 domicilio_params	app/controllers/domicilios_controller.rb	/^  def domicilio_params$/;"	f	class:DomiciliosController
 domicilios_params	app/controllers/profesionales_controller.rb	/^  def domicilios_params$/;"	f	class:ProfesionalesController
+down	db/migrate/20180413222813_change_nro_recibo_to_be_string_in_pagos.rb	/^  def down$/;"	f	class:ChangeNroReciboToBeStringInPagos
 edit	app/controllers/domicilios_controller.rb	/^  def edit$/;"	f	class:DomiciliosController
 edit	app/controllers/matriculas_controller.rb	/^  def edit$/;"	f	class:MatriculasController
-edit	app/controllers/pagos_controller.rb	/^  def edit; end$/;"	f	class:PagosController
+edit	app/controllers/pagos_controller.rb	/^  def edit$/;"	f	class:PagosController
 edit	app/controllers/profesionales_controller.rb	/^  def edit$/;"	f	class:ProfesionalesController
 edit	app/controllers/users_controller.rb	/^  def edit$/;"	f	class:UsersController
 forget	app/helpers/sessions_helper.rb	/^  def forget(user)$/;"	f	class:SessionsHelper
@@ -153,6 +155,7 @@ store_location	app/helpers/sessions_helper.rb	/^ def store_location$/;"	f	class:
 system!	bin/setup	/^def system!(*args)$/;"	f
 system!	bin/update	/^def system!(*args)$/;"	f
 to_csv	app/models/profesional.rb	/^  def self.to_csv profesionales$/;"	F	class:Profesional
+up	db/migrate/20180413222813_change_nro_recibo_to_be_string_in_pagos.rb	/^  def up$/;"	f	class:ChangeNroReciboToBeStringInPagos
 update	app/controllers/domicilios_controller.rb	/^  def update$/;"	f	class:DomiciliosController
 update	app/controllers/matriculas_controller.rb	/^  def update$/;"	f	class:MatriculasController
 update	app/controllers/pagos_controller.rb	/^  def update$/;"	f	class:PagosController
