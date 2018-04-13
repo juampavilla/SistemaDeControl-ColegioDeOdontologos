@@ -6,7 +6,6 @@ class PagosController < ApplicationController
   def index
     @pagos = Pago.where profesional: params[:profesional_id]
     @profesional = Profesional.find params[:profesional_id]
-
   end
 
   # GET /pagos/1
@@ -19,7 +18,6 @@ class PagosController < ApplicationController
 
   # GET /pagos/new
   def new
-    
     @profesional = Profesional.find params[:profesional_id]
     @pago = Pago.new(profesional_id: @profesional.id)
   end
@@ -30,7 +28,6 @@ class PagosController < ApplicationController
   # POST /pagos
   # POST /pagos.json
   def create
-
     @pago = Pago.new(pago_params)
 
     respond_to do |format|
@@ -62,10 +59,11 @@ class PagosController < ApplicationController
   # DELETE /pagos/1
   # DELETE /pagos/1.json
   def destroy
-    @pago.destroy
-    respond_to do |format|
-      format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully destroyed.' }
-      format.json { head :no_content }
+    if @pago.destroy
+      flash[:success] = '¡El pago fue eliminado exitosamente!'
+      redirect_to profesional_pagos_url(@pago.profesional)
+    else
+      flash[:danger] = '¡No se pudo eliminar el Pago!'
     end
   end
 
@@ -79,8 +77,8 @@ class PagosController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def pago_params
     params.require(:pago).permit(:monto_abonado,
-                  :fecha_pago,
-                  :nro_recibo,
-                  :profesional_id)
+                                 :fecha_pago,
+                                 :nro_recibo,
+                                 :profesional_id)
   end
 end

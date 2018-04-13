@@ -14,38 +14,38 @@
   </tr>
 
   <% @profesionales.each do |profesional| %>
-  <tr>
-    <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
-    <td><%= link_to "#{profesional.domicilios.first.localidad}", profesional_show_domicilios_path(profesional) %>
-      <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
-      <td><%= link_to "#{profesional.matricula.matricula}", matricula_path(profesional.matricula) %>
-        <td>
-          <%= link_to profesional_pagos_path(profesional) do %>
-          <%= fa_icon "usd" %>
+    <tr>
+      <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
+      <td><%= link_to "#{profesional.domicilios.first.localidad}", profesional_show_domicilios_path(profesional) %>
+        <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
+        <td><%= link_to "#{profesional.matricula.matricula}", matricula_path(profesional.matricula) %>
+          <td>
+            <%= link_to profesional_pagos_path(profesional) do %>
+            <%= fa_icon "usd" %>
           <% end %>
         </td>
         <td>
           <%= link_to profesional_path(profesional) do %>
           <%= fa_icon "search" %>
-          <% end %>
-        </td>
-        <td>
-          <%= link_to edit_profesional_path(profesional) do %>
-          <%= fa_icon "pencil" %>
-          <% end %>
-        </td>
-
-        <td>
-          <%= link_to profesional_path(profesional), method: :delete, data: { confirm: 'Está seguro?' } do %>
-          <%= fa_icon "trash-o" %>
-          <% end %>
-        </td>
-      </tr>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to edit_profesional_path(profesional) do %>
+        <%= fa_icon "pencil" %>
       <% end %>
-    </table>
+    </td>
 
-    <br/>
+    <td>
+      <%= link_to profesional_path(profesional), method: :delete, data: { confirm: "¿Está seguro que desea eliminar a: #{profesional.apellido} #{profesional.nombres}?\n Se eliminará toda la infomación relacionada a este profesional" } do %>
+      <%= fa_icon "trash-o" %>
+    <% end %>
+  </td>
+</tr>
+<% end %>
+</table>
 
-    <%= link_to 'Exportar Todo a Excel', search_index_path(params.permit!.merge(:format => "csv")) %>
-    <br/>
-    <%= link_to 'Agregar Profesional', new_profesional_path %>
+<br/>
+
+<%= link_to 'Exportar Todo a Excel', search_index_path(params.permit!.merge(:format => "csv")) %>
+<br/>
+<%= link_to 'Agregar Profesional', new_profesional_path %>

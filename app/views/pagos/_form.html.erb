@@ -10,19 +10,18 @@
       </ul>
     </div>
   <% end %>
-  <%= f.label :monto_abonado %>
 
-  <%= f.number_field :monto_abonado, in: 1.0..20.00, step: 0.5, class: 'form-control' %>
-
-  <%= f.label :fecha_pago %>
-  <%= f.date_field :fecha_pago, class: 'form-control', value: Time.now.strftime('%d-%m-%Y') %>
+  <%= f.hidden_field :profesional_id %>
 
   <%= f.label :nro_recibo %>
   <%= f.text_field :nro_recibo, class: 'form-control' %>
 
-  <%= f.label :profesional_id %>
-  <%= f.text_field :profesional_id, class: 'form-control', readonly: true %>
+  <%= f.label :monto_abonado %>
 
+  <%= f.number_field :monto_abonado, class: 'form-control' %>
+
+  <%= f.label :fecha_pago %>
+  <%= f.date_field :fecha_pago, value: Date.today.strftime("%Y-%m-%d"), class: 'form-control'%>
 
   <div class="actions">
     <%= f.submit %>
