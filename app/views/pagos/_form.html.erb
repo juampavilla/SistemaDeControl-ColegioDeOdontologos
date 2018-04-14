@@ -26,7 +26,7 @@
   <%= f.text_field :nro_recibo, class: 'form-control' %>
 
   <%= f.label :monto_abonado %>
-  <%= f.number_field :monto_abonado, class: 'form-control' %>
+  <%= f.text_field :monto_abonado %>
 
   <%= f.label :fecha_pago %>
   <%= f.date_field :fecha_pago, value: Date.today.strftime("%Y-%m-%d"), class: 'form-control'%>

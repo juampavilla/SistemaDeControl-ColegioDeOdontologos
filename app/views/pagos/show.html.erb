@@ -17,7 +17,7 @@
 
     <p>
       <strong>Monto abonado:</strong>
-      <%= @pago.monto_abonado %>
+      <%= number_to_currency(@pago.monto_abonado) %>
     </p>
 
     <p>

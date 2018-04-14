@@ -18,7 +18,7 @@
   <% @pagos.each do |pago| %>
   <tr>
     <td><%= pago.nro_recibo %></td>
-    <td><%= pago.monto_abonado %></td>
+    <td><%= number_to_currency(pago.monto_abonado) %></td>
     <td><%= pago.fecha_pago %></td>
     <td><%= link_to profesional_pago_path(pago.profesional, pago) do %>
       <%= fa_icon "search" %>
