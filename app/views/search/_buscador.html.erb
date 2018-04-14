@@ -3,31 +3,14 @@
     <div class="row">
       <div class="form-group">
         <div class="col-sm-10">
-          <%= text_field_tag :termino_buscado, params[:termino_buscado], class: "form-control" %>
+          <%= text_field_tag :termino_buscado, params[:termino_buscado], class: "form-control", placeholder: "Ingrese nombre, apellido, dni o matricula para buscar..." %>
         </div>
         <div class="col-sm-2">
-          <%= submit_tag 'Buscar', class: "btn btn-default", name: nil  %>
+          <%= button_tag(type: "submit", class: "btn btn-default", name: nil) do %>
+            Buscar
+            <%= fa_icon "search" %>
+          <% end %>
         </div>
-      </div>
-    </div>
-    <div class="row pl20">
-      <h3>Elija por cuáles campos desea buscar:</h3>
-    </div>
-    <div class="row pl20">
-      <div class="col-sm-2">
-        <label class="checkbox">
-          Apellido y nombre: <%= check_box_tag 'nombre' %>
-        </label>
-      </div>
-      <div class="col-sm-2 col-sm-offset-1">
-        <label class="checkbox">
-          Documento: <%= check_box_tag 'documento' %>
-        </label>
-      </div>
-      <div class="col-sm-2 col-sm-offset-1">
-        <label class="checkbox">
-          Matrícula: <%= check_box_tag 'matricula' %>
-        </label>
       </div>
     </div>
   </div>
