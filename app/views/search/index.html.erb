@@ -13,29 +13,34 @@
     <th></th>
   </tr>
 
-<% @result.each do |profesional| %>
+  <% @result.each do |profesional| %>
   <tr>
     <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
-    <td><%= link_to "#{profesional.domicilios.first.localidad}", profesional_show_domicilios_path(profesional) %>
+    <td><%= link_to "#{profesional.domicilios.first.localidad}", profesional_show_domicilios_path(profesional) %></td>
     <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
-    <td><%= link_to "#{profesional.matricula.matricula}", matricula_path(profesional.matricula) %>
+    <td><%= link_to "#{profesional.matricula.matricula}", matricula_path(profesional.matricula) %></td>
+    <td>
+      <%= link_to profesional_pagos_path(profesional) do %>
+      <%= fa_icon "usd" %>
+      <% end %>
+    </td>
     <td>
       <%= link_to profesional_path(profesional) do %>
-        <%= fa_icon "search" %>
+      <%= fa_icon "search" %>
       <% end %>
     </td>
     <td>
       <%= link_to edit_profesional_path(profesional) do %>
-        <%= fa_icon "pencil" %>
+      <%= fa_icon "pencil" %>
       <% end %>
     </td>
     <td>
-      <%= link_to profesional_path(profesional), method: :delete, data: { confirm: 'Está seguro?' } do %>
-        <%= fa_icon "trash-o" %>
+      <%= link_to profesional_path(profesional), method: :delete, data: { confirm: "¿Está seguro que desea eliminar a: #{profesional.apellido} #{profesional.nombres}?\n Se eliminará toda la infomación relacionada a este profesional" } do %>
+      <%= fa_icon "trash-o" %>
       <% end %>
     </td>
   </tr>
-<% end %>
+  <% end %>
 </table>
 
 <%= link_to 'Exportar Resultados a Excel', search_index_path(params.permit!.merge(:format => "csv")) %>

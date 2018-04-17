@@ -64,7 +64,6 @@ UsersSignupTest	test/integration/users_signup_test.rb	/^class UsersSignupTest < 
 about	app/controllers/pages_controller.rb	/^  def about$/;"	f	class:PagesController
 admin_user	app/controllers/profesionales_controller.rb	/^    def admin_user$/;"	f	class:ProfesionalesController
 admin_user	app/controllers/users_controller.rb	/^    def admin_user$/;"	f	class:UsersController
-attributes	app/controllers/search_controller.rb	/^  def attributes$/;"	f	class:SearchController
 authenticated?	app/models/user.rb	/^  def authenticated?(remember_token)$/;"	f	class:User
 change	db/migrate/20170722131736_create_profesionales.rb	/^  def change$/;"	f	class:CreateProfesionales
 change	db/migrate/20170722153735_create_matriculas.rb	/^  def change$/;"	f	class:CreateMatriculas
