@@ -3,7 +3,8 @@ class ProfesionalesController < ApplicationController
   before_action :admin_user,     only: :index
 
   def index
-    @profesionales = Profesional.all.order :id
+    # @profesionales = Profesional.all.order :id
+    @profesionales = (Profesional.all.order :id ).paginate(page: params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -109,7 +110,7 @@ class ProfesionalesController < ApplicationController
     [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
   end
 
-  
+
 
   # Confirms a logged-in user.
   def logged_in_user
