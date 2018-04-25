@@ -13,6 +13,8 @@
     <th></th>
   </tr>
 
+  <%= will_paginate @profesionales, :previous_label => t("Anterior"), :next_label => t("Siguiente") %>
+
   <% @profesionales.each do |profesional| %>
   <tr>
     <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
@@ -41,8 +43,10 @@
       <% end %>
     </td>
   </tr>
+
   <% end %>
 </table>
+<%= will_paginate %>
 
 <br/>
 
