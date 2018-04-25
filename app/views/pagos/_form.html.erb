@@ -29,7 +29,8 @@
   <%= f.text_field :monto_abonado, class: 'form-control'%>
 
   <%= f.label :fecha_pago %>
-  <% if(yield(:title) == "Nuevo pago") %>
+  
+  <% if(@pago.fecha_pago == nil) then %>
     <%= f.date_field :fecha_pago, value: Date.today.strftime("%Y-%m-%d"), class: 'form-control'%>
   <% else %>
     <%= f.date_field :fecha_pago, class: 'form-control'%>
