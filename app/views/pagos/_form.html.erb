@@ -29,12 +29,15 @@
   <%= f.text_field :monto_abonado, class: 'form-control'%>
 
   <%= f.label :fecha_pago %>
-  <%= f.date_field :fecha_pago, value: Date.today.strftime("%Y-%m-%d"), class: 'form-control'%>
+  <% if(yield(:title) == "Nuevo pago") %>
+    <%= f.date_field :fecha_pago, value: Date.today.strftime("%Y-%m-%d"), class: 'form-control'%>
+  <% else %>
+    <%= f.date_field :fecha_pago, class: 'form-control'%>
+  <% end %>
+    <%= f.label :notas %>
+    <%= f.text_area :notas, class: 'form-control' %>
 
-  <%= f.label :notas %>
-  <%= f.text_area :notas, class: 'form-control' %>
-
-  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
-<% end %>
+    <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+  <% end %>
 </div>
 </div>

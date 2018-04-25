@@ -32,18 +32,14 @@ class PagosController < ApplicationController
   def create
     @pago = Pago.new(pago_params)
 
-    respond_to do |format|
       if @pago.save
         flash[:success] = 'Pago creado exitosamente'
-        format.html { redirect_to profesional_pagos_url(@pago.profesional), notice: 'Pago was successfully created.' }
-        format.json { render :show, status: :created, location: @pago }
+        redirect_to profesional_pagos_url(@pago.profesional)
       else
-        flash[:danger] = 'No se pudo crear el Pago'
+        flash[:danger] = 'No se pudo crear el Pago, revise los campos completado'
         @profesional = Profesional.find @pago.profesional_id
-        format.html { render :new }
-        format.json { render json: @pago.errors, status: :unprocessable_entity }
+        render :new
       end
-    end
   end
 
   # PATCH/PUT /pagos/1
