@@ -46,7 +46,7 @@
 
   <% end %>
 </table>
-<%= will_paginate %>
+<%= will_paginate @profesionales, :previous_label => t("Anterior"), :next_label => t("Siguiente") %>
 
 <br/>
 
