@@ -8,9 +8,11 @@
   <tr>
     <th>Nro recibo</th>
     <th>Cuota/Año</th>
+    <th>Concepto</th>
     <th>Monto</th>
     <th>Fecha</th>
 
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -21,6 +23,7 @@
   <tr>
     <td><%= pago.nro_recibo %></td>
     <td><%= pago.cuota_anio %></td>
+    <td><%= pago.concepto %></td>
     <td><%= number_to_currency(pago.monto_abonado) %></td>
     <td><%= pago.fecha_pago %></td>
     <td><%= link_to profesional_pago_path(pago.profesional, pago) do %>

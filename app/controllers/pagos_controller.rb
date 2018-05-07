@@ -22,6 +22,7 @@ class PagosController < ApplicationController
     @pago = Pago.new(profesional_id: @profesional.id)
     @pago.fecha_pago = Date.today.strftime("%Y-%m-%d")
     @pago.cuota_anio = Date::today.year
+    @pago.concepto = Choices['concepto'][0]
   end
 
   # GET /pagos/1/edit
@@ -83,6 +84,7 @@ class PagosController < ApplicationController
                                  :nro_recibo,
                                  :profesional_id,
                                  :notas,
-                                 :cuota_anio)
+                                 :cuota_anio,
+                                 :concepto)
   end
 end
