@@ -4,7 +4,7 @@ class PagosController < ApplicationController
   # GET /pagos
   # GET /pagos.json
   def index
-    @pagos = Pago.where profesional: params[:profesional_id]
+    @pagos = Pago.where(profesional: params[:profesional_id]).order(:fecha_pago)
     @profesional = Profesional.find params[:profesional_id]
   end
 
@@ -20,6 +20,8 @@ class PagosController < ApplicationController
   def new
     @profesional = Profesional.find params[:profesional_id]
     @pago = Pago.new(profesional_id: @profesional.id)
+    @pago.fecha_pago = Date.today.strftime("%Y-%m-%d")
+    @pago.cuota_anio = Date::today.year
   end
 
   # GET /pagos/1/edit
@@ -80,6 +82,7 @@ class PagosController < ApplicationController
                                  :fecha_pago,
                                  :nro_recibo,
                                  :profesional_id,
-                                 :notas)
+                                 :notas,
+                                 :cuota_anio)
   end
 end

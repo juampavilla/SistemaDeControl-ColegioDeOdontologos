@@ -7,6 +7,7 @@
 ActionDispatch	test/test_helper.rb	/^class ActionDispatch::IntegrationTest$/;"	c
 ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
 AddAdminToUsers	db/migrate/20171129010008_add_admin_to_users.rb	/^class AddAdminToUsers < ActiveRecord::Migration[5.1]$/;"	c
+AddCuotaToPagos	db/migrate/20180427015959_add_cuota_to_pagos.rb	/^class AddCuotaToPagos < ActiveRecord::Migration[5.1]$/;"	c
 AddIndexToUsersEmail	db/migrate/20170911012834_add_index_to_users_email.rb	/^class AddIndexToUsersEmail < ActiveRecord::Migration[5.1]$/;"	c
 AddNotaToPagos	db/migrate/20180413145543_add_nota_to_pagos.rb	/^class AddNotaToPagos < ActiveRecord::Migration[5.1]$/;"	c
 AddPasswordDigestToUsers	db/migrate/20170911020536_add_password_digest_to_users.rb	/^class AddPasswordDigestToUsers < ActiveRecord::Migration[5.1]$/;"	c
@@ -78,6 +79,7 @@ change	db/migrate/20171130230943_add_profesional_id_to_users.rb	/^  def change$/
 change	db/migrate/20171130231023_add_user_id_to_profesionales.rb	/^  def change$/;"	f	class:AddUserIdToProfesionales
 change	db/migrate/20180318145704_create_pagos.rb	/^  def change$/;"	f	class:CreatePagos
 change	db/migrate/20180413145543_add_nota_to_pagos.rb	/^  def change$/;"	f	class:AddNotaToPagos
+change	db/migrate/20180427015959_add_cuota_to_pagos.rb	/^  def change$/;"	f	class:AddCuotaToPagos
 contact	app/controllers/pages_controller.rb	/^  def contact$/;"	f	class:PagesController
 correct_user	app/controllers/users_controller.rb	/^   def correct_user$/;"	f	class:UsersController
 create	app/controllers/domicilios_controller.rb	/^  def create$/;"	f	class:DomiciliosController
