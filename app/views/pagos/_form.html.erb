@@ -26,25 +26,14 @@
   <%= f.text_field :nro_recibo, class: 'form-control' %>
 
 
-
-
   <% nowYear = Date::today.year %>
   <% cuotaOpciones = (nowYear-2)..(nowYear+2) %>
-
-  <% unless @pago.cuota_anio %>
-    <% @pago.cuota_anio = Date::today.year %>
-  <% end %>
   <%= f.label :cuota_anio, "Cuota/año" %>
   <%= f.select :cuota_anio, cuotaOpciones , {include_blank: "Selecciona un año"}, { :class => 'form-control' } %>
-
 
   <%= f.label :monto_abonado %>
   <%= f.text_field :monto_abonado, class: 'form-control'%>
 
-
-  <% unless @pago.fecha_pago %>
-    <%  @pago.fecha_pago = Date.today.strftime("%Y-%m-%d")%>
-  <% end %>
   <%= f.label :fecha_pago %>
   <%= f.date_field :fecha_pago, class: 'form-control'%>
 

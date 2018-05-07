@@ -20,6 +20,8 @@ class PagosController < ApplicationController
   def new
     @profesional = Profesional.find params[:profesional_id]
     @pago = Pago.new(profesional_id: @profesional.id)
+    @pago.fecha_pago = Date.today.strftime("%Y-%m-%d")
+    @pago.cuota_anio = Date::today.year
   end
 
   # GET /pagos/1/edit
