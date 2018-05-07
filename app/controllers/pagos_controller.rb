@@ -4,7 +4,7 @@ class PagosController < ApplicationController
   # GET /pagos
   # GET /pagos.json
   def index
-    @pagos = Pago.where(profesional: params[:profesional_id]).order(:fecha_pago)
+    @pagos = Pago.where(profesional: params[:profesional_id]).order(:fecha_pago, :cuota_anio, :nro_recibo)
     @profesional = Profesional.find params[:profesional_id]
   end
 
