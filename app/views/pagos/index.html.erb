@@ -2,6 +2,7 @@
   <p class='bg-info text-white'><%= @profesional.apellido.downcase %>&ensp;<%= @profesional.nombres.downcase %></p>
 </div>
 </br>
+<%= link_to "export to xlsx", profesional_pagos_path( format: "xlsx" ) %>
 <h3>Pagos realizados</h3>
 <table class='table table-condensed'>
 

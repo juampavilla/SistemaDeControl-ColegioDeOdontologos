@@ -6,6 +6,10 @@ class PagosController < ApplicationController
   def index
     @pagos = Pago.where(profesional: params[:profesional_id]).order(:fecha_pago, :cuota_anio, :nro_recibo)
     @profesional = Profesional.find params[:profesional_id]
+    respond_to do |format|
+      format.html
+      format.xlsx
+    end
   end
 
   # GET /pagos/1

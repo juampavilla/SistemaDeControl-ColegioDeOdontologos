@@ -1,0 +1,13 @@
+# app/views/pagos/index.xlsx.axlsx
+
+wb = xlsx_package.workbook
+
+wb.add_worksheet(name: "Pagos") do |sheet|
+  # this is the head row of your spreadsheet
+  sheet.add_row %w(id name email)
+
+  # each user is a row on your spreadsheet
+  @pagos.each do |pago|
+    sheet.add_row [pago.id, pago.monto_abonado, pago.fecha_pago]
+  end
+end

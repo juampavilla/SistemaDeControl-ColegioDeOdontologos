@@ -38,6 +38,10 @@ gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 # datepicker
 gem 'bootstrap-datepicker-rails'
+# export to xls
+gem 'rubyzip',         '1.0.0'
+gem 'axlsx',           '2.0.1'
+gem 'axlsx_rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
