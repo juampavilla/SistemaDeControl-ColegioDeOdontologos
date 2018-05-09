@@ -110,6 +110,7 @@ edit	app/controllers/profesionales_controller.rb	/^  def edit$/;"	f	class:Profes
 edit	app/controllers/users_controller.rb	/^  def edit$/;"	f	class:UsersController
 forget	app/helpers/sessions_helper.rb	/^  def forget(user)$/;"	f	class:SessionsHelper
 forget	app/models/user.rb	/^  def forget$/;"	f	class:User
+general	app/controllers/pagos_controller.rb	/^  def general$/;"	f	class:PagosController
 home	app/controllers/pages_controller.rb	/^  def home$/;"	f	class:PagesController
 index	app/controllers/domicilios_controller.rb	/^  def index$/;"	f	class:DomiciliosController
 index	app/controllers/matriculas_controller.rb	/^  def index$/;"	f	class:MatriculasController

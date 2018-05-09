@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   #report kit
   mount ReportsKit::Engine, at: '/'
-  
+
   get 'pago/new'
 
   get 'sessions/new'
@@ -20,6 +20,10 @@ Rails.application.routes.draw do
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
+
+  get    '/general',   to: 'pagos#general'
+  #post   '/general',   to: 'pagos#general'
+
 
   get  'search/index', to: 'search#index'
 
