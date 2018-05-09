@@ -1,0 +1,6 @@
+measure: pago
+
+
+dimensions:
+  - profesional
+format: table

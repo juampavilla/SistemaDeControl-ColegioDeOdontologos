@@ -2,6 +2,11 @@
   <p class='bg-info text-white'><%= @profesional.apellido.downcase %>&ensp;<%= @profesional.nombres.downcase %></p>
 </div>
 </br>
+
+<%= render_report 'pago_table' %>
+
+
+<br>
 <h3>Pagos realizados</h3>
 <table class='table table-condensed'>
 

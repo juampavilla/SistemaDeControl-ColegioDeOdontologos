@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  #report kit
+  mount ReportsKit::Engine, at: '/'
+  
   get 'pago/new'
 
   get 'sessions/new'
@@ -30,5 +33,7 @@ Rails.application.routes.draw do
   end
   resources :users
 #  resources :pagos
+
+
 
 end

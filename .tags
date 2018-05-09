@@ -160,6 +160,7 @@ store_location	app/helpers/sessions_helper.rb	/^ def store_location$/;"	f	class:
 system!	bin/setup	/^def system!(*args)$/;"	f
 system!	bin/update	/^def system!(*args)$/;"	f
 to_csv	app/models/profesional.rb	/^  def self.to_csv profesionales$/;"	F	class:Profesional
+to_s	app/models/profesional.rb	/^  def to_s$/;"	f
 up	db/migrate/20180413222813_change_nro_recibo_to_be_string_in_pagos.rb	/^  def up$/;"	f	class:ChangeNroReciboToBeStringInPagos
 up	db/migrate/20180414002211_change_monto_abonado_to_be_string_in_pagos.rb	/^  def up$/;"	f	class:ChangeMontoAbonadoToBeStringInPagos
 update	app/controllers/domicilios_controller.rb	/^  def update$/;"	f	class:DomiciliosController
