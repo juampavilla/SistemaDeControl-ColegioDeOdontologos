@@ -44,4 +44,4 @@ bower.json
 .byebug_history
 
 # ignore .tags, ??
-#.tags
+.tags
