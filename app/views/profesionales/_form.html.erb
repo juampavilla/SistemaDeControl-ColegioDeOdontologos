@@ -2,6 +2,10 @@
 <div class="row">
   <div class="col-sm-4">
     <h2>Datos Personales</h2>
+    <p class="bg-info" >
+      <% nombres_apellido = "#{@profesional.nombres} #{@profesional.apellido}" %>
+      <%=  nombres_apellido.titleize %>
+    </p>
     <div class="field">
       <%= f.label :apellido %>
       <%= f.text_field :apellido, class:'form-control' %>
@@ -27,13 +31,16 @@
   <div class="col-sm-4">
     <h2>Matricula Registrada</h2>
     <%= f.fields_for :matricula do |ff| %>
-    <div class="field">
-      <%= ff.label :estado %><br/>
-      <%= ff.text_field :estado, class:'form-control' %>
-    </div>
+    <p class="bg-warning" >
+      <%=  "Matrícula Nro: #{@profesional.matricula.matricula}" %>
+    </p>
     <div class="field">
       <%= ff.label :matricula %><br/>
       <%= ff.text_field :matricula, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :estado %><br/>
+      <%= ff.text_field :estado, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :fecha_inscripcion %><br/>
@@ -77,6 +84,9 @@
 <div class="col-sm-4">
   <h2>Domicilios Registrados</h2>
   <%= f.fields_for :domicilios do |ff| %>
+  <p class="bg-success"> Registro de domicilio Nro:
+    <%= (ff.index + 1) %>
+  </p>
   <div class="field">
     <%= ff.label :cp %><br/>
     <%= ff.text_field :cp, class:'form-control' %>
