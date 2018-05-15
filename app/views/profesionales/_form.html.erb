@@ -2,77 +2,119 @@
 <div class="row">
   <div class="col-sm-4">
     <h2>Datos Personales</h2>
-    <p class="bg-info" >
-      <% nombres_apellido = "#{@profesional.nombres} #{@profesional.apellido}" %>
-      <%=  nombres_apellido.titleize %>
-    </p>
-    <div class="field">
-      <%= f.label :apellido %>
-      <%= f.text_field :apellido, class:'form-control' %>
+      <p class="bg-info">
+      <% if (@profesional.new_record?) %>
+        <%= "Nuevo profesional" %>
+      <% else %>
+        <% nombres_apellido = "#{@profesional.nombres} #{@profesional.apellido}" %>
+        <%= nombres_apellido.titleize %>
+      <% end %>
+      </p>
+      <div class="field">
+        <%= f.label :apellido %>
+        <%= f.text_field :apellido, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= f.label :nombres %>
+        <%= f.text_field :nombres, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= f.label :fecha_nacimiento %>
+        <%= f.date_field :fecha_nacimiento, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= f.label :tipo_doc %>
+        <%= f.text_field :tipo_doc, class:'form-control'%>
+      </div>
+      <div class="field">
+        <%= f.label :nro_doc %><br/>
+        <%= f.number_field :nro_doc, class:'form-control' %>
+      </div>
+      <hr>
     </div>
-    <div class="field">
-      <%= f.label :nombres %>
-      <%= f.text_field :nombres, class:'form-control'  %>
-    </div>
-    <div class="field">
-      <%= f.label :fecha_nacimiento %>
-      <%= f.date_field :fecha_nacimiento, class:'form-control' %>
-    </div>
-    <div class="field">
-      <%= f.label :tipo_doc %>
-      <%= f.text_field :tipo_doc, class:'form-control'%>
-    </div>
-    <div class="field">
-      <%= f.label :nro_doc %><br/>
-      <%= f.number_field :nro_doc, class:'form-control' %>
-    </div>
-    <hr>
+    <div class="col-sm-4">
+      <h2>Matricula Registrada</h2>
+      <%= f.fields_for :matricula do |ff| %>
+      <p class="bg-warning">
+        <% if (@profesional.new_record?) %>
+          <%= "Nueva matricula" %>
+        <% else %>
+          <%= "Matrícula Nro: #{@profesional.matricula.matricula}" %>
+        <% end %>
+      </p>
+      <div class="field">
+        <%= ff.label :matricula %><br/>
+        <%= ff.text_field :matricula, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :estado %><br/>
+        <%= ff.text_field :estado, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :fecha_inscripcion %><br/>
+        <%= ff.date_field :fecha_inscripcion, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :libro %><br/>
+        <%= ff.text_field :libro, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :folio %><br/>
+        <%= ff.number_field :folio, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :fecha_habilitacion %><br/>
+        <%= ff.date_field :fecha_habilitacion, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :nota_fecha_habilitacion %><br/>
+        <%= ff.text_field :nota_fecha_habilitacion, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :vencimiento %><br/>
+        <%= ff.number_field :vencimiento, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :especialidad %><br/>
+        <%= ff.text_field :especialidad, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :fecha_vencimiento %><br/>
+        <%= ff.date_field :fecha_vencimiento, class:'form-control' %>
+      </div>
+      <div class="field">
+        <%= ff.label :notas %><br/>
+        <%= ff.text_area :notas, class:'form-control' %>
+      </div>
+      <hr>
+    <% end %>
   </div>
   <div class="col-sm-4">
-    <h2>Matricula Registrada</h2>
-    <%= f.fields_for :matricula do |ff| %>
-    <p class="bg-warning" >
-      <%=  "Matrícula Nro: #{@profesional.matricula.matricula}" %>
+    <h2>Domicilios Registrados</h2>
+    <%= f.fields_for :domicilios do |ff| %>
+    <p class="bg-success">
+      Registro de domicilio Nro:
+      <%= (ff.index + 1) %>
     </p>
     <div class="field">
-      <%= ff.label :matricula %><br/>
-      <%= ff.text_field :matricula, class:'form-control' %>
+      <%= ff.label :cp %><br/>
+      <%= ff.text_field :cp, class:'form-control' %>
     </div>
     <div class="field">
-      <%= ff.label :estado %><br/>
-      <%= ff.text_field :estado, class:'form-control' %>
+      <%= ff.label :localidad %><br/>
+      <%= ff.text_field :localidad, class:'form-control' %>
     </div>
     <div class="field">
-      <%= ff.label :fecha_inscripcion %><br/>
-      <%= ff.date_field :fecha_inscripcion, class:'form-control' %>
+      <%= ff.label :domicilio %><br/>
+      <%= ff.text_field :domicilio, class:'form-control' %>
     </div>
     <div class="field">
-      <%= ff.label :libro %><br/>
-      <%= ff.text_field :libro, class:'form-control' %>
+      <%= ff.label :telefono %><br/>
+      <%= ff.text_field :telefono, class:'form-control' %>
     </div>
     <div class="field">
-      <%= ff.label :folio %><br/>
-      <%= ff.number_field :folio, class:'form-control' %>
-    </div>
-    <div class="field">
-      <%= ff.label :fecha_habilitacion %><br/>
-      <%= ff.date_field :fecha_habilitacion, class:'form-control' %>
-    </div>
-    <div class="field">
-      <%= ff.label :nota_fecha_habilitacion %><br/>
-      <%= ff.text_field :nota_fecha_habilitacion, class:'form-control' %>
-    </div>
-    <div class="field">
-      <%= ff.label :vencimiento %><br/>
-      <%= ff.number_field :vencimiento, class:'form-control' %>
-    </div>
-    <div class="field">
-      <%= ff.label :especialidad %><br/>
-      <%= ff.text_field :especialidad, class:'form-control' %>
-    </div>
-    <div class="field">
-      <%= ff.label :fecha_vencimiento %><br/>
-      <%= ff.date_field :fecha_vencimiento, class:'form-control' %>
+      <%= ff.label :tipo %><br/>
+      <%= ff.text_field :tipo, class:'form-control' %>
     </div>
     <div class="field">
       <%= ff.label :notas %><br/>
@@ -81,42 +123,10 @@
     <hr>
   <% end %>
 </div>
-<div class="col-sm-4">
-  <h2>Domicilios Registrados</h2>
-  <%= f.fields_for :domicilios do |ff| %>
-  <p class="bg-success"> Registro de domicilio Nro:
-    <%= (ff.index + 1) %>
-  </p>
-  <div class="field">
-    <%= ff.label :cp %><br/>
-    <%= ff.text_field :cp, class:'form-control' %>
-  </div>
-  <div class="field">
-    <%= ff.label :localidad %><br/>
-    <%= ff.text_field :localidad, class:'form-control' %>
-  </div>
-  <div class="field">
-    <%= ff.label :domicilio %><br/>
-    <%= ff.text_field :domicilio, class:'form-control' %>
-  </div>
-  <div class="field">
-    <%= ff.label :telefono %><br/>
-    <%= ff.text_field :telefono, class:'form-control' %>
-  </div>
-  <div class="field">
-    <%= ff.label :tipo %><br/>
-    <%= ff.text_field :tipo, class:'form-control' %>
-  </div>
-  <div class="field">
-    <%= ff.label :notas %><br/>
-    <%= ff.text_area :notas, class:'form-control' %>
-  </div>
-  <hr>
-<% end %>
-</div>
 </div>
 
 <div class="actions">
-<%= f.submit "Guardar" %>
+<%= f.submit "Guardar", class:'btn btn-primary' %>
 </div>
+</br>
 <% end %>
