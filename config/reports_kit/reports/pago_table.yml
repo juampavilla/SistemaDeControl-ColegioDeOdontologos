@@ -1,15 +1,7 @@
 measure:
   key: pago
-  name: Monto($)
-  aggregation: monto
-
+  aggregation: sum_pago
 dimensions:
-  - profesional
-  
-
+  - key: profesional
+  - key: cuota_anio
 format: table
-report_options:
-  aggregations:
-  - from: columns
-    operator: sum
-    label: Total
