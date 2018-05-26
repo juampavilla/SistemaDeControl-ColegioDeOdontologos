@@ -1,109 +1,122 @@
 <div class="row">
   <div class="col-sm-4">
     <h2>Datos Personales</h2>
-    <p>
-      <b>Apellido:</b>
-      <%= @profesional.apellido %>
-    </p>
-    <p>
-      <b>Nombres:</b>
-      <%= @profesional.nombres %>
-    </p>
-    <p>
-      <b>Fecha nacimiento:</b>
-      <%= @profesional.fecha_nacimiento %>
-    </p>
-    <p>
-      <b>Tipo doc:</b>
-      <%= @profesional.tipo_doc %>
-    </p>
-    <p>
-      <b>Nro doc:</b>
-      <%= @profesional.nro_doc %>
-    </p>
-    <hr>
-  </div>
-  <div class="col-sm-4">
-    <h2>Matricula Registrada</h2>
-    <p>
-      <b>Estado:</b>
-      <%= @profesional.matricula.estado %>
-    </p>
-    <p>
-      <b>Matrícula:</b>
-      <%= @profesional.matricula.matricula %>
-    </p>
-    <p>
-      <b>Fecha Inscripción:</b>
-      <%= @profesional.matricula.fecha_inscripcion %>
-    </p>
-    <p>
-      <b>Libro:</b>
-      <%= @profesional.matricula.libro %>
-    </p>
-    <p>
-      <b>Folio:</b>
-      <%= @profesional.matricula.folio %>
-    </p>
-    <p>
-      <b>Fecha Habilitación:</b>
-      <%= @profesional.matricula.fecha_habilitacion %>
-    </p>
-    <p>
-      <b>Nota Fecha Hablitación:</b>
-      <%= @profesional.matricula.nota_fecha_habilitacion %>
-    </p>
-    <p>
-      <b>Vencimiento:</b>
-      <%= @profesional.matricula.vencimiento %>
-    </p>
-    <p>
-      <b>Especialidad:</b>
-      <%= @profesional.matricula.especialidad %>
-    </p>
-    <p>
-      <b>Fecha Vencimiento:</b>
-      <%= @profesional.matricula.fecha_vencimiento %>
-    </p>
-    <p>
-      <b>Notas:</b>
-      <%= @profesional.matricula.notas %>
-    </p>
-    <hr>
-  </div>
-  <div class="col-sm-4">
-    <h2>Domicilios Registrados</h2>
-    <% @profesional.domicilios.each do |dom| %>
-      <p>
-        <b>CP:</b>
-        <%= dom.cp %>
+    <p class="bg-info">
+      <% nombres_apellido = "#{@profesional.nombres} #{@profesional.apellido}" %>
+        <%= nombres_apellido.titleize %>
       </p>
       <p>
-        <b>Localidad:</b>
-        <%= dom.localidad %>
+        <b>Apellido:</b>
+        <%= @profesional.apellido %>
       </p>
       <p>
-        <b>Domicilio:</b>
-        <%= dom.domicilio %>
+        <b>Nombres:</b>
+        <%= @profesional.nombres %>
       </p>
       <p>
-        <b>Teléfono:</b>
-        <%= dom.telefono %>
+        <b>Fecha nacimiento:</b>
+        <%= @profesional.fecha_nacimiento %>
       </p>
       <p>
-        <b>Tipo:</b>
-        <%= dom.tipo %>
+        <b>Tipo doc:</b>
+        <%= @profesional.tipo_doc %>
+      </p>
+      <p>
+        <b>Nro doc:</b>
+        <%= @profesional.nro_doc %>
+      </p>
+      <hr>
+    </div>
+    <div class="col-sm-4">
+      <h2>Matricula Registrada</h2>
+      <p class="bg-warning">
+          <%= "Matrícula Nro: #{@profesional.matricula.matricula}" %>
+      </p>
+      <p>
+        <b>Matrícula:</b>
+        <%= @profesional.matricula.matricula %>
+      </p>
+      <p>
+        <b>Estado:</b>
+        <%= @profesional.matricula.estado %>
+      </p>
+
+      <p>
+        <b>Fecha Inscripción:</b>
+        <%= @profesional.matricula.fecha_inscripcion %>
+      </p>
+      <p>
+        <b>Libro:</b>
+        <%= @profesional.matricula.libro %>
+      </p>
+      <p>
+        <b>Folio:</b>
+        <%= @profesional.matricula.folio %>
+      </p>
+      <p>
+        <b>Fecha Habilitación:</b>
+        <%= @profesional.matricula.fecha_habilitacion %>
+      </p>
+      <p>
+        <b>Nota Fecha Hablitación:</b>
+        <%= @profesional.matricula.nota_fecha_habilitacion %>
+      </p>
+      <p>
+        <b>Vencimiento:</b>
+        <%= @profesional.matricula.vencimiento %>
+      </p>
+      <p>
+        <b>Especialidad:</b>
+        <%= @profesional.matricula.especialidad %>
+      </p>
+      <p>
+        <b>Fecha Vencimiento:</b>
+        <%= @profesional.matricula.fecha_vencimiento %>
       </p>
       <p>
         <b>Notas:</b>
-        <%= dom.notas %>
+        <%= @profesional.matricula.notas %>
       </p>
-    <hr>
-    <% end %>
+      <hr>
+    </div>
+    <div class="col-sm-4">
+      <h2>Domicilios Registrados</h2>
+      <% @profesional.domicilios.each_with_index do |dom, index| %>
+      <p class="bg-success">
+        Registro de domicilio Nro:
+        <%= (index + 1) %>
+      </p>
+        <p>
+          <b>CP:</b>
+          <%= dom.cp %>
+        </p>
+        <p>
+          <b>Localidad:</b>
+          <%= dom.localidad %>
+        </p>
+        <p>
+          <b>Domicilio:</b>
+          <%= dom.domicilio %>
+        </p>
+        <p>
+          <b>Teléfono:</b>
+          <%= dom.telefono %>
+        </p>
+        <p>
+          <b>Tipo:</b>
+          <%= dom.tipo %>
+        </p>
+        <p>
+          <b>Notas:</b>
+          <%= dom.notas %>
+        </p>
+        <hr>
+      <% end %>
+
+    </div>
 
   </div>
 
-</div>
-
-<%= link_to 'Modificar', edit_profesional_path(@profesional) %> |
-<%= link_to 'Volver', profesionales_path %>
+  <%= link_to 'Modificar', edit_profesional_path(@profesional) %>
+  |
+  <%= link_to 'Volver', profesionales_path %>

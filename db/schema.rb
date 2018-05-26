@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180507032251) do
+ActiveRecord::Schema.define(version: 20180526220050) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(version: 20180507032251) do
   end
 
   create_table "pagos", force: :cascade do |t|
-    t.string "monto_abonado"
+    t.float "monto_abonado"
     t.date "fecha_pago"
     t.string "nro_recibo"
     t.integer "profesional_id"
@@ -64,7 +64,6 @@ ActiveRecord::Schema.define(version: 20180507032251) do
     t.integer "nro_doc"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|

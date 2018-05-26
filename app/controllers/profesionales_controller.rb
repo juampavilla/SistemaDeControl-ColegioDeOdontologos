@@ -41,6 +41,8 @@ class ProfesionalesController < ApplicationController
     @profesional = Profesional.new
     @profesional.matricula = Matricula.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
+    @profesional.domicilios << Domicilio.new(profesional: @profesional)
+    @profesional.domicilios << Domicilio.new(profesional: @profesional)
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @profesional }
