@@ -8,12 +8,14 @@
 User.create!(email: "copba8@speedy.com.ar",
              password:              "admin123",
              password_confirmation: "admin123",
-             admin: true)
+             admin: true,
+             profesional_id: nil)
 
 User.create!(email: "prueba@prueba.org",
                           password:              "prueba123",
                           password_confirmation: "prueba123",
-                          admin: false)
+                          admin: false,
+                          profesional_id: nil)
 
 # 99.times do |n|
 #
