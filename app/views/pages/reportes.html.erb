@@ -1,6 +1,5 @@
-<% provide(:title, "Reportes") %>
-<h1>Reportes</h1>
-<p><strong>Pagos</strong></p>
-<p>here</p>
-<%= print params.inspect %>
-<%= render_report 'pago_table' %>
+    <% provide(:title, "Reportes") %>
+    <h1>Reportes</h1>
+    
+
+    <%= link_to "Pagos Reporte", pagosreporte_path, :target => "_blank", :class => "btn btn-primary" %>

@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   def home
   end
 
@@ -12,5 +13,12 @@ class PagesController < ApplicationController
 
   def reportes
     @title = "Reportes"
+    
   end
+
+  def pagos_reporte
+    @title = "Reporte pagos"
+    render layout: false
+  end
+
 end

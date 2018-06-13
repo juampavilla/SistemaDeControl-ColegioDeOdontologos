@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  #report kit
-  mount ReportsKit::Engine, at: '/'
+
 
 
   get 'pago/new'
@@ -13,7 +12,8 @@ Rails.application.routes.draw do
   get  '/about',    to: 'pages#about'
   get  '/contact',  to: 'pages#contact'
   get  '/reportes', to: 'pages#reportes'
-  post  '/reportes', to: 'pages#reportes'
+  get  '/pagosreporte', to: 'pages#pagos_reporte'
+
   get  '/signup',   to: 'users#new'
   post '/signup',   to: 'users#create'
   get  '/edit',     to: 'users#edit'
@@ -41,6 +41,9 @@ Rails.application.routes.draw do
     resources :pagos
   end
   resources :users
+
+  #report kit
+  mount ReportsKit::Engine, at: '/'
 
 
 end
