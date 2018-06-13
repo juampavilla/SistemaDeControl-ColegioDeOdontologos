@@ -70,6 +70,10 @@ class PagosController < ApplicationController
     redirect_to profesional_pagos_url(@pago.profesional)
   end
 
+  def general
+    @pagos = Pago.all
+  end
+
   private
 
   # Use callbacks to share common setup or constraints between actions.

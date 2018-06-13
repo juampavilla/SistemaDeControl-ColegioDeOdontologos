@@ -37,4 +37,8 @@ class Profesional < ApplicationRecord
       end
     end
   end
+
+  def to_s
+    apellido + ' ' + nombres[0] + '.  '
+  end
 end

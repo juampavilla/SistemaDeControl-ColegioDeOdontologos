@@ -1,0 +1,7 @@
+measure:
+  key: pago
+  aggregation: sum_pago
+dimensions:
+- key: profesional
+- key: cuota_anio
+format: table

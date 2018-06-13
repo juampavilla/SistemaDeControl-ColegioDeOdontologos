@@ -38,6 +38,8 @@ gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 # datepicker
 gem 'bootstrap-datepicker-rails'
+# report kit
+gem 'reports_kit'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
