@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   get  '/about',    to: 'pages#about'
   get  '/contact',  to: 'pages#contact'
   get  '/reportes', to: 'pages#reportes'
-  get  '/pagosreporte', to: 'pages#pagos_reporte'
+  get  '/pagos_reporte', to: 'pages#pagos_reporte'
+  get  '/profesionales_reporte', to: 'pages#profesionales_reporte'
 
   get  '/signup',   to: 'users#new'
   post '/signup',   to: 'users#create'
