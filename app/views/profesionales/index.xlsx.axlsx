@@ -1,0 +1,13 @@
+# app/views/profesionales/index.xlsx.axlsx
+
+wb = xlsx_package.workbook
+
+wb.add_worksheet(name: "Profesionles") do |sheet|
+  # this is the head row of your spreadsheet
+  sheet.add_row %w(id nombres apellido)
+
+  # each user is a row on your spreadsheet
+  @profesionales.each do |user|
+    sheet.add_row [user.id, user.nombres, user.apellido]
+  end
+end

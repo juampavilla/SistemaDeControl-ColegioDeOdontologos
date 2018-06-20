@@ -7,9 +7,11 @@ class ProfesionalesController < ApplicationController
     @profesionales = (Profesional.all.order :id ).paginate(page: params[:page])
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @profesionales }
-      format.csv { send_data @profesionales.to_csv }
+      # format.html # index.html.erb
+      # format.json { render json: @profesionales }
+      # format.csv { send_data @profesionales.to_csv }
+      format.html
+      format.xlsx
     end
   end
 

@@ -40,6 +40,11 @@ gem 'bootstrap-will_paginate', '1.0.0'
 gem 'bootstrap-datepicker-rails'
 # report kit
 gem 'reports_kit'
+# excel
+gem 'rubyzip', '= 1.0.0'
+gem 'axlsx', '= 2.0.1'
+gem 'axlsx_rails'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
