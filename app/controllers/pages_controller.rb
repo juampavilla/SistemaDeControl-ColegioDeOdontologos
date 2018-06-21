@@ -16,14 +16,14 @@ class PagesController < ApplicationController
 
   end
 
-  def pagos_reporte
-    @title = "Reporte pagos"
-    render layout: false
-  end
+  # def pagos_reporte
+  #   @title = "Reporte pagos"
+  #   render layout: false
+  # end
 
-  def profesionales_reporte
-    @title = "Reporte profesionales"
-    render layout: false
-  end
+  # def profesionales_reporte
+  #   @title = "Reporte profesionales"
+  #   render layout: false
+  # end
 
 end

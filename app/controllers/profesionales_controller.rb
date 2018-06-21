@@ -6,10 +6,19 @@ class ProfesionalesController < ApplicationController
     # @profesionales = Profesional.all.order :id
     @profesionales = (Profesional.all.order :id ).paginate(page: params[:page])
 
+
     respond_to do |format|
       # format.html # index.html.erb
-      # format.json { render json: @profesionales }
-      # format.csv { send_data @profesionales.to_csv }
+      format.json { render json: @profesionales }
+      format.csv { send_data @profesionales.to_csv }
+      format.html
+    end
+  end
+
+  def reporte
+    @profesionales = (Profesional.all.order :id ).paginate(page: params[:page])
+    render layout: false
+    respond_to do |format|
       format.html
       format.xlsx
     end
@@ -54,6 +63,7 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales/1/edit
   def edit
     @profesional = Profesional.find(params[:id])
+    #@profesional.domicilios.sort_by(&:id)
   end
 
   # POST /profesionales

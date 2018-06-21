@@ -1,0 +1,18 @@
+# app/views/profesionales/reporte.xlsx.axlsx
+
+wb = xlsx_package.workbook
+
+wb.add_worksheet(name: "Profesionles") do |sheet|
+  # this is the head row of your spreadsheet
+  sheet.add_row %w(ApellidoYNombre domicilio documento matricula estado)
+
+  # each user is a row on your spreadsheet
+  @profesionales.each do |profesional|
+    sheet.add_row ["#{profesional.apellido} #{profesional.nombres}",
+                   "#{profesional.domicilios.first.localidad}",
+                   "#{profesional.tipo_doc} #{profesional.nro_doc}",
+                   "#{profesional.matricula.matricula}",
+                   "#{profesional.matricula.estado}"
+                   ]
+  end
+end
