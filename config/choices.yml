@@ -3,3 +3,8 @@
 concepto:
   - Capital
   - Mora
+
+estado:
+  - Activo
+  - Cancelado
+  - Trasladado
