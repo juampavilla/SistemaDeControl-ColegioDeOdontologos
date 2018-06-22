@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %>
+      | Sistema de control- Colegio Odontologos</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
+
+  </head>
+  <body>
+    <div class="container">
+      <% flash.each do |message_type, message| %>
+        <!--<div class="alert alert-<%#= message_type %>"><%#= message %></div-->
+        <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+      <% end %>
+      <%= yield %>
+      <h1>Reporte de Profesionales</h1>
+      <table class="table table-condensed">
+        <tr>
+          <th>Apellido y Nombres</th>
+          <th>Localidad</th>
+          <th>Documento</th>
+          <th>Matrícula</th>
+          <th>Estado</th>
+        </tr>
+
+        <%= will_paginate @profesionales, :previous_label => t("Anterior"), :next_label => t("Siguiente") %>
+
+        <% @profesionales.each do |profesional| %>
+        <tr>
+          <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
+          <td><%= "#{profesional.domicilios.first.localidad}" %></td>
+          <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
+          <td><%= "#{profesional.matricula.matricula}"%></td>
+          <td><%= "#{profesional.matricula.estado}"%></td>
+
+        </tr>
+
+        <% end %>
+      </table>
+      <%= link_to "Exportar a Excel", profesionales_reporte_path(format: "xlsx"), class:'btn btn-success' %>
+
+    </div>
+
+  </body>
+</html>

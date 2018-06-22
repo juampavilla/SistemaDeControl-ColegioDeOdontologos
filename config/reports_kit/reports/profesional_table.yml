@@ -1,0 +1,5 @@
+measure:
+  key: profesional
+dimensions:
+- key: apellido
+format: table
