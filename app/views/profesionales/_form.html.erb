@@ -48,7 +48,8 @@
       </div>
       <div class="field">
         <%= ff.label :estado %><br/>
-        <%= ff.text_field :estado, class:'form-control' %>
+        <%= ff.select :estado, Choices['estado'], {include_blank: "Selecciona un estado"}, { :class => 'form-control' } %>
+        <!-- <%= ff.text_field :estado, class:'form-control' %> -->
       </div>
       <div class="field">
         <%= ff.label :fecha_inscripcion %><br/>
