@@ -8,6 +8,11 @@ class PagosController < ApplicationController
     @profesional = Profesional.find params[:profesional_id]
   end
 
+  def reporte
+    @title = "Reporte pagos"
+    render layout: false
+  end
+
   # GET /pagos/1
   # GET /pagos/1.json
   def show

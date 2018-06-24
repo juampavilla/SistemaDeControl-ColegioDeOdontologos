@@ -77,7 +77,11 @@
       </div>
       <div class="field">
         <%= ff.label :especialidad %><br/>
-        <%= ff.text_field :especialidad, class:'form-control' %>
+        <%= ff.select :especialidad, Choices['especialidad'], {include_blank: "Selecciona una especialidad"}, { :class => 'form-control' } %>
+      </div>
+      <div class="field">
+        <%= ff.label :especialidad_otorgada_por %><br/>
+        <%= ff.select :especialidad_otorgada_por, Choices['universidad'], {include_blank: "Selecciona universidad"}, { :class => 'form-control' } %>
       </div>
       <div class="field">
         <%= ff.label :fecha_vencimiento %><br/>
