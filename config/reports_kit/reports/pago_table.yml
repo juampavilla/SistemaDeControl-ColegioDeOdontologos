@@ -1,6 +1,7 @@
 measure:
   key: pago
   aggregation: sum_pago
+  order: dimension1.label asc
 dimensions:
 - key: profesional
 - key: cuota_anio
