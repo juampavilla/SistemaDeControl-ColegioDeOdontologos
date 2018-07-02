@@ -26,7 +26,7 @@
           <th>Estado</th>
         </tr>
 
-    
+
 
         <% @profesionales.each do |profesional| %>
         <tr>
@@ -40,7 +40,11 @@
 
         <% end %>
       </table>
+      <br>
+      
       <%= link_to "Exportar a Excel", profesionales_reporte_path(format: "xlsx"), class:'btn btn-success' %>
+      <br>
+      <br>
 
     </div>
 
