@@ -16,7 +16,7 @@ class ProfesionalesController < ApplicationController
   end
 
   def reporte
-    @profesionales = (Profesional.all.order :id ).paginate(page: params[:page])
+    @profesionales = (Profesional.all.order :id )
     render layout: false
     respond_to do |format|
       format.html
