@@ -9,8 +9,22 @@ class PagosController < ApplicationController
   end
 
   def reporte
-    @title = "Reporte pagos"
+    @title = 'Reporte pagos'
+    # @pagos = Pago.all
+    #
+    # @p = Pago.find_by_sql("SELECT profesionales.* FROM pagos  inner join profesionales
+    #                                       ON pagos.profesional_id=profesionales.id")
+    # puts "variable: #{@p}"
+    #
+    # @pago1 = Pago.includes(:profesional).order(:nombres)
+    #
+    # @pago1.each do |pago|
+    #   puts pago.profesional.nombres
+    # end
+
     render layout: false
+    # byebug
+    # @pagos = Pago.joins(:profesional).merge(Profesional.order(apellido: :desc))
   end
 
   # GET /pagos/1
@@ -25,8 +39,8 @@ class PagosController < ApplicationController
   def new
     @profesional = Profesional.find params[:profesional_id]
     @pago = Pago.new(profesional_id: @profesional.id)
-    @pago.fecha_pago = Date.today.strftime("%Y-%m-%d")
-    @pago.cuota_anio = Date::today.year
+    @pago.fecha_pago = Date.today.strftime('%Y-%m-%d')
+    @pago.cuota_anio = Date.today.year
     @pago.concepto = Choices['concepto'][0]
   end
 
@@ -40,20 +54,20 @@ class PagosController < ApplicationController
   def create
     @pago = Pago.new(pago_params)
 
-      if @pago.save
-        flash[:success] = 'Pago creado exitosamente'
-        redirect_to profesional_pagos_url(@pago.profesional)
-      else
-        flash[:danger] = 'No se pudo crear el Pago, revise los campos completado'
-        @profesional = Profesional.find @pago.profesional_id
-        render :new
-      end
+    if @pago.save
+      flash[:success] = 'Pago creado exitosamente'
+      redirect_to profesional_pagos_url(@pago.profesional)
+    else
+      flash[:danger] = 'No se pudo crear el Pago, revise los campos completado'
+      @profesional = Profesional.find @pago.profesional_id
+      render :new
+    end
   end
 
   # PATCH/PUT /pagos/1
   # PATCH/PUT /pagos/1.json
   def update
-    profesional_id = @pago.profesional;
+    profesional_id = @pago.profesional
     if @pago.update(pago_params)
       flash[:success] = 'El pago se actualizó exitosamente'
       redirect_to profesional_pagos_url(profesional_id)
