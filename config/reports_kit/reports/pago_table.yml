@@ -6,6 +6,6 @@ dimensions:
 - key: profesional
   label: profesional
   limit: 5000
-- key: created_at
+- key: cuota_anio
 order: dimension1.label
 format: table
