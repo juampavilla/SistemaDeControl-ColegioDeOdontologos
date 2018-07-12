@@ -1,8 +1,11 @@
 measure:
   key: pago
   aggregation: sum_pago
-  order: dimension1.label asc
+
 dimensions:
 - key: profesional
-- key: cuota_anio
+  label: profesional
+  limit: 5000
+- key: created_at
+order: dimension1.label
 format: table

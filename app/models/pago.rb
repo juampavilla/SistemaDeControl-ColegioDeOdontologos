@@ -12,7 +12,7 @@ class Pago < ApplicationRecord
   end
 
 
-  STATUSES = %w(draft private published).freeze
+  # STATUSES = %w(draft private published).freeze
 
   # def to_s
   #  cuota_anio
