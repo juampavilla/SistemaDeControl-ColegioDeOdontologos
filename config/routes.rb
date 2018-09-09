@@ -37,11 +37,12 @@ Rails.application.routes.draw do
 
   resources :domicilios
   resources :matriculas
+  resources :users
   resources :profesionales do
     get 'show_domicilios'
     resources :pagos
   end
-  resources :users
+
 
   #report kit
   mount ReportsKit::Engine, at: '/'

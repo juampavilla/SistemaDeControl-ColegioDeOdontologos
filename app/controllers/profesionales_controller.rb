@@ -54,6 +54,9 @@ class ProfesionalesController < ApplicationController
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
+    byebug
+    @profesional.user = User.new(profesional: @profesional)
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @profesional }
@@ -69,7 +72,11 @@ class ProfesionalesController < ApplicationController
   # POST /profesionales
   # POST /profesionales.json
   def create
+
     @profesional = Profesional.new(profesional_params)
+    byebug
+    @profesional.user.email = getEmail(@profesional)
+    byebug
 
     respond_to do |format|
       if @profesional.save
@@ -110,10 +117,11 @@ class ProfesionalesController < ApplicationController
     end
   end
 
+
   private
 
   def profesional_params
-    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params)
+    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params, users_attributes: user_params)
   end
 
   def matricula_params
@@ -124,6 +132,9 @@ class ProfesionalesController < ApplicationController
     [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
   end
 
+  def user_params
+    [:id, :email, :password, :password_confirmation, :profesional_id]
+  end
 
 
   # Confirms a logged-in user.

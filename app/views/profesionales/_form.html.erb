@@ -2,96 +2,96 @@
 <div class="row">
   <div class="col-sm-4">
     <h2>Datos Personales</h2>
-      <p class="bg-info">
+    <p class="bg-info">
       <% if (@profesional.new_record?) %>
-        <%= "Nuevo profesional" %>
+      <%= "Nuevo profesional" %>
       <% else %>
-        <% nombres_apellido = "#{@profesional.nombres} #{@profesional.apellido}" %>
-        <%= nombres_apellido.titleize %>
+      <% nombres_apellido = "#{@profesional.nombres} #{@profesional.apellido}" %>
+      <%= nombres_apellido.titleize %>
       <% end %>
-      </p>
-      <div class="field">
-        <%= f.label :apellido %>
-        <%= f.text_field :apellido, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= f.label :nombres %>
-        <%= f.text_field :nombres, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= f.label :fecha_nacimiento %>
-        <%= f.date_field :fecha_nacimiento, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= f.label :tipo_doc %>
-        <%= f.text_field :tipo_doc, class:'form-control'%>
-      </div>
-      <div class="field">
-        <%= f.label :nro_doc %><br/>
-        <%= f.number_field :nro_doc, class:'form-control' %>
-      </div>
-      <hr>
+    </p>
+    <div class="field">
+      <%= f.label :apellido %>
+      <%= f.text_field :apellido, class:'form-control' %>
     </div>
-    <div class="col-sm-4">
-      <h2>Matricula Registrada</h2>
-      <%= f.fields_for :matricula do |ff| %>
-      <p class="bg-warning">
-        <% if (@profesional.new_record?) %>
-          <%= "Nueva matricula" %>
-        <% else %>
-          <%= "Matrícula Nro: #{@profesional.matricula.matricula}" %>
-        <% end %>
-      </p>
-      <div class="field">
-        <%= ff.label :matricula %><br/>
-        <%= ff.text_field :matricula, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :estado %><br/>
-        <%= ff.select :estado, Choices['estado'], {include_blank: "Selecciona un estado"}, { :class => 'form-control' } %>
-        <!-- <%= ff.text_field :estado, class:'form-control' %> -->
-      </div>
-      <div class="field">
-        <%= ff.label :fecha_inscripcion %><br/>
-        <%= ff.date_field :fecha_inscripcion, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :libro %><br/>
-        <%= ff.text_field :libro, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :folio %><br/>
-        <%= ff.number_field :folio, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :fecha_habilitacion %><br/>
-        <%= ff.date_field :fecha_habilitacion, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :nota_fecha_habilitacion %><br/>
-        <%= ff.text_field :nota_fecha_habilitacion, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :vencimiento %><br/>
-        <%= ff.number_field :vencimiento, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :especialidad %><br/>
-        <%= ff.select :especialidad, Choices['especialidad'], {include_blank: "Selecciona una especialidad"}, { :class => 'form-control' } %>
-      </div>
-      <div class="field">
-        <%= ff.label :especialidad_otorgada_por %><br/>
-        <%= ff.select :especialidad_otorgada_por, Choices['universidad'], {include_blank: "Selecciona universidad"}, { :class => 'form-control' } %>
-      </div>
-      <div class="field">
-        <%= ff.label :fecha_vencimiento %><br/>
-        <%= ff.date_field :fecha_vencimiento, class:'form-control' %>
-      </div>
-      <div class="field">
-        <%= ff.label :notas %><br/>
-        <%= ff.text_area :notas, class:'form-control' %>
-      </div>
-      <hr>
+    <div class="field">
+      <%= f.label :nombres %>
+      <%= f.text_field :nombres, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :fecha_nacimiento %>
+      <%= f.date_field :fecha_nacimiento, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= f.label :tipo_doc %>
+      <%= f.text_field :tipo_doc, class:'form-control'%>
+    </div>
+    <div class="field">
+      <%= f.label :nro_doc %><br/>
+      <%= f.number_field :nro_doc, class:'form-control' %>
+    </div>
+    <hr>
+  </div>
+  <div class="col-sm-4">
+    <h2>Matricula Registrada</h2>
+    <%= f.fields_for :matricula do |ff| %>
+    <p class="bg-warning">
+      <% if (@profesional.new_record?) %>
+      <%= "Nueva matricula" %>
+      <% else %>
+      <%= "Matrícula Nro: #{@profesional.matricula.matricula}" %>
+      <% end %>
+    </p>
+    <div class="field">
+      <%= ff.label :matricula %><br/>
+      <%= ff.text_field :matricula, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :estado %><br/>
+      <%= ff.select :estado, Choices['estado'], {include_blank: "Selecciona un estado"}, { :class => 'form-control' } %>
+      <!-- <%= ff.text_field :estado, class:'form-control' %> -->
+    </div>
+    <div class="field">
+      <%= ff.label :fecha_inscripcion %><br/>
+      <%= ff.date_field :fecha_inscripcion, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :libro %><br/>
+      <%= ff.text_field :libro, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :folio %><br/>
+      <%= ff.number_field :folio, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :fecha_habilitacion %><br/>
+      <%= ff.date_field :fecha_habilitacion, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :nota_fecha_habilitacion %><br/>
+      <%= ff.text_field :nota_fecha_habilitacion, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :vencimiento %><br/>
+      <%= ff.number_field :vencimiento, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :especialidad %><br/>
+      <%= ff.select :especialidad, Choices['especialidad'], {include_blank: "Selecciona una especialidad"}, { :class => 'form-control' } %>
+    </div>
+    <div class="field">
+      <%= ff.label :especialidad_otorgada_por %><br/>
+      <%= ff.select :especialidad_otorgada_por, Choices['universidad'], {include_blank: "Selecciona universidad"}, { :class => 'form-control' } %>
+    </div>
+    <div class="field">
+      <%= ff.label :fecha_vencimiento %><br/>
+      <%= ff.date_field :fecha_vencimiento, class:'form-control' %>
+    </div>
+    <div class="field">
+      <%= ff.label :notas %><br/>
+      <%= ff.text_area :notas, class:'form-control' %>
+    </div>
+    <hr>
     <% end %>
   </div>
   <div class="col-sm-4">
@@ -126,12 +126,25 @@
       <%= ff.text_area :notas, class:'form-control' %>
     </div>
     <hr>
-  <% end %>
+    <% end %>
+  </div>
 </div>
+
+<div class="col-sm-2">
+  <h2>Usuario</h2>
+  <%= f.fields_for :user do |ff| %>
+  <p class="bg-warning">
+    <div class="field">
+      <%= ff.label :email %><br/>
+      <%= ff.text_field :email, class:'form-control' %>
+    </div>
+  </p>
+  <% end %>
 </div>
 
 <div class="actions">
-<%= f.submit "Guardar", class:'btn btn-primary' %>
+  <%= f.submit "Guardar", class:'btn btn-primary' %>
 </div>
+
 </br>
 <% end %>

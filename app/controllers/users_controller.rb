@@ -13,6 +13,11 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    
+    respond_to do |format|
+      format.html # new.html.erb
+      format.json { render json: @user }
+    end
   end
 
   def create
@@ -46,7 +51,8 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:email,
                                  :password,
-                                 :password_confirmation)
+                                 :password_confirmation,
+                                 :profesional_id)
   end
 
   # Before filters
@@ -70,5 +76,9 @@ class UsersController < ApplicationController
     # Confirms an admin user.
     def admin_user
       redirect_to(root_url) unless current_user.admin?
+    end
+
+    def has_profesional
+      User.exists?(profesional_id: params[:profesional_id]) unless params[:profesional_id].nill
     end
 end
