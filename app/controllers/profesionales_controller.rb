@@ -16,7 +16,11 @@ class ProfesionalesController < ApplicationController
   end
 
   def reporte
-    @profesionales = (Profesional.all.order :id )
+    @profesionales = Profesional.all
+    #@profesionales = Profesional.includes(:domicilios).order('domicilios.localidad asc, profesionales.apellido asc')
+    ##@profesionales = Profesional.includes(:domicilios).sort_by { |p| p.domicilios.last.localidad }
+    ##@profesionales = Profesional.includes(:domicilios).order(:localidad)
+    #byebug
     render layout: false
     respond_to do |format|
       format.html

@@ -20,28 +20,43 @@
       <table class="table table-condensed">
         <tr>
           <th>Apellido y Nombres</th>
-          <th>Localidad</th>
+
           <th>Documento</th>
-          <th>Matrícula</th>
+          <th>Nro. Matrícula</th>
+
+          <th>Tomo/folio</th>
+          <th>F. insc.</th>
+          <th>F. hab.</th>
+          <th>F. venc.</th>
+          <th>Localidad</th>
+          <th>Domic. prof.</th>
           <th>Estado</th>
+
         </tr>
 
+        <% @profesionales.sort_by do |profesional| %>
 
-
-        <% @profesionales.each do |profesional| %>
         <tr>
           <td><%= "#{profesional.apellido}, #{profesional.nombres}" %></td>
-          <td><%= "#{profesional.domicilios.first.localidad}" %></td>
           <td><%= "#{profesional.tipo_doc} #{profesional.nro_doc}" %></td>
           <td><%= "#{profesional.matricula.matricula}"%></td>
-          <td><%= "#{profesional.matricula.estado}"%></td>
-
+          <td><%= "#{profesional.matricula.libro}-#{profesional.matricula.folio}"%></td>
+          <td><%= "#{profesional.matricula.fecha_inscripcion}"%></td>
+          <td><%= "#{profesional.matricula.fecha_habilitacion}"%></td>
+          <td><%= "#{profesional.matricula.fecha_vencimiento}"%></td>
+          <td><%= "#{profesional.domicilios.first.localidad}" %></td>
+          <td><%= "#{profesional.domicilios.first.domicilio}" %></td>
+          <% if profesional.matricula.estado=="0" %>
+                 <td> <%= "Cancelo" %> </td>
+          <% else %>
+                 <td> <%= "Vigente" %> </td>
+          <% end %>
         </tr>
 
         <% end %>
       </table>
       <br>
-      
+
       <%= link_to "Exportar a Excel", profesionales_reporte_path(format: "xlsx"), class:'btn btn-success' %>
       <br>
       <br>
