@@ -54,7 +54,7 @@ class ProfesionalesController < ApplicationController
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
-    byebug
+
     @profesional.user = User.new(profesional: @profesional)
 
     respond_to do |format|
@@ -66,6 +66,11 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales/1/edit
   def edit
     @profesional = Profesional.find(params[:id])
+    if (@profesional.user.nil?)
+      @profesional.user.new
+      @profesional.user.password = @profesional.matricula.matricula
+      @profesional.user.password_confirmation = @profesional.matricula.matricula
+    end
     #@profesional.domicilios.sort_by(&:id)
   end
 
@@ -74,9 +79,10 @@ class ProfesionalesController < ApplicationController
   def create
 
     @profesional = Profesional.new(profesional_params)
-    byebug
-    @profesional.user.email = getEmail(@profesional)
-    byebug
+    @profesional.user.password = @profesional.matricula.matricula
+    @profesional.user.password_confirmation = @profesional.matricula.matricula
+    # @profesional.user.email = getEmail(@profesional)
+
 
     respond_to do |format|
       if @profesional.save
@@ -121,7 +127,7 @@ class ProfesionalesController < ApplicationController
   private
 
   def profesional_params
-    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params, users_attributes: user_params)
+    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params, user_attributes: user_params)
   end
 
   def matricula_params

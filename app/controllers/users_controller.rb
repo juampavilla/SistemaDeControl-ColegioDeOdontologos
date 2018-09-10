@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
-    
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @user }
@@ -33,6 +33,7 @@ class UsersController < ApplicationController
   end
 
   def edit
+    byebug
     @user = User.find(params[:id])
   end
 
@@ -47,7 +48,6 @@ class UsersController < ApplicationController
   end
 
   private
-
   def user_params
     params.require(:user).permit(:email,
                                  :password,
@@ -78,7 +78,7 @@ class UsersController < ApplicationController
       redirect_to(root_url) unless current_user.admin?
     end
 
-    def has_profesional
-      User.exists?(profesional_id: params[:profesional_id]) unless params[:profesional_id].nill
-    end
+    # def has_profesional
+    #   User.exists?(profesional_id: params[:profesional_id]) unless params[:profesional_id].nil
+    # end
 end

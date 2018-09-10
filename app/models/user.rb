@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   attr_accessor :remember_token
+  attr_accessor :clear_pass
 
   belongs_to :profesional #, optional: true
 
@@ -10,6 +11,12 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
+
+  after_initialize :set_attr
+
+  def set_attr
+    @clear_pass = false
+  end
 
 
   # Returns the hash digest of the given string.
