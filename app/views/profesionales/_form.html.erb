@@ -33,20 +33,15 @@
 
       <hr>
 
-      <%= f.fields_for :user do |ff| %>
-
-      <div class="field">
-        <%= ff.label :email %><br/>
-        <%= ff.text_field :email, class:'form-control' %>
-      </div>
-      <% unless (@profesional.new_record?) %>
-      <div class="field">
-        <p><strong>Blanquear pass
-        <%= ff.check_box :clear_pass, class:'checkbox-inline' %>
-        </strong></p> <br/>
-      </div>
+      <% if @profesional.user.nil? %>
+        <%= link_to "Crear usuario", new_profesional_user_path(@profesional), :class => "btn btn-primary" %>
+      <% else %>
+        <p><strong>Email</strong></p>
+        <p><%= @profesional.user.email %></p>
+        <%= link_to "Modificar usuario", edit_user_path(@profesional.user), :class => "btn btn-success" %>
       <% end %>
-    <% end %>
+
+
 
   </div>
   <div class="col-sm-4">

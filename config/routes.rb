@@ -28,9 +28,6 @@ Rails.application.routes.draw do
   get    '/general',   to: 'pagos#general'
 
 
-
-
-
   get  'search/index', to: 'search#index'
 
 
@@ -41,6 +38,7 @@ Rails.application.routes.draw do
   resources :profesionales do
     get 'show_domicilios'
     resources :pagos
+    resources :users
   end
 
 

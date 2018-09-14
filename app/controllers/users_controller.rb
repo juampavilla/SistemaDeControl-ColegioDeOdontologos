@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :logged_in_user, only: [:index, :edit, :update]
-  before_action :correct_user,   only: [:edit, :update]
-  before_action :admin_user,     only: :index
+  before_action :correct_user,   only: [:edit, :update, :show]
+  before_action :admin_user,     only: [:index, :new, :edit]
 
   def index
     @users = User.paginate(page: params[:page])
@@ -12,28 +12,40 @@ class UsersController < ApplicationController
   end
 
   def new
-    @user = User.new
+    @profesionalParam = params[:profesional_id];
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @user }
+    if !@profesionalParam.nil?
+      @profesional = Profesional.find @profesionalParam
+      @user = User.new(profesional_id: @profesional.id)
+    else
+      @user = User.new
     end
+
+
+
+    # respond_to do |format|
+    #   format.html # new.html.erb
+    #   format.json { render json: @user }
+    # end
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      flash[:success] = '¡Bienvenido a SACO!'
-      redirect_to @user
-      # redirect_to profesionales_path
+      if(!current_user.admin?)
+        log_in @user
+        flash[:success] = '¡Bienvenido a SACO!'
+        redirect_to @user
+      else
+        redirect_to profesionales_path
+        flash[:success] = '¡Profesional creado!'
+      end
     else
       render 'new'
     end
   end
 
   def edit
-    byebug
     @user = User.find(params[:id])
   end
 
@@ -69,7 +81,7 @@ class UsersController < ApplicationController
   # Confirms the correct user.
    def correct_user
      @user = User.find(params[:id])
-     redirect_to(root_url) unless current_user?(@user)
+     redirect_to(root_url) unless (current_user?(@user) || current_user.admin?)
    end
 
 

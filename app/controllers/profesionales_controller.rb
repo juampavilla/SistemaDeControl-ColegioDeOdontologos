@@ -54,35 +54,22 @@ class ProfesionalesController < ApplicationController
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
 
-    @profesional.user = User.new(profesional: @profesional)
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @profesional }
     end
   end
 
+  
   # GET /profesionales/1/edit
   def edit
     @profesional = Profesional.find(params[:id])
-    if @profesional.user.nil?
-      byebug
-      @user = User.new(profesional: @profesional)
-      @profesional.user.password = @profesional.matricula.matricula
-      @profesional.user.password_confirmation = @profesional.matricula.matricula
-      @profesional.save
-      #@profesional.user = @user
-    end
-    # @profesional.domicilios.sort_by(&:id)
   end
 
   # POST /profesionales
   # POST /profesionales.json
   def create
     @profesional = Profesional.new(profesional_params)
-    @profesional.user.password = @profesional.matricula.matricula
-    @profesional.user.password_confirmation = @profesional.matricula.matricula
-    # @profesional.user.email = getEmail(@profesional)
 
     respond_to do |format|
       if @profesional.save
@@ -98,7 +85,6 @@ class ProfesionalesController < ApplicationController
   # PUT /profesionales/1
   # PUT /profesionales/1.json
   def update
-
     @profesional = Profesional.find(params[:id])
     # if @profesional.user.password.nil?
     #   @profesional.user.password = @profesional.matricula.matricula
