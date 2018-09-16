@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update]
-  before_action :correct_user,   only: [:edit, :update, :show]
-  before_action :admin_user,     only: [:index, :new, :edit]
+  before_action :correct_user, :logged_in_user, only: [:edit, :update, :show]
+  before_action :admin_user, only: [:index, :new, :create]
 
   def index
     @users = User.paginate(page: params[:page])
@@ -21,26 +20,19 @@ class UsersController < ApplicationController
       @user = User.new
     end
 
-
-
-    # respond_to do |format|
-    #   format.html # new.html.erb
-    #   format.json { render json: @user }
-    # end
   end
 
   def create
     @user = User.new(user_params)
     if @user.save
-      if(!current_user.admin?)
-        log_in @user
-        flash[:success] = '¡Bienvenido a SACO!'
-        redirect_to @user
-      else
-        redirect_to profesionales_path
+      if(current_user.admin?)
         flash[:success] = '¡Profesional creado!'
+        redirect_to profesionales_path
+      else
+        flash[:danger] = 'Operacion no permitida'
       end
     else
+      flash[:success] = '¡No se pudo crear el profesional!'
       render 'new'
     end
   end
@@ -67,28 +59,28 @@ class UsersController < ApplicationController
                                  :profesional_id)
   end
 
-  # Before filters
-
-  # Confirms a logged-in user.
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = 'Es necesario loguearse.'
-      redirect_to login_url
-    end
-  end
-
-  # Confirms the correct user.
-   def correct_user
-     @user = User.find(params[:id])
-     redirect_to(root_url) unless (current_user?(@user) || current_user.admin?)
-   end
-
-
-    # Confirms an admin user.
-    def admin_user
-      redirect_to(root_url) unless current_user.admin?
-    end
+  # # Before filters
+  #
+  # # Confirms a logged-in user.
+  # def logged_in_user
+  #   unless logged_in?
+  #     store_location
+  #     flash[:danger] = 'Es necesario loguearse.'
+  #     redirect_to login_url
+  #   end
+  # end
+  #
+  # # Confirms the correct user.
+  #  def correct_user
+  #    @user = User.find(params[:id])
+  #    redirect_to(root_url) unless (current_user?(@user) || current_user.admin?)
+  #  end
+  #
+  #
+  #   # Confirms an admin user.
+  #   def admin_user
+  #     redirect_to(root_url) unless current_user.admin?
+  #   end
 
     # def has_profesional
     #   User.exists?(profesional_id: params[:profesional_id]) unless params[:profesional_id].nil

@@ -1,6 +1,9 @@
 class ProfesionalesController < ApplicationController
-  before_action :logged_in_user, only: %i[index edit update]
-  before_action :admin_user,     only: :index
+  # before_action :logged_in_user, only: %i[index edit update]
+  # before_action :admin_user,     only: :index
+
+  before_action :correct_user, :logged_in_user, only: [:show]
+  before_action :admin_user, only: [:index, :new, :create, :edit, :update]
 
   def index
     # @profesionales = Profesional.all.order :id
@@ -60,7 +63,6 @@ class ProfesionalesController < ApplicationController
     end
   end
 
-  
   # GET /profesionales/1/edit
   def edit
     @profesional = Profesional.find(params[:id])
@@ -70,15 +72,12 @@ class ProfesionalesController < ApplicationController
   # POST /profesionales.json
   def create
     @profesional = Profesional.new(profesional_params)
-
-    respond_to do |format|
-      if @profesional.save
-        format.html { redirect_to @profesional, notice: 'Profesional was successfully created.' }
-        format.json { render json: @profesional, status: :created, location: @profesional }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @profesional.errors, status: :unprocessable_entity }
-      end
+    if @profesional.save
+      flash[:success] = 'Profesional creado exitosamente'
+      redirect_to @profesional
+    else
+      # flash[:danger] = 'No se pudo crear el profesional'
+      render 'new'
     end
   end
 
@@ -91,14 +90,12 @@ class ProfesionalesController < ApplicationController
     #   @profesional.user.password_confirmation = @profesional.matricula.matricula
     # end
 
-    respond_to do |format|
-      if @profesional.update_attributes(profesional_params)
-        format.html { redirect_to @profesional, notice: 'Profesional was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @profesional.errors, status: :unprocessable_entity }
-      end
+    if @profesional.update_attributes(profesional_params)
+      flash[:success] = 'Profesional ha sido actualizado'
+      redirect_to @profesional
+    else
+      flash[:danger] = 'Error al actualizar el profesional'
+      render action: 'edit'
     end
   end
 
@@ -132,17 +129,17 @@ class ProfesionalesController < ApplicationController
     %i[id email password password_confirmation profesional_id]
   end
 
-  # Confirms a logged-in user.
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = 'Es necesario loguearse.'
-      redirect_to login_url
-    end
-  end
-
-  # Confirms an admin user.
-  def admin_user
-    redirect_to(root_url) unless current_user.admin?
-  end
+  # # Confirms a logged-in user.
+  # def logged_in_user
+  #   unless logged_in?
+  #     store_location
+  #     flash[:danger] = 'Es necesario loguearse.'
+  #     redirect_to login_url
+  #   end
+  # end
+  #
+  # # Confirms an admin user.
+  # def admin_user
+  #   redirect_to(root_url) unless current_user.admin?
+  # end
 end
