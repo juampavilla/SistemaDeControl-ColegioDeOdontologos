@@ -28,20 +28,19 @@ Rails.application.routes.draw do
   get    '/general',   to: 'pagos#general'
 
 
-
-
-
   get  'search/index', to: 'search#index'
 
 
 
   resources :domicilios
   resources :matriculas
+  resources :users
   resources :profesionales do
     get 'show_domicilios'
     resources :pagos
+    resources :users
   end
-  resources :users
+
 
   #report kit
   mount ReportsKit::Engine, at: '/'

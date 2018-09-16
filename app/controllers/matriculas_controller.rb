@@ -34,6 +34,7 @@ class MatriculasController < ApplicationController
 
   # GET /matriculas/1/edit
   def edit
+    
     @matricula = Matricula.find(params[:id])
   end
 

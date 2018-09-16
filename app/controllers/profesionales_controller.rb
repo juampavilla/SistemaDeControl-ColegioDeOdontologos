@@ -1,11 +1,13 @@
 class ProfesionalesController < ApplicationController
-  before_action :logged_in_user, only: [:index, :edit, :update]
-  before_action :admin_user,     only: :index
+  # before_action :logged_in_user, only: %i[index edit update]
+  # before_action :admin_user,     only: :index
+
+  before_action :correct_user, :logged_in_user, only: [:show]
+  before_action :admin_user, only: [:index, :new, :create, :edit, :update]
 
   def index
     # @profesionales = Profesional.all.order :id
-    @profesionales = (Profesional.all.order :id ).paginate(page: params[:page])
-
+    @profesionales = (Profesional.all.order :id).paginate(page: params[:page])
 
     respond_to do |format|
       # format.html # index.html.erb
@@ -16,7 +18,7 @@ class ProfesionalesController < ApplicationController
   end
 
   def reporte
-    @profesionales = (Profesional.all.order :id )
+    @profesionales = (Profesional.all.order :id)
     render layout: false
     respond_to do |format|
       format.html
@@ -54,6 +56,7 @@ class ProfesionalesController < ApplicationController
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
     @profesional.domicilios << Domicilio.new(profesional: @profesional)
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @profesional }
@@ -63,22 +66,18 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales/1/edit
   def edit
     @profesional = Profesional.find(params[:id])
-    #@profesional.domicilios.sort_by(&:id)
   end
 
   # POST /profesionales
   # POST /profesionales.json
   def create
     @profesional = Profesional.new(profesional_params)
-
-    respond_to do |format|
-      if @profesional.save
-        format.html { redirect_to @profesional, notice: 'Profesional was successfully created.' }
-        format.json { render json: @profesional, status: :created, location: @profesional }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @profesional.errors, status: :unprocessable_entity }
-      end
+    if @profesional.save
+      flash[:success] = 'Profesional creado exitosamente'
+      redirect_to @profesional
+    else
+      # flash[:danger] = 'No se pudo crear el profesional'
+      render 'new'
     end
   end
 
@@ -86,15 +85,17 @@ class ProfesionalesController < ApplicationController
   # PUT /profesionales/1.json
   def update
     @profesional = Profesional.find(params[:id])
+    # if @profesional.user.password.nil?
+    #   @profesional.user.password = @profesional.matricula.matricula
+    #   @profesional.user.password_confirmation = @profesional.matricula.matricula
+    # end
 
-    respond_to do |format|
-      if @profesional.update_attributes(profesional_params)
-        format.html { redirect_to @profesional, notice: 'Profesional was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @profesional.errors, status: :unprocessable_entity }
-      end
+    if @profesional.update_attributes(profesional_params)
+      flash[:success] = 'Profesional ha sido actualizado'
+      redirect_to @profesional
+    else
+      flash[:danger] = 'Error al actualizar el profesional'
+      render action: 'edit'
     end
   end
 
@@ -113,31 +114,32 @@ class ProfesionalesController < ApplicationController
   private
 
   def profesional_params
-    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params)
+    params.require(:profesional).permit(:apellido, :nombres, :tipo_doc, :nro_doc, :fecha_nacimiento, matricula_attributes: matricula_params, domicilios_attributes: domicilios_params, user_attributes: user_params)
   end
 
   def matricula_params
-    [:id, :especialidad, :estado, :fecha_habilitacion, :fecha_inscripcion, :fecha_vencimiento, :folio, :libro, :matricula, :nota_fecha_habilitacion, :notas, :profesional_id, :vencimiento]
+    %i[id especialidad estado fecha_habilitacion fecha_inscripcion fecha_vencimiento folio libro matricula nota_fecha_habilitacion notas profesional_id vencimiento]
   end
 
   def domicilios_params
-    [:id, :cp, :domicilio, :localidad, :notas, :profesional_id, :telefono, :tipo]
+    %i[id cp domicilio localidad notas profesional_id telefono tipo]
   end
 
-
-
-  # Confirms a logged-in user.
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = 'Es necesario loguearse.'
-      redirect_to login_url
-    end
+  def user_params
+    %i[id email password password_confirmation profesional_id]
   end
 
-
-    # Confirms an admin user.
-    def admin_user
-      redirect_to(root_url) unless current_user.admin?
-    end
+  # # Confirms a logged-in user.
+  # def logged_in_user
+  #   unless logged_in?
+  #     store_location
+  #     flash[:danger] = 'Es necesario loguearse.'
+  #     redirect_to login_url
+  #   end
+  # end
+  #
+  # # Confirms an admin user.
+  # def admin_user
+  #   redirect_to(root_url) unless current_user.admin?
+  # end
 end

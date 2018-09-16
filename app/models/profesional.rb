@@ -1,13 +1,15 @@
 class Profesional < ApplicationRecord
   require 'csv'
 
-  has_one :matricula
   has_many :domicilios
+  has_one :matricula  
   has_one :user
   has_many :pagos
 
   accepts_nested_attributes_for :domicilios
   accepts_nested_attributes_for :matricula
+  accepts_nested_attributes_for :user
+  accepts_nested_attributes_for :pagos
 
   def self.search(termino_buscado, attributes)
     if termino_buscado && attributes
