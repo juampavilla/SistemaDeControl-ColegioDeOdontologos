@@ -18,7 +18,12 @@
           </a>
           <ul class="dropdown-menu">
             <li><%= link_to "Perfil", current_user %></li>
-            <li><%= link_to "Configuración", edit_user_path(current_user) %></li>
+            <% unless current_user.admin? %>
+              <li>
+              <%= link_to "Pagos", profesional_pagos_path(current_user.profesional) %>
+              </li>
+            <% end %>
+            <li><%= link_to "Configuración", edit_user_path(current_user) %></li>          
             <li class="divider"></li>
             <li>
               <%= link_to "Cerrar sesión", logout_path, method: :delete %>
