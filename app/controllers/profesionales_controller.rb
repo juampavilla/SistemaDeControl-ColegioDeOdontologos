@@ -29,6 +29,7 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales/1
   # GET /profesionales/1.json
   def show
+    byebug
     @profesional = Profesional.find(params[:id])
 
     respond_to do |format|
