@@ -1,6 +1,7 @@
+<%= render partial: 'shared/error_messages', locals: { localVar: @user }%>
 <%= form_for(@user, url: yield(:action)) do |f| %>
 
-<%= render partial: 'shared/error_messages', locals: { localVar: @user }%>
+
 <% if !@user.profesional_id.nil? %>
   <%= f.label :profesional_id %>
   <%= f.hidden_field :profesional_id%>

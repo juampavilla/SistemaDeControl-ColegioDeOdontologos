@@ -2,8 +2,8 @@ class ProfesionalesController < ApplicationController
   # before_action :logged_in_user, only: %i[index edit update]
   # before_action :admin_user,     only: :index
 
-  before_action :correct_user, :logged_in_user, only: [:show]
-  before_action :admin_user, only: [:index, :new, :create, :edit, :update]
+  before_action :logged_in_user, only: [:show]
+  before_action :admin_user, :logged_in_user , only: [:index, :new, :create, :edit, :update]
 
   def index
     # @profesionales = Profesional.all.order :id
@@ -29,7 +29,6 @@ class ProfesionalesController < ApplicationController
   # GET /profesionales/1
   # GET /profesionales/1.json
   def show
-    byebug
     @profesional = Profesional.find(params[:id])
 
     respond_to do |format|
@@ -129,6 +128,7 @@ class ProfesionalesController < ApplicationController
   def user_params
     %i[id email password password_confirmation profesional_id]
   end
+
 
   # # Confirms a logged-in user.
   # def logged_in_user
