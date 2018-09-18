@@ -1,5 +1,7 @@
 class PagosController < ApplicationController
   before_action :set_pago, only: %i[show edit update destroy]
+  #before_action :correct_user, only: %i[show index]
+  before_action :admin_user, only: %i[new create update edit destroy]
 
   # GET /pagos
   # GET /pagos.json

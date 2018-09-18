@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :correct_user, :logged_in_user, only: [:edit, :update, :show]
+  before_action :logged_in_user, only: [:edit, :update, :show]
   before_action :admin_user, only: [:index, :new, :create]
 
   def index
@@ -58,6 +58,8 @@ class UsersController < ApplicationController
                                  :password_confirmation,
                                  :profesional_id)
   end
+
+
 
   # # Before filters
   #

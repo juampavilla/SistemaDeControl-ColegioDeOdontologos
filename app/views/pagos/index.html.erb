@@ -3,8 +3,6 @@
 </div>
 </br>
 
-
-
 </br>
 
 <h3>Pagos realizados</h3>
@@ -31,20 +29,26 @@
     <td><%= pago.concepto %></td>
     <td><%= number_to_currency(pago.monto_abonado) %></td>
     <td><%= pago.fecha_pago %></td>
+
     <td><%= link_to profesional_pago_path(pago.profesional, pago) do %>
       <%= fa_icon "search" %>
       <% end %>
     </td>
-    <td>
-      <%= link_to edit_profesional_pago_path(pago.profesional, pago) do%>
-      <%= fa_icon "pencil" %></td>
-      <% end %>
-    </td>
-    <td>
-      <%= link_to profesional_pago_path(pago.profesional, pago), method: :delete, data: { confirm: "¿Está seguro que desea eliminar el pago: #{pago.nro_recibo}?"} do %>
-      <%= fa_icon "trash-o" %></td>
-      <% end %>
-    </td>
+    <% if current_user.admin?%>
+      <td>
+        <%= link_to edit_profesional_pago_path(pago.profesional, pago) do%>
+        <%= fa_icon "pencil" %>
+        <% end %>
+      </td>
+      <td>
+        <%= link_to profesional_pago_path(pago.profesional, pago), method: :delete, data: { confirm: "¿Está seguro que desea eliminar el pago: #{pago.nro_recibo}?"} do %>
+        <%= fa_icon "trash-o" %>
+        <% end %>
+      </td>
+    <% else %>
+      <td></td>
+      <td></td>
+    <% end %>
   </tr>
   <% end %>
 </tbody>

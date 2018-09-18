@@ -8,9 +8,16 @@
   </h2>
   <% if logged_in? %>
     <%= link_to "Perfil profesional", current_user, class: "btn btn-lg btn-primary" %>
+    <br/>
+    <br/>
+    <% unless current_user.admin? %>
+      <%= link_to "Pagos", profesional_pagos_path(current_user.profesional), class: "btb btn-lg btn-success" %>
+    <% end %>
   <% else %>
     <%= link_to "Iniciar Sesión", login_path, class: "btn btn-lg btn-primary" %>
   <% end %>
+
+
 </div>
 
 <%= link_to image_tag("isologo.png", alt: "logo"),
