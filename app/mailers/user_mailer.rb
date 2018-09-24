@@ -5,9 +5,6 @@ class UserMailer < ApplicationMailer
     byebug
     @user = user
     @url  = 'http://sistemasaco2018'
-    mail(to: "juampavilla@gmail.com", subject: 'Bienvenido a SACO' )
-    format.html {
-      render locals: { recipient_name: "John D." }
-    }
+    mail(to: "juampavilla@gmail.com", subject: 'Bienvenido a SACO' )    
   end
 end
