@@ -23,16 +23,19 @@ class UsersController < ApplicationController
   end
 
   def create
+    #Notifier.welcome(@user).deliver_now
+
+
     @user = User.new(user_params)
     if @user.save
       if(current_user.admin?)
-        flash[:success] = '¡Profesional creado!'
+        flash[:success] = '¡Usuario creado!'
+        #welcome email
+        UserMailer.welcome_email(@user).deliver_later
         redirect_to profesionales_path
-      else
-        flash[:danger] = 'Operacion no permitida'
       end
     else
-      flash[:success] = '¡No se pudo crear el profesional!'
+      flash[:danger] = '¡No se pudo crear el profesional!'
       render 'new'
     end
   end
