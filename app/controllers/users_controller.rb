@@ -27,20 +27,17 @@ class UsersController < ApplicationController
 
 
     @user = User.new(user_params)
-    byebug
-    #email
-    UserMailer.welcome_email(@user)
-    redirect_to profesionales_path
-    # if @user.save
-    #   if(current_user.admin?)
-    #     flash[:success] = '¡Usuario creado!'
-    #     Notifier.welcome(@user).deliver_now
-    #     redirect_to profesionales_path
-    #   end
-    # else
-    #   flash[:danger] = '¡No se pudo crear el profesional!'
-    #   render 'new'
-    # end
+    if @user.save
+      if(current_user.admin?)
+        flash[:success] = '¡Usuario creado!'
+        #welcome email
+        UserMailer.welcome_email(@user).deliver_later
+        redirect_to profesionales_path
+      end
+    else
+      flash[:danger] = '¡No se pudo crear el profesional!'
+      render 'new'
+    end
   end
 
   def edit
