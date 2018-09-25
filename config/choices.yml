@@ -3,7 +3,7 @@
 concepto:
   - Capital
   - Mora
-  
+
 
 estado:
   - Activo
@@ -36,3 +36,8 @@ universidad:
   - Universidad Maimónides
   - Universidad Nacional de Cordoba
   - Universidad Nacional de La Plata
+
+status:
+  - Pagado en Colegio
+  - Pendiente mercadopago
+  - Pagado mercadopago

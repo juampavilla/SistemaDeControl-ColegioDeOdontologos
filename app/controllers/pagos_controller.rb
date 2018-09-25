@@ -1,7 +1,8 @@
+require 'mercadopago.rb'
 class PagosController < ApplicationController
   before_action :set_pago, only: %i[show edit update destroy]
   #before_action :correct_user, only: %i[show index]
-  before_action :admin_user, only: %i[new create update edit destroy]
+  before_action :admin_user, only: %i[update edit destroy]
 
   # GET /pagos
   # GET /pagos.json
@@ -44,6 +45,7 @@ class PagosController < ApplicationController
     @pago.fecha_pago = Date.today.strftime('%Y-%m-%d')
     @pago.cuota_anio = Date.today.year
     @pago.concepto = Choices['concepto'][0]
+
   end
 
   # GET /pagos/1/edit
@@ -55,6 +57,11 @@ class PagosController < ApplicationController
   # POST /pagos.json
   def create
     @pago = Pago.new(pago_params)
+    if(current_user.admin?)
+      @pago.status = Choices['status'][0]
+    else
+      @pago.status = Choices['status'][1]
+    end
 
     if @pago.save
       flash[:success] = 'Pago creado exitosamente'
@@ -110,6 +117,7 @@ class PagosController < ApplicationController
                                  :profesional_id,
                                  :notas,
                                  :cuota_anio,
-                                 :concepto)
+                                 :concepto,
+                                 :status)
   end
 end
