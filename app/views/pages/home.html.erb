@@ -10,7 +10,7 @@
     <%= link_to "Perfil profesional", current_user, class: "btn btn-lg btn-primary" %>
     <br/>
     <br/>
-    <% unless current_user.admin? %>
+    <% unless current_user.admin? || current_user.profesional_id == nil %>
       <%= link_to "Pagos", profesional_pagos_path(current_user.profesional), class: "btb btn-lg btn-success" %>
     <% end %>
   <% else %>

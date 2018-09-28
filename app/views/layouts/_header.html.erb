@@ -22,7 +22,7 @@
               <% else %>
               <li><%= link_to "Perfil", current_user %></li>
             <% end %>
-            <% unless current_user.admin? %>
+            <% unless current_user.admin? || current_user.profesional_id == nil%>
               <li>
               <%= link_to "Pagos", profesional_pagos_path(current_user.profesional) %>
               </li>

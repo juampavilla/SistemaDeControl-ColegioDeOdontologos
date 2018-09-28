@@ -45,7 +45,7 @@ gem 'rubyzip', '= 1.0.0'
 gem 'axlsx', '= 2.0.1'
 gem 'axlsx_rails'
 # mercado pago
-gem 'mercadopago'
+gem 'mercadopago-sdk'
 
 
 # Use Capistrano for deployment
