@@ -58,7 +58,7 @@
 
           }
           @preference = $mp.create_preference(preference_data)
-          redirect_to @preference['response']['sandbox_init_point']
+          redirect_to @preference['response'][ ENV['INIT_POINT_MP']]
     end
 
     # GET /pagos/1/edit
