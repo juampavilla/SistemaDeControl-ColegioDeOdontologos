@@ -14,6 +14,8 @@
     <th>Concepto</th>
     <th>Monto</th>
     <th>Fecha</th>
+    <th>Estado</th>
+
 
     <th></th>
     <th></th>
@@ -29,6 +31,7 @@
     <td><%= pago.concepto %></td>
     <td><%= number_to_currency(pago.monto_abonado) %></td>
     <td><%= pago.fecha_pago %></td>
+    <td><%= pago.status %></td>
 
     <td><%= link_to profesional_pago_path(pago.profesional, pago) do %>
       <%= fa_icon "search" %>
@@ -56,4 +59,7 @@
 </table>
 <br>
 
-<%= link_to 'Nuevo Pago', new_profesional_pago_path(@profesional), class:'btn btn-primary' %>
+<% if current_user.admin? %>
+  <%= link_to 'Nuevo Pago', new_profesional_pago_path(@profesional), class:'btn btn-primary' %>
+<% end %>
+<%= link_to 'Mercado Pago', profesional_pagos_new_mercado_pago_path(@profesional), class:'btn btn-success' %>

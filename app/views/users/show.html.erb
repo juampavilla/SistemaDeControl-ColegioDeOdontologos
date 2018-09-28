@@ -7,6 +7,6 @@
     <%= @user.email %>
   </h2>
 
-  <% unless current_user.admin? %>
+  <% unless current_user.admin? || current_user.profesional_id == nil %>
     <%= render partial: 'profesionales/show_limited', locals: { profesional: @user.profesional }%>
   <%end  %>

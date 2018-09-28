@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get  '/reportes', to: 'pages#reportes'
   get  '/pagos/reporte', to: 'pagos#reporte'
   get  '/profesionales/reporte', to: 'profesionales#reporte'
+#  get  '/pagos/new_mercado_pago', to: 'pagos#new_mercado_pago'
 
   get  '/signup',   to: 'users#new'
   post '/signup',   to: 'users#create'
@@ -37,6 +38,7 @@ Rails.application.routes.draw do
   resources :users
   resources :profesionales do
     get 'show_domicilios'
+    get 'pagos/new_mercado_pago', to: 'pagos#new_mercado_pago'
     resources :pagos
     resources :users
   end
