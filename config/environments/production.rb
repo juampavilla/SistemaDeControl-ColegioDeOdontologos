@@ -92,16 +92,16 @@ Rails.application.configure do
   #email configure production
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'sistemasaco2018@gmail.com'}
+  config.action_mailer.default_options = {from: ENV['SENDMAIL_USERNAME']}
   config.action_mailer.smtp_settings = {
     address: 'smtp.gmail.com',
     port: 587,
-    user_name: 'sistemasaco2018@gmail.com',
-    password: 'juampa2018',
-    authentication: :plain,
+    user_name:  ENV['SENDMAIL_USERNAME'],
+    password:   ENV['SENDMAIL_PASSWORD'],
+    authentication: 'plain',
     enable_starttls_auto: true
   }
-  config.action_mailer.default_url_options = { host: 'sacotest.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: ENV['APPHOST'] }
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default :charset => "utf-8"
 end
