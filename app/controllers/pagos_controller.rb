@@ -50,7 +50,7 @@ class PagosController < ApplicationController
     @profesional = Profesional.find params[:profesional_id]
 
     require 'mercadopago.rb'
-    $mp = MercadoPago.new('2103521299597679', 'cCrpCVeZBcoZ3heTbH61VXDbZjxnAvuz')
+    $mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
 
     preference_data = {
       "items": [
