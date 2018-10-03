@@ -1,3 +1,4 @@
+  require 'mercadopago.rb'
   class PagosController < ApplicationController
     before_action :set_pago, only: %i[show edit update destroy]
     #before_action :correct_user, only: %i[show index]
@@ -13,6 +14,21 @@
     def reporte
       @title = 'Reporte pagos'
       render layout: false
+    end
+
+    def reporte_mercado_pago
+        require 'mercadopago.rb'
+        $mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
+        $mp.sandbox_mode(true);
+        filters = Hash[status=>'approved']
+
+        @searchResult = $mp.search_payment(filters)
+        byebug
+        puts @searchResult
+
+        @title = 'Reporte mercado pago'
+        render layout: false
+        #puts @searchResult
     end
 
     # GET /pagos/1
@@ -34,8 +50,8 @@
     def new_mercado_pago
       @profesional = Profesional.find params[:profesional_id]
 
-      require 'mercadopago.rb'
       $mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
+      $mp.sandbox_mode(true);
 
       preference_data = {
         "items": [

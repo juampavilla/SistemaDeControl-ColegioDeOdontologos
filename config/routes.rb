@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get  '/contact',  to: 'pages#contact'
   get  '/reportes', to: 'pages#reportes'
   get  '/pagos/reporte', to: 'pagos#reporte'
+  get  '/pagos/reporte_mercado_pago', to: 'pagos#reporte_mercado_pago'
   get  '/profesionales/reporte', to: 'profesionales#reporte'
 #  get  '/pagos/new_mercado_pago', to: 'pagos#new_mercado_pago'
 
