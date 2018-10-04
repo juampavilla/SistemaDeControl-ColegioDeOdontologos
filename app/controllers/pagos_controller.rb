@@ -23,7 +23,7 @@
         filters = Hash[status=>'approved']
 
         @searchResult = $mp.search_payment(filters)
-        byebug
+        
         puts @searchResult
 
         @title = 'Reporte mercado pago'

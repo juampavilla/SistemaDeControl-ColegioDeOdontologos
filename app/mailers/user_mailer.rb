@@ -1,9 +1,14 @@
 class UserMailer < ApplicationMailer
-  default from: 'sistemasaco2018@gmail.com'
+  default from: ENV['SENDMAIL_USERNAME']
 
   def welcome_email(user)
     @user = user
-    @url  = 'http://sistemasaco2018'
-    mail(to: "juampavilla@gmail.com", subject: 'Bienvenido a SACO' )
+    
+
+    mail(to: @user.email,
+         subject: 'Bienvenido a SACO',
+         cc: ENV['CC_EMAIL'],
+         bcc: ENV['BCC_EMAIL'] )
+
   end
 end
