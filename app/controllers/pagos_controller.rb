@@ -23,7 +23,7 @@
         filters = Hash[status=>'approved']
 
         @searchResult = $mp.search_payment(filters)
-        
+
         puts @searchResult
 
         @title = 'Reporte mercado pago'
@@ -53,18 +53,29 @@
       $mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
       $mp.sandbox_mode(true);
 
+      if current_user.admin?
+        user = User.where(profesional_id: @profesional.id)
+        if(user.nil?)
+          email = ""
+        else
+          email = user.first.email
+        end
+      else
+        email = current_user.email
+      end
+
       preference_data = {
         "items": [
           {
-            "title": "prueba pago matricula #{@profesional.matricula.matricula}",
+            "title": "Pago matricula #{@profesional.matricula.matricula} #{@profesional.apellido}",
             "quantity": 1,
-            "unit_price": 10.2,
+            "unit_price": 10,
             "currency_id": "ARS"
             }],
             "payer": {
               "name": "#{@profesional.nombres}",
               "surname": "#{@profesional.apellido}",
-              "email": "",
+              "email": "#{email}",
               "date_created": "",
               "phone": {
                 "area_code": "",
@@ -74,6 +85,8 @@
 
           }
           @preference = $mp.create_preference(preference_data)
+          puts @preference
+    
           redirect_to @preference['response'][ ENV['INIT_POINT_MP']]
     end
 
