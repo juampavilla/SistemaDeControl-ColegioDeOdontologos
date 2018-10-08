@@ -1,3 +1,4 @@
+  require 'mercadopago.rb'
   class PagosController < ApplicationController
     before_action :set_pago, only: %i[show edit update destroy]
     #before_action :correct_user, only: %i[show index]
@@ -13,6 +14,21 @@
     def reporte
       @title = 'Reporte pagos'
       render layout: false
+    end
+
+    def reporte_mercado_pago
+        require 'mercadopago.rb'
+        $mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
+        $mp.sandbox_mode(true);
+        filters = Hash[status=>'approved']
+
+        @searchResult = $mp.search_payment(filters)
+
+        puts @searchResult
+
+        @title = 'Reporte mercado pago'
+        render layout: false
+        #puts @searchResult
     end
 
     # GET /pagos/1
@@ -34,21 +50,32 @@
     def new_mercado_pago
       @profesional = Profesional.find params[:profesional_id]
 
-      require 'mercadopago.rb'
       $mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
+      $mp.sandbox_mode(true);
+
+      if current_user.admin?
+        user = User.where(profesional_id: @profesional.id)
+        if(user.nil?)
+          email = ""
+        else
+          email = user.first.email
+        end
+      else
+        email = current_user.email
+      end
 
       preference_data = {
         "items": [
           {
-            "title": "prueba pago matricula #{@profesional.matricula.matricula}",
+            "title": "Pago matricula #{@profesional.matricula.matricula} #{@profesional.apellido}",
             "quantity": 1,
-            "unit_price": 10.2,
+            "unit_price": 10,
             "currency_id": "ARS"
             }],
             "payer": {
               "name": "#{@profesional.nombres}",
               "surname": "#{@profesional.apellido}",
-              "email": "",
+              "email": "#{email}",
               "date_created": "",
               "phone": {
                 "area_code": "",
@@ -58,6 +85,8 @@
 
           }
           @preference = $mp.create_preference(preference_data)
+          puts @preference
+    
           redirect_to @preference['response'][ ENV['INIT_POINT_MP']]
     end
 

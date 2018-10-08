@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+  </head>
+  <body>
+
+    <p>
+      <%= "#{@user.profesional.nombres } #{@user.profesional.apellido } " %>
+    le damos la bienvenida a <strong> SACO </strong>
+    <h5>Sistema de administración de colegios de odontólogos</h5>
+  </p>
+    <p>Este es un correo automático. No conteste este correo.</p>
+    <p>Nunca se le solicitará ningún dato personal o password por este medio.</p>
+
+    <p>Usted podrá ver sus datos, pagar su matrícula y otras operaciones, muy pronto les informaremos</p>
+
+    <p>Puede acceder a https://saco.herokuapp.com/ y comenzar a operar.</p>
+
+    <p>El nombre de usuario es su correo electrónico:
+      <%= @user.email %>
+    </p>
+    <p>Su clave de usuario será otorgada por el colegio de manera personal.</p>
+
+    <p>Cualquier consulta enviar un correo a copba8@speedy.com.ar
+    </p>
+
+    <p>Lo saludamos cordialmente</p>
+
+  </body>
+</html>
