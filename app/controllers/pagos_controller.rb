@@ -69,7 +69,7 @@
           {
             "title": "Pago matricula #{@profesional.matricula.matricula} #{@profesional.apellido}",
             "quantity": 1,
-            "unit_price": 10,
+            "unit_price": 3720,
             "currency_id": "ARS"
             }],
             "payer": {
@@ -86,7 +86,7 @@
           }
           @preference = $mp.create_preference(preference_data)
           puts @preference
-    
+
           redirect_to @preference['response'][ ENV['INIT_POINT_MP']]
     end
 
