@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get  '/pagos/reporte', to: 'pagos#reporte'
   get  '/pagos/reporte_mercado_pago', to: 'pagos#reporte_mercado_pago'
   get  '/profesionales/reporte', to: 'profesionales#reporte'
-#  get  '/pagos/new_mercado_pago', to: 'pagos#new_mercado_pago'
+#  get  '/pagos/new_mercado_pago', to: 'pagos#new_mercado_pago'<%= link_to 'Mercado Pago', profesional_pagos_new_mercado_pago_path(@profesional), class:'btn btn-success' %>
 
   get  '/signup',   to: 'users#new'
   post '/signup',   to: 'users#create'
@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   resources :profesionales do
     get 'show_domicilios'
     get 'pagos/new_mercado_pago', to: 'pagos#new_mercado_pago'
+    get 'pagos/prueba', to: 'pagos#prueba'
     resources :pagos
     resources :users
   end

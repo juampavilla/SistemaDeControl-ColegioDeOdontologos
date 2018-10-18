@@ -45,7 +45,8 @@ gem 'rubyzip', '= 1.0.0'
 gem 'axlsx', '= 2.0.1'
 gem 'axlsx_rails'
 # mercado pago
-gem 'mercadopago-sdk'
+gem 'mercadopago-sdk', :git => 'https://github.com/mercadopago/sdk-ruby'
+
 
 
 # Use Capistrano for deployment
@@ -63,7 +64,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  #gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
