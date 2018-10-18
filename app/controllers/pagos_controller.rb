@@ -90,22 +90,6 @@
           redirect_to @preference['response'][ ENV['INIT_POINT_MP']]
     end
 
-    def prueba
-      require 'mercadopago.rb'
-    	$mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
-
-    	# Sets the filters you want
-    	filters = Hash["description" => "Pago matricula #{@profesional.matricula.matricula} #{@profesional.apellido}"]
-
-      searchResult = $mp.search_payment(filters)
-
-      puts searchResult
-
-
-    	byebug
-
-    end
-
     # GET /pagos/1/edit
     def edit
       @profesional = Profesional.find params[:profesional_id]
