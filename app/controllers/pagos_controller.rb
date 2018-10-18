@@ -91,10 +91,11 @@
     end
 
     def prueba
+      require 'mercadopago.rb'
     	$mp = MercadoPago.new(ENV['CLIENT_ID'], ENV['CLIENT_SECRET'])
 
     	# Sets the filters you want
-    	filters = Hash["operation_type" => "regular_payment","payer.email" => "flopi.6@hotmail.com"]
+    	filters = Hash["description" => "Pago matricula #{@profesional.matricula.matricula} #{@profesional.apellido}"]
 
       searchResult = $mp.search_payment(filters)
 
@@ -102,7 +103,7 @@
 
 
     	byebug
-    	
+
     end
 
     # GET /pagos/1/edit
