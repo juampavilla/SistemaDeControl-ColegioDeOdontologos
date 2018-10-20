@@ -20,7 +20,7 @@ namespace :importador_mp do
           existing_pago.update_attribute(:status, pago['status'])
           p "pago con estado actualizado a #{existing_pago.status}"
         else
-          nuevo_pago = profesional.pagos.create(monto_abonado: pago['transaction_amount'],
+          nuevo_pago = profesional.pagos.create(monto_abonado: pago['transaction_amount'].to_f,
                                   fecha_pago: pago['date_created'],
                                   nro_recibo: pago['id'],
                                   cuota_anio: '2018',
