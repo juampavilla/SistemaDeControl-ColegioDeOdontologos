@@ -23,7 +23,7 @@ namespace :importador_mp do
           nuevo_pago = profesional.pagos.create(monto_abonado: pago['transaction_amount'].to_f,
                                   fecha_pago: pago['date_created'],
                                   nro_recibo: pago['id'],
-                                  cuota_anio: '2018',
+                                  cuota_anio: '2019',
                                   concepto: Choices['concepto'][0],
                                   status: pago['status'],
                                   mp_id: pago['id'])
